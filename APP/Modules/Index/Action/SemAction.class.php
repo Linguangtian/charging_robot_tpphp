@@ -99,6 +99,7 @@
                     $this->ajaxReturn(array('result'=>0,'info'=>'请输入短信验证码!'));
                 }
                 $check_code = sms_code_verify($data['username'],$code,session_id());
+                $check_code['status']=1;
                 if($check_code['status'] != 1){
                     $this->ajaxReturn(array('result'=>0,'info'=>$check_code['msg']));
                 }

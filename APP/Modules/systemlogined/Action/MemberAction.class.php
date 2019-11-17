@@ -86,12 +86,12 @@
 					$this->error('请输入会员账号');	
 				}
 				if(empty($num)){
-						$this->error('请选择机器人');
+						$this->error('请选择5G服务器');
 					}	
 				
 				$userinfo=M('member')->where(array('username'=>$username))->find();
 				$product = M("product");
-				//查询机器人信息
+				//查询5G服务器信息
 				$data = $product ->where(array('id'=>$num))-> find();
 				if(empty($userinfo)){
 					$this->error('没有该会员,请正确输入');	
@@ -183,10 +183,61 @@
 
 		//编辑会员
 		public function editMember(){
+
 			$member = M('member')->where(array('id'=>I('id')))->find();
 			$this->assign('member',$member);
 			$this->display();
 		}
+
+
+
+        //添加会员
+        public function addUser(){
+//
+
+
+            if($_POST){
+                $member_is_set = M('member')->where(array('username'=>I('username')))->find();
+                if($member_is_set||!I('username')){
+                    $this->error('用户已存在！',U(GROUP_NAME.'/Member/addUser'));
+                    exit;
+                }
+
+                $data=[
+                    'username'=>I('username'),
+                    'truename'=>I('truename'),
+                    'mobile'=>I('username'),
+                    'password'=>md5(I('$password')),
+
+
+                ];
+
+                if(I('parent_username')){
+                    $parent_member = M('member')->where(array('username'=>I('parent_username')))->find();
+                    if(!$parent_member){
+                        $this->error('推荐人不存在！',U(GROUP_NAME.'/Member/addUser'));
+                        exit;
+                    }
+
+                    $data['parent']=$parent_member['username'];
+                    $data['parent_id']=$parent_member['id'];
+                    $data['parentpath']  = trim($parent_member['parentpath'] . $parent_member['id'] . '|');;
+                    $data['parentlayer'] = $parent_member['parentlayer'] + 1;
+
+                    M('member')->where(array('username' => $data['parent']))->setInc('parentcount',1);
+                    mmtjrennumadd($data['parent_id']);//  所有上级加一人
+                }
+                $data['regdate']     = time();
+                M('member')->add($data);
+
+                $this->success('添加成功！',U(GROUP_NAME.'/Member/addUser'));
+                exit;
+            }
+
+            $this->display();
+        }
+
+
 
 		//编辑会员处理函数
 		public function editMemberHandle(){

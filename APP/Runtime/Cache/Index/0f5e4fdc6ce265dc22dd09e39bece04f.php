@@ -9,7 +9,7 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
 
-    <title>我的充电宝</title>
+    <title>我的5G服务器</title>
     <link rel="stylesheet" href="/Public/dianyun/css/app.css">
     <link rel="stylesheet" href="/Public/dianyun/css/iconfont.css">
 
@@ -97,8 +97,8 @@
 </head>
 <body style="background: #131933;">
 	
-            <p class="bxxxx-top">我的充电宝
-            	<a href="<?php echo U('/index/robot/pcontent');?>" style="">购买充电宝 > </a>
+            <p class="bxxxx-top">我的5G服务器
+            	<a href="<?php echo U('/index/robot/pcontent');?>" style="">购买服务器 > </a>
             </p>
             
             <div class="boooooss">
@@ -118,7 +118,7 @@
             
             					<?php if($v["zt"] == 1): if($v["is_jiesuan"] == 1): ?><a href="<?php echo U('Robot/jiesuan',array('id'=>$v['id']));?>" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取电量</a>
             							<?php else: ?>
-            							<a href="javascript:alert(&#39;请勿操作，招充电宝在努力的充电中！&#39;);">运行中</a><?php endif; ?>
+            							<a href="javascript:alert(&#39;请勿操作，招5G服务器在努力的充电中！&#39;);">运行中</a><?php endif; ?>
             						<?php else: ?> ----<?php endif; ?>
             
             				</div>

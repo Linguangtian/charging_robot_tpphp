@@ -62,7 +62,7 @@
 						</li>
 
 						<li>
-							<a href="#">机器人管理</a>
+							<a href="#">5G服务器管理</a>
 
 							<span class="divider">
 								<i class="icon-angle-right"></i>
@@ -74,7 +74,7 @@
 				<div id="page-content" class="clearfix">
 					<div class="page-header position-relative">
 						<h1>
-							修改机器人
+							修改5G服务器
 						</h1>
 					</div><!--/.page-header-->
 
@@ -83,7 +83,7 @@
 							<form class="form-horizontal" name="editProductHandle"  enctype="multipart/form-data" action="{:U(GROUP_NAME .'/Shop/editProductHandle')}" method="post">
 							<input type="hidden"  name="id" value="{$product.id}">
 								<div class="control-group">
-									<label class="control-label" for="title"> 机器人名称</label>
+									<label class="control-label" for="title"> 5G服务器名称</label>
                                    
 									<div class="controls">
 										<input type="text" value="{$product.title}" name="title" id="title" placeholder="" />
@@ -160,9 +160,18 @@
                                         
                                         
 									</div>
-								</div>	
-                                
-                                
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="is_cumulative"> 是否有效服务器</label>
+
+									<div class="controls">
+										<input type="radio"   <if condition="$product['is_cumulative'] eq 1 "> checked </if>  value="1" name="is_cumulative" >
+										<span class="lbl"> 是</span>
+										<input type="radio"  <if condition="$product['is_cumulative'] eq 2 "> checked </if> value="2" name="is_cumulative">
+										<span class="lbl"> 否</span>
+									</div>
+								</div>
                                 
                                 	
 								<div class="control-group">

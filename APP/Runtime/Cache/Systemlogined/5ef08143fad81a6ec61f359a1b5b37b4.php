@@ -45,7 +45,7 @@
 					<a href="#" class="brand">
 						<small>
 							<i class="icon-leaf"></i>
-							充电宝管理系统
+							5G服务器管理系统
 						</small>
 					</a><!--/.brand-->
 
@@ -156,7 +156,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 							<li url="Memberuncheck">
 								<a href="<?php echo U(GROUP_NAME.'/Member/gaward');?>">
 									<i class="icon-double-angle-right"></i>
-									赠送充电宝
+									赠送5G服务器
 								</a>
 							</li>
 
@@ -206,7 +206,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li sid="top"  <?php if(MODULE_NAME == 'Shop'): ?>class="open"<?php endif; ?>>
 						<a href="#" class="dropdown-toggle">
 							<i class="icon-random"></i>
-							<span>充电宝管理</span>
+							<span>5G服务器管理</span>
 
 							<b class="arrow icon-angle-down"></b>
 						</a>
@@ -227,13 +227,13 @@ a.active{ color:#C30 !important; font-size:18px;}
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('lists')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 								<a href="<?php echo U(GROUP_NAME.'/Shop/lists');?>">
 									<i class="icon-double-angle-right"></i>
-									充电宝列表
+									5G服务器列表
 								</a>
 							</li><?php endif; ?>					
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('orderlist')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 								<a href="<?php echo U(GROUP_NAME.'/Shop/orderlist');?>">
 									<i class="icon-double-angle-right"></i>
-									已购充电宝
+									已购5G服务器
 								</a>
 							</li><?php endif; ?>
 	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('editshouyi')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
@@ -265,7 +265,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Jinbidetail')][strtoupper('index')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Jinbidetailindex">
 								<a href="<?php echo U('Jinbidetail/index',array('type'=>1));?>">
 									<i class="icon-double-angle-right"></i>
-									充电宝收益
+									5G服务器收益
 								</a>
 	
 						</li><?php endif; ?>	
@@ -481,14 +481,14 @@ a.active{ color:#C30 !important; font-size:18px;}
 															已购一代<input type="text" id="one" name="ONE" value="<?php echo ($config["ONE"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             已购二代<input type="text" id="two" name="TWO" value="<?php echo ($config["TWO"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             已购三代<input type="text" id="two" name="THREE" value="<?php echo ($config["THREE"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
-															<font color="red">已购--此处设置推荐别人购买机器人时，自己已持有机器人，获得奖励多。</font>
+															<font color="red">已购--此处设置推荐别人购买5G服务器时，自己已持有5G服务器，获得奖励多。</font>
                                                         </div>
 												<div style="height: 20px;"></div>
 														<div class="controls">
 															未购一代<input type="text" id="ones" name="ONES" value="<?php echo ($config["ONES"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             未购二代<input type="text" id="twos" name="TWOS" value="<?php echo ($config["TWOS"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             未购三代<input type="text" id="threes" name="THREES" value="<?php echo ($config["THREES"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
-															<font color="red">未购--此处设置推荐别人购买机器人时，自己未持有机器人，获得奖励少。</font>
+															<font color="red">未购--此处设置推荐别人购买5G服务器时，自己未持有5G服务器，获得奖励少。</font>
                                                         </div>
 											</div>
 												<div class="control-group" >
@@ -504,7 +504,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 													<label class="control-label" for="chengzhu">领袖设置</label>
 
 													<div class="controls">
-														直推机器人数量<input type="text" id="chengzhu" name="chengzhu" value="<?php echo ($config["chengzhu"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">设置直推拥有多少机器人可以升级为城主。</font>
+														直推5G服务器数量<input type="text" id="chengzhu" name="chengzhu" value="<?php echo ($config["chengzhu"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">设置直推拥有多少5G服务器可以升级为城主。</font>
 														奖励代数<input type="text" id="daishu" name="daishu" value="<?php echo ($config["daishu"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">设置奖励的代数，建议设置小一些。</font>
 													</div>
 													<div style="height: 20px;"></div>
@@ -523,9 +523,9 @@ a.active{ color:#C30 !important; font-size:18px;}
 													</div>
 												</div>
 												<div class="control-group">
-													<label class="control-label" for="faquan">发圈赠送机器人编号</label>
+													<label class="control-label" for="faquan">发圈赠送5G服务器编号</label>
 													<div class="controls">
-														<input type="text" id="faquan" name="faquan" value="<?php echo ($config["faquan"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">此处修改金币兑换机器人的编号。</font>&nbsp;&nbsp;
+														<input type="text" id="faquan" name="faquan" value="<?php echo ($config["faquan"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">此处修改金币兑换5G服务器的编号。</font>&nbsp;&nbsp;
 													</div>
 												</div>
 												<div class="control-group">
@@ -545,7 +545,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 													<label class="control-label" for="jiangli">发圈奖励金币数量</label>
 													<div class="controls">
 														发圈奖励<input type="text" id="jinbi" name="jinbi" value="<?php echo ($config["jinbi"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">发圈奖励金币的数量。</font>
-														金币兑换<input type="text" id="duihuan" name="duihuan" value="<?php echo ($config["duihuan"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">设置兑换机器人需要的金币数量。</font>
+														金币兑换<input type="text" id="duihuan" name="duihuan" value="<?php echo ($config["duihuan"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">设置兑换5G服务器需要的金币数量。</font>
 													</div>
 												</div>
 												<div class="control-group">
@@ -586,7 +586,7 @@ a.active{ color:#C30 !important; font-size:18px;}
                                             
                                             
                                             <div class="control-group">
-														<label class="control-label" for="jiesuan_time">机器人结算时间间隔</label>
+														<label class="control-label" for="jiesuan_time">5G服务器结算时间间隔</label>
 
 														<div class="controls">
 															<input type="text" id="jiesuan_time" name="jiesuan_time" value="<?php echo ($config["jiesuan_time"]); ?>"  class="span3"/> 

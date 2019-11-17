@@ -471,7 +471,7 @@ function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=false){
 	  $mobile = implode(",", $mobile);
 	}
  	$sec = C('CODE_GQ')/60;
-    $content = "【衔电】您的验证码为".$code."，在".$sec."分钟内有效。";
+    $content = "【云智】您的验证码为".$code."，在".$sec."分钟内有效。";
 	
  	$userid = C('CODE_ACCOUNT');
 	$pass = C('CODE_PASSWORD');

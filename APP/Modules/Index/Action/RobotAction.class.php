@@ -28,21 +28,21 @@
             $id =  I('get.id',0,'intval');
             $product = M("product");
 
-            //查询机器人信息
+            //查询5G服务器信息
             $data = $product -> find($id);
             if(empty($data)){
-                alert('充电宝不存在',U('Robot/index'));
+                alert('5G服务器不存在',U('Robot/index'));
             }
 
             $letter = M('type')->where(array('id'=>$data['tid']))->getField('name');
-            //判断 是否已经达到限购数量
-            $my_gounum=M("order")->where(array("user"=>session('username'),"sid"=>$id))->count();
+            //判断 是否已经达到限购数量"user_id = {$user_id} and zt = {$zt}"
+            $my_gounum=M("order")->where(array("user"=>session('username'),"sid"=>$id,"zt"=>1))->count();
             if($my_gounum >=$data['xiangou']){
-                echo '<script>alert("已经达到当前充电宝的上线！");window.history.back(-1);</script>';
+                echo '<script>alert("已经达到当前5G服务器的上线！");window.history.back(-1);</script>';
                 die;
             }
             if($data['stock'] < 1){
-                echo '<script>alert("充电宝已经购买完毕，请改日再来！");window.history.back(-1);</script>';
+                echo '<script>alert("5G服务器已经购买完毕，请改日再来！");window.history.back(-1);</script>';
                 die;
             }
             $faquan = C('faquan');
@@ -165,7 +165,7 @@
 
             }
             $product->where(array("id" => $id))->setDec("stock");
-            alert('充电宝购买成功', U('Robot/robot'));
+            alert('5G服务器购买成功', U('Robot/robot'));
         }
 		public function rank(){
 			$list = M('member')->order('robotcount desc')->limit(3)->select();
@@ -233,7 +233,7 @@
             $order=M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id}")->find();
 
             if(empty($order)){
-                $this->ajaxReturn(array('result'=>0,'info'=>'该机器人不存在！'));
+                $this->ajaxReturn(array('result'=>0,'info'=>'该5G服务器不存在！'));
             }
             //判断与上次结算时间有没有达到24小时
             $jiesuan_time=C('jiesuan_time');
@@ -265,7 +265,7 @@
             M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id}")->save($data);
 
             M('member')->where("id = {$user_id}")->setInc("money",$shouyi);
-            account_log($username,$shouyi,'充电宝收益',1,1,1,$order['id']);
+            account_log($username,$shouyi,'5G服务器收益',1,1,1,$order['id']);
             $shou1 = $shouyi * C('shou1');
             $shou2 = $shouyi * C('shou2');
             $shou3 = $shouyi * C('shou3');
@@ -304,7 +304,7 @@
                     }
                 }
             }
-            alert('充电宝收益领取成功！',U('Robot/robot'));
+            alert('5G服务器收益领取成功！',U('Robot/robot'));
         }
 
 	}

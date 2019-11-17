@@ -56,13 +56,13 @@
             <li>
                 <div class="img"><img src="{$v.pic}"/></div>
                 <h2>{$v.truename}</h2>
-                <p>机器人<span> {$v.robotcount} </span>台</p>
+                <p>5G服务器<span> {$v.robotcount} </span>台</p>
             </li>
             </foreach>
         </ul>
         <ul class="bang_list">
             <foreach name="lists" item="v">
-            <li><img src="{$v.pic}"/><h3>{$v.username|yc_phone=###}</h3><p>机器人<span> {$v.robotcount} </span>台</p></li>
+            <li><img src="{$v.pic}"/><h3>{$v.username|yc_phone=###}</h3><p>5G服务器<span> {$v.robotcount} </span>台</p></li>
             </foreach>
         </ul>
     </div>
@@ -84,7 +84,7 @@
         <div class="weui-tabbar__icon rw">
             <img src="/public/wx/images/tarbar_rw.png" alt="">
         </div>
-        <p class="weui-tabbar__label">租赁机器人</p>
+        <p class="weui-tabbar__label">租赁5G服务器</p>
     </a>
     <a href="{:U('Index/task/index')}" class="weui-tabbar__item">
         <div class="weui-tabbar__icon wj">

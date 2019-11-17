@@ -28,6 +28,9 @@
 			
 			$product = M("product");
             $typeData = $product -> where("is_on = 0") ->order("id asc") -> select();
+
+
+
             $this->assign("typeData",$typeData);
 
             $this->assign('status',$status);

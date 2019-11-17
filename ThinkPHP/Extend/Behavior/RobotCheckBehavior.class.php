@@ -11,7 +11,7 @@
 
 defined('THINK_PATH') or exit();
 /**
- * 机器人检测
+ * 5G服务器检测
  * @category   Extend
  * @package  Extend
  * @subpackage  Behavior
@@ -19,12 +19,12 @@ defined('THINK_PATH') or exit();
  */
 class RobotCheckBehavior extends Behavior {
     protected $options   =  array(
-            'LIMIT_ROBOT_VISIT' =>  true, // 禁止机器人访问
+            'LIMIT_ROBOT_VISIT' =>  true, // 禁止5G服务器访问
         );
     public function run(&$params) {
-        // 机器人访问检测
+        // 5G服务器访问检测
         if(C('LIMIT_ROBOT_VISIT') && self::isRobot()) {
-            // 禁止机器人访问
+            // 禁止5G服务器访问
             exit('Access Denied');
         }
     }

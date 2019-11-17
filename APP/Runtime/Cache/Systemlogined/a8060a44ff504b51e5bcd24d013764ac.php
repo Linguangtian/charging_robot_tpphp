@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>矿机机器人</title>
+		<title>矿机5G服务器</title>
 
 		<meta name="description" content="Minimal empty page" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
 					<a href="#" class="brand">
 						<small>
 							<i class="icon-leaf"></i>
-							充电宝管理系统
+							5G服务器管理系统
 						</small>
 					</a><!--/.brand-->
 
@@ -150,7 +150,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 							<li url="Memberuncheck">
 								<a href="<?php echo U(GROUP_NAME.'/Member/gaward');?>">
 									<i class="icon-double-angle-right"></i>
-									赠送充电宝
+									赠送5G服务器
 								</a>
 							</li>
 
@@ -200,7 +200,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li sid="top"  <?php if(MODULE_NAME == 'Shop'): ?>class="open"<?php endif; ?>>
 						<a href="#" class="dropdown-toggle">
 							<i class="icon-random"></i>
-							<span>充电宝管理</span>
+							<span>5G服务器管理</span>
 
 							<b class="arrow icon-angle-down"></b>
 						</a>
@@ -221,13 +221,13 @@ a.active{ color:#C30 !important; font-size:18px;}
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('lists')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 								<a href="<?php echo U(GROUP_NAME.'/Shop/lists');?>">
 									<i class="icon-double-angle-right"></i>
-									充电宝列表
+									5G服务器列表
 								</a>
 							</li><?php endif; ?>					
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('orderlist')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 								<a href="<?php echo U(GROUP_NAME.'/Shop/orderlist');?>">
 									<i class="icon-double-angle-right"></i>
-									已购充电宝
+									已购5G服务器
 								</a>
 							</li><?php endif; ?>
 	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('editshouyi')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
@@ -259,7 +259,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Jinbidetail')][strtoupper('index')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Jinbidetailindex">
 								<a href="<?php echo U('Jinbidetail/index',array('type'=>1));?>">
 									<i class="icon-double-angle-right"></i>
-									充电宝收益
+									5G服务器收益
 								</a>
 	
 						</li><?php endif; ?>	
@@ -427,7 +427,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 						</li>
 
 						<li>
-							赠送机器人
+							赠送5G服务器
 
 							<span class="divider">
 								<i class="icon-angle-right"></i>
@@ -439,7 +439,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 				<div id="page-content" class="clearfix">
 					<div class="page-header position-relative">
 						<h1>
-							赠送机器人
+							赠送5G服务器
 						</h1>
 					</div><!--/.page-header-->
 
@@ -455,7 +455,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 								</div>
 								<div class="control-group">
 									<label class="control-label" for="jifen">
-										机器人类型：</label>
+										5G服务器类型：</label>
 									<div class="controls">
 										 <select name="num" id="num" onChange="getpnum();">
                                         	

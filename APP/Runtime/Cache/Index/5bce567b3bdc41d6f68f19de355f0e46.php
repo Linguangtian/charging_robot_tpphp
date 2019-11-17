@@ -28,8 +28,8 @@
 	
 	
 	<div class="index-top">
-		<p class="hello">Hi，欢迎来到衔电。</p>
-		<p class="gonggao">全新高性能共享充电宝上架了</p>
+		<p class="hello">Hi，欢迎来到云智5G服务。</p>
+		<p class="gonggao">全新高性能共享5G服务器上架了</p>
 	</div>
 	
 	<div class="index-c">
@@ -37,7 +37,7 @@
 			<a href="<?php echo U('Index/Wallet/paihangban');?>">
 			<li class="il1">
 				<img src="/Public/dianyun/img/i-link-itemIcon1.png"/>
-				<p>充电榜</p>
+				<p>收益</p>
 			</li>
 			</a>
 			<a href="<?php echo U('Index/Index/tgm');?>">
@@ -65,7 +65,7 @@
 		<a href="<?php echo U('Index/Task/index');?>">
 		<img src="/Public/dianyun/img/zzz.png"/>
 		<p class="yyp">恭喜您</p>
-		<p class="yyyp">获得衔电充电宝一台</p>
+		<p class="yyyp">获得一台5G服务器</p>
 		<a class="lqu" href="#">领</a>
 		</a>
 	</div>
@@ -95,17 +95,19 @@
 	
 	
 	<div class="index-d">
-		<p class="index-d-p"> <img src="/Public/dianyun/img/hot-icon.png"/>热门充电宝推荐 <span>更多</span> </p>
+		<p class="index-d-p"> <img src="/Public/dianyun/img/hot-icon.png"/>热门5G服务器 <span>更多</span> </p>
 		
 		<ul>
 			<!--调用后台数据-->
 			<?php if(is_array($typeData)): foreach($typeData as $key=>$v): ?><li>
 				<p class="index-nc"><?php echo ($v["title"]); ?></p>
-				<p class="index-fd">发电周期：720小时</p>
-				<p class="index-cd">预计充电：<?php echo ($v["shouyi"]); ?>元</p>
-				<p class="index-bq">  <span>全新机型</span> <span>高性能</span> </p>
+					<p class="index-fd">合约有效期：<?php echo ($v["yxzq"]); ?>小时</p>
+				<p class="index-cd">每小时收益：<?php echo ($v["shouyi"]); ?>元</p>
+				<p class="index-bq">  <span>5G服务器</span> <span>高性能</span> </p>
 				<p class="index-jz"><?php echo ($v["price"]); ?> </p>
-				<a href="<?php echo U('Robot/buy',array('id'=>$v['id']));?>" class="index-ljgm"><?php echo ($v["price"]); ?>元建站</a>
+				<p class="index-cd">剩余可租台数</p>
+				<p class="index-cd">剩余可租台数</p>
+				<a href="<?php echo U('Robot/buy',array('id'=>$v['id']));?>" class="index-ljgm"><?php echo ($v["price"]); ?>元租凭服务器</a>
 			</li><?php endforeach; endif; ?>
 			
 		</ul>
@@ -120,7 +122,7 @@
 							<h3 style="color: #ecbf54;"><i class="icon iconfont icon-yonghuming"></i> 最近购买用户</h3>
 								<marquee scrolldelay="200" id="lstBuyHistory" direction="up" onmouseover="this.stop()" onmouseout="this.start()" style="height: 60px;">
 								<ul id="ulBuyHistory">
-									<?php if(is_array($mai_log)): foreach($mai_log as $key=>$v): ?><li style="color: #ecbf54;"><?php echo (yc_phone($v["user"])); ?>&nbsp;&nbsp;购买了充电宝&nbsp;&nbsp;<?php echo (mb_substr($v["addtime"],5,11,'utf-8')); ?></li><?php endforeach; endif; ?>
+									<?php if(is_array($mai_log)): foreach($mai_log as $key=>$v): ?><li style="color: #ecbf54;"><?php echo (yc_phone($v["user"])); ?>&nbsp;&nbsp;购买了5G服务器&nbsp;&nbsp;<?php echo (mb_substr($v["addtime"],5,11,'utf-8')); ?></li><?php endforeach; endif; ?>
 								</ul>
 							</marquee>
 						</div>

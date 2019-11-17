@@ -69,21 +69,21 @@
             $id =  C('faquan');
             $product = M("product");
 
-            //查询机器人信息
+            //查询5G服务器信息
             $data = $product -> find($id);
             if(empty($data)){
-                alert('机器人不存在',U('Robot/index'));
+                alert('5G服务器不存在',U('Robot/index'));
             }
 
             $letter = M('type')->where(array('id'=>$data['tid']))->getField('name');
             //判断 是否已经达到限购数量
             $my_gounum=M("order")->where(array("user"=>session('username'),"sid"=>$id))->count();
             if($my_gounum >=$data['xiangou']){
-                echo '<script>alert("已经达到金币兑换充电宝的上线！");window.history.back(-1);</script>';
+                echo '<script>alert("已经达到金币兑换5G服务器的上线！");window.history.back(-1);</script>';
                 die;
             }
             if($data['stock'] < 1){
-                echo '<script>alert("充电宝已经兑换完毕，请改日再来！");window.history.back(-1);</script>';
+                echo '<script>alert("5G服务器已经兑换完毕，请改日再来！");window.history.back(-1);</script>';
                 die;
             }
             $faquan = C('faquan');
@@ -114,7 +114,7 @@
                 }
             }
             $product->where(array("id" => $id))->setDec("stock");
-            alert('充电宝兑换成功', U('Robot/robot'));
+            alert('5G服务器兑换成功', U('Robot/robot'));
         }
 
 		//上传图片

@@ -341,7 +341,7 @@
             $number['shouyi'] = $_POST['num'];
             $sid = $_POST['id'];
             if(empty($sid)){
-                $this -> error('机器人编号不能为空');
+                $this -> error('5G服务器编号不能为空');
             }
             if(empty($number['shouyi'])){
                 $this -> error('收益不能为空');

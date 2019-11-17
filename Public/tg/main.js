@@ -86,7 +86,7 @@ function account_pay_Success(resp) {
 
     if (!m_paySuccessTiped) {
         m_paySuccessTiped = true;
-        myApp.alert("恭喜您，您已成功升级为机器人VIP会员.", function () {
+        myApp.alert("恭喜您，您已成功升级为5G服务器VIP会员.", function () {
             window.location.href = "/m/my";
         });
     }
@@ -1202,7 +1202,7 @@ function service_GetBuiedHistorySuccess(resp) {
         var it = data[i];
         var sDate = new Date(it.BuyTime).Format("MM-dd HH:mm");
 
-        var s = "<li>[" + sDate + "]&nbsp;&nbsp;&nbsp;&nbsp;" + it.Uid + "购买了机器人" + "</li>";
+        var s = "<li>[" + sDate + "]&nbsp;&nbsp;&nbsp;&nbsp;" + it.Uid + "购买了5G服务器" + "</li>";
         $("#ulBuyHistory").append(s);
     }
 }
@@ -1271,14 +1271,14 @@ function myextend_wxinit() {
     var sLink = window.location.protocol + "//"+ window.location.host + "/m/shareqrcode?url=" + encodeURIComponent(m_SharedImageUrl);
     var sImg = window.location.protocol + "//"+ window.location.host + "/static/m/img/logo_b.png";
     wx.onMenuShareAppMessage({
-        title: '【机器人】',
-        desc: '机器人！', // 分享描述
+        title: '【5G服务器】',
+        desc: '5G服务器！', // 分享描述
         link: sLink,
         imgUrl: sImg
     });
 
     wx.onMenuShareTimeline({
-        title: '【机器人】 机器人！',
+        title: '【5G服务器】 5G服务器！',
         link: sLink,
         imgUrl: sImg
     });
