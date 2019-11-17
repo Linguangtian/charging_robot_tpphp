@@ -1,0 +1,10 @@
+ 测试环境 php5.4+mysql5.6
+
+1.导入数据库
+2.\APP\Conf\config.php 数据库配置
+
+3.后台地址 http://域名/admin.php  用户名：admin，密码：suibianlucom
+
+4.前台地址http://域名/   测试账号18888888888，密码：suibianlucom
+
+
