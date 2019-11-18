@@ -23,11 +23,13 @@
 			<foreach name="typeData" item="v">
 			<li>
 				<p class="index-nc">{$v.title}</p>
-				<p class="index-fd">发电周期：720小时</p>
-				<p class="index-cd">预计充电：{$v.shouyi}元</p>
+
+				<p class="index-fd">合约有效期：{$v.yxzq}小时</p>
+				<p class="index-cd">每小时收益：{$v.shouyi}元</p>
+
 				<p class="index-bq"> <span>全新机型</span> <span>高性能</span> </p>
 				<p class="index-jz"> {$v.price} <span>元</span> </p>
-				<a href="{:U('Robot/buy',array('id'=>$v['id']))}" class="index-ljgm">{$v.price}元建站</a>
+				<a href="{:U('Robot/buy',array('id'=>$v['id']))}" class="index-ljgm">{$v.price}元租凭服务器</a>
 			</li>
 			</foreach>
 			

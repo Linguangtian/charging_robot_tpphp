@@ -22,11 +22,13 @@
 		<ul>
 			<?php if(is_array($typeData)): foreach($typeData as $key=>$v): ?><li>
 				<p class="index-nc"><?php echo ($v["title"]); ?></p>
-				<p class="index-fd">发电周期：720小时</p>
-				<p class="index-cd">预计充电：<?php echo ($v["shouyi"]); ?>元</p>
+
+				<p class="index-fd">合约有效期：<?php echo ($v["yxzq"]); ?>小时</p>
+				<p class="index-cd">每小时收益：<?php echo ($v["shouyi"]); ?>元</p>
+
 				<p class="index-bq"> <span>全新机型</span> <span>高性能</span> </p>
 				<p class="index-jz"> <?php echo ($v["price"]); ?> <span>元</span> </p>
-				<a href="<?php echo U('Robot/buy',array('id'=>$v['id']));?>" class="index-ljgm"><?php echo ($v["price"]); ?>元建站</a>
+				<a href="<?php echo U('Robot/buy',array('id'=>$v['id']));?>" class="index-ljgm"><?php echo ($v["price"]); ?>元租凭服务器</a>
 			</li><?php endforeach; endif; ?>
 			
 	

@@ -106,8 +106,8 @@
 				<p class="index-cd">每小时收益：{$v.shouyi}元</p>
 				<p class="index-bq">  <span>5G服务器</span> <span>高性能</span> </p>
 				<p class="index-jz">{$v.price} </p>
-				<p class="index-cd">剩余可租台数</p>
-				<p class="index-cd">剩余可租台数</p>
+				<p class="index-cd">租中的服务器数量：{$v.have}台</p>
+				<p class="index-cd">剩余可租台数：{$v.unhave}台</p>
 				<a href="{:U('Robot/buy',array('id'=>$v['id']))}" class="index-ljgm">{$v.price}元租凭服务器</a>
 			</li>
 			</foreach>
@@ -125,7 +125,7 @@
 								<marquee scrolldelay="200" id="lstBuyHistory" direction="up" onmouseover="this.stop()" onmouseout="this.start()" style="height: 60px;">
 								<ul id="ulBuyHistory">
 									<foreach name="mai_log" item="v">
-									<li style="color: #ecbf54;">{$v.user|yc_phone=###}&nbsp;&nbsp;购买了5G服务器&nbsp;&nbsp;{$v.addtime|mb_substr=###,5,11,'utf-8'}</li>
+									<li style="color: #ecbf54;">{$v.user|yc_phone=###}&nbsp;&nbsp;购买了[{$v.project}]5G服务器&nbsp;</li>&nbsp;<!--{$v.addtime|mb_substr=###,5,11,'utf-8'}-->
 									</foreach>
 								</ul>
 							</marquee>

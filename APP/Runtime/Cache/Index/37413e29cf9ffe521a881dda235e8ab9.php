@@ -27,7 +27,7 @@
      <div class="me-index-top">
      	
      	<div class="me-index-top-t">
-     		<img src="/Public/dianyun/img/lg.png"/>
+     		<img src="/Public/dianyun/img/lg.png?v=102"/>
      		<p class="me-index-top-s"><?php echo ($minfo["mobile"]); ?></p>
      		<p class="me-index-top-k"> <span>领袖</span>  推荐码：XD<?php echo ($minfo["id"]); ?></p>
      	</div>

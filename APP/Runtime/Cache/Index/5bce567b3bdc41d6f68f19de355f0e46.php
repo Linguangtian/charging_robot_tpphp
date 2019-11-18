@@ -105,8 +105,8 @@
 				<p class="index-cd">每小时收益：<?php echo ($v["shouyi"]); ?>元</p>
 				<p class="index-bq">  <span>5G服务器</span> <span>高性能</span> </p>
 				<p class="index-jz"><?php echo ($v["price"]); ?> </p>
-				<p class="index-cd">剩余可租台数</p>
-				<p class="index-cd">剩余可租台数</p>
+				<p class="index-cd">租中的服务器数量：<?php echo ($v["have"]); ?>台</p>
+				<p class="index-cd">剩余可租台数：<?php echo ($v["unhave"]); ?>台</p>
 				<a href="<?php echo U('Robot/buy',array('id'=>$v['id']));?>" class="index-ljgm"><?php echo ($v["price"]); ?>元租凭服务器</a>
 			</li><?php endforeach; endif; ?>
 			
@@ -122,7 +122,7 @@
 							<h3 style="color: #ecbf54;"><i class="icon iconfont icon-yonghuming"></i> 最近购买用户</h3>
 								<marquee scrolldelay="200" id="lstBuyHistory" direction="up" onmouseover="this.stop()" onmouseout="this.start()" style="height: 60px;">
 								<ul id="ulBuyHistory">
-									<?php if(is_array($mai_log)): foreach($mai_log as $key=>$v): ?><li style="color: #ecbf54;"><?php echo (yc_phone($v["user"])); ?>&nbsp;&nbsp;购买了5G服务器&nbsp;&nbsp;<?php echo (mb_substr($v["addtime"],5,11,'utf-8')); ?></li><?php endforeach; endif; ?>
+									<?php if(is_array($mai_log)): foreach($mai_log as $key=>$v): ?><li style="color: #ecbf54;"><?php echo (yc_phone($v["user"])); ?>&nbsp;&nbsp;购买了[<?php echo ($v["project"]); ?>]5G服务器&nbsp;</li>&nbsp;<!--<?php echo (mb_substr($v["addtime"],5,11,'utf-8')); ?>--><?php endforeach; endif; ?>
 								</ul>
 							</marquee>
 						</div>

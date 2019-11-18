@@ -40,7 +40,7 @@
    
    <div class="award-index-aaa">
    	<a href="{:U('Index/Wallet/award')}">全部</a>
-   	<a href="{:U('Index/Wallet/llaward')}">充电收入</a>
+   	<a href="{:U('Index/Wallet/llaward')}">服务器收益</a>
    	<a href="{:U('Index/Wallet/tgaward')}" style="border-bottom: 2px #fff solid;">推广收入</a>
    </div>
    
@@ -48,7 +48,7 @@
    	<ul>
    		<foreach name="list" item="v">
    		<li>
-   			<p> <span>{$v.addtime|date='Y-m-d',###}</span> <span>{$v.desc}</span>  <span><if condition="$v.adds eq 0.00">-{$v.reduce|two_number=###}<else/>+{$v.adds|two_number=###}</if></span> </p>
+   			<p> <span>{$v.addtime|date='Y-m-d',###}</span> <span style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{$v.desc}</span>  <span><if condition="$v.adds eq 0.00">-{$v.reduce|two_number=###}<else/>+{$v.adds|two_number=###}</if></span> </p>
    		</li>
    		</foreach>
    	</ul>

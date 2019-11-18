@@ -188,7 +188,8 @@
             $Page->setConfig('theme', '%first% %upPage% %linkPage% %downPage% %end%');
             $show = $Page -> show();
             $jiesuan_time = C('jiesuan_time');
-            $orders = $order->where("user_id = {$user_id} and zt = {$zt}") -> limit($Page ->firstRow.','.$Page -> listRows)->order('id desc') -> select();
+
+            $orders = $order->where("user_id = {$user_id} and zt = {$zt}") ->order('id desc') -> select();
             foreach($orders as $k=>$v){
 
                 $a_time = (time()-strtotime($v['addtime']))/3600;

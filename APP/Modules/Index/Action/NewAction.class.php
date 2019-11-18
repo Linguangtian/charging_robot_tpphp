@@ -4,9 +4,10 @@
 
 		//资讯详细页
 		public function index(){
+            $db     =   Db::getInstance(C('RBAC_DB_DSN'));
 		    $gonggao = C('gonggao');
 			$banner = M('banner')->order('addtime desc')->select();
-            $mai_log=M('order')->field('user,addtime')->order('id desc')->select();
+            $mai_log=M('order')->field('user,addtime,project')->order('id desc')->select();
 			
 			$username = session('username');
 			if($username == ""){
@@ -26,9 +27,15 @@
 				
 			}
 			
-			$product = M("product");
-            $typeData = $product -> where("is_on = 0") ->order("id asc") -> select();
+		/*	$product = M("product");
+            $typeData = $product -> where("is_on = 0") ->order("id asc") -> select();*/
 
+            $sql='select *,IFNULL(total,0) as have ,(xiangou - IFNULL(total,0) ) as unhave from ds_product as a'.
+                    ' left join (select count(1) as total,sid from ds_order where user='.$username.' and zt = 1 group by sid ) as b'
+/*                    ' left join (select count(1) as total,sid from ds_order where user='.$username.' and zt = 1 and UG_getTime >\''.time().'\' group by sid ) as b'*/
+                    .' on b.sid=a.id '
+                .' where a.is_on = 0 order by a.id asc';
+            $typeData=$db->query($sql);
 
 
             $this->assign("typeData",$typeData);

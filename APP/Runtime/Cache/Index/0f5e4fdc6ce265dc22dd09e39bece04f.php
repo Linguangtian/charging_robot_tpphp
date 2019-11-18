@@ -116,9 +116,9 @@
             
             				<div class="lqkd_r">
             
-            					<?php if($v["zt"] == 1): if($v["is_jiesuan"] == 1): ?><a href="<?php echo U('Robot/jiesuan',array('id'=>$v['id']));?>" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取电量</a>
+            					<?php if($v["zt"] == 1): if($v["is_jiesuan"] == 1): ?><a href="<?php echo U('Robot/jiesuan',array('id'=>$v['id']));?>" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取收益</a>
             							<?php else: ?>
-            							<a href="javascript:alert(&#39;请勿操作，招5G服务器在努力的充电中！&#39;);">运行中</a><?php endif; ?>
+            							<a href="javascript:alert(&#39;请勿操作，招5G服务器在努力的工作中！&#39;);">运行中</a><?php endif; ?>
             						<?php else: ?> ----<?php endif; ?>
             
             				</div>
