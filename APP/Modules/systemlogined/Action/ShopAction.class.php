@@ -449,6 +449,51 @@
 	   }
 
 
+	   //收益排行榜
+        function  paihangbang(){
+
+            $order = M("paihangbang");
+            $orders = $order->order('money desc') -> select();
+            $this -> assign("list",$orders);
+            $this -> display('paihangbanglist');
+
+        }
+
+    //排行榜会员编辑
+        function  edit_phb(){
+	    $id=I('id','',int);
+        $info = M("paihangbang")->where(['id'=>$id]) -> find();
+        $this -> assign("info",$info);
+        if($_POST){
+             if($id){
+                 unset($_POST['id']);
+                 M("paihangbang")->where(['id'=>$id]) -> save($_POST);
+             }else{
+                 unset($_POST['id']);
+                 M("paihangbang")-> add($_POST);
+
+             }
+            $this->success('订单操作成功!',U(GROUP_NAME .'/Shop/paihangbang'));
+             exit;
+        }
+        $this -> assign("id",$id);
+        $this -> display('edit_phb');
+
+        }
+
+
+        //删除
+        function del_phb(){
+
+            $member = M('paihangbang');
+            if ($member->where(array('id'=>$_GET['id']))->delete()) {
+                alert('删除成功！',U(GROUP_NAME.'/Shop/paihangbang'));
+            }else{
+                alert('删除失败！',U(GROUP_NAME.'/Shop/paihangbang'));
+            }
+        }
+
+        
 	   
 	}
 

@@ -181,6 +181,8 @@ class Model {
         // 写入数据到数据库
         $result = $this->db->insert($data,$options);
         $insertId   =   $this->getLastInsID();
+
+
         if($insertId) {
             return $insertId;
         }

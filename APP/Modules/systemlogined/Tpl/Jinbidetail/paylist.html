@@ -87,6 +87,7 @@
 							<th>支付说明</th>
 							<th>支付状态</th>
 							<th>创建时间</th>
+							<th>操作</th>
 						</tr>
 						</thead>
 						<tbody>
@@ -103,15 +104,31 @@
 								</td>
 								<td>{$v.pay_no}</td>
 								<td>{$v.pay_time|date='Y-m-d H:i:s',###}</td>
-								<td>在线充值</td>
+								<td>{$v.pay_tag}</td>
 								<td><if condition="$v['status'] eq 0">
 									未支付
 									<elseif condition="$v['status'] eq 1"/>
 									支付失败
 									<elseif condition="$v['status'] eq 2"/>
 									支付成功
+									<elseif condition="$v['status'] eq 3"/>
+									充值审核中
+									<elseif condition="$v['status'] eq 4"/>
+									充值成功
+									<elseif condition="$v['status'] eq 5"/>
+									无效充值
 								</if></td>
 								<td>{$v.creat_time|date='Y-m-d H:i:s',###}</td>
+								<td>
+									<?php if($v["status"] == 3): ?>
+									<a href="<?php echo U(GROUP_NAME.'/jinbidetail/pass_chongzhi',array('id'=>$v['id'],'status'=>4));?>">通过</a>
+									<a href="<?php echo U(GROUP_NAME.'/jinbidetail/pass_chongzhi',array('id'=>$v['id'],'status'=>5));?>">拒绝</a>
+
+									<?php else: ?>
+									已处理<?php endif; ?>
+
+
+								</td>
 							</tr>
 						</foreach>
 						<tr>

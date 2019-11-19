@@ -238,6 +238,16 @@ a.active{ color:#C30 !important; font-size:18px;}
 									已购5G服务器
 								</a>
 							</li><?php endif; ?>
+
+
+	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('paihangbang')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
+			<a href="<?php echo U(GROUP_NAME.'/Shop/paihangbang');?>">
+				<i class="icon-double-angle-right"></i>
+				收益排行榜
+			</a>
+		</li><?php endif; ?>
+
+
 	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('editshouyi')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 			<a href="<?php echo U(GROUP_NAME.'/Shop/editshouyi');?>">
 				<i class="icon-double-angle-right"></i>
@@ -458,6 +468,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 							<th>支付说明</th>
 							<th>支付状态</th>
 							<th>创建时间</th>
+							<th>操作</th>
 						</tr>
 						</thead>
 						<tbody>
@@ -471,13 +482,29 @@ a.active{ color:#C30 !important; font-size:18px;}
 								</td>
 								<td><?php echo ($v["pay_no"]); ?></td>
 								<td><?php echo (date('Y-m-d H:i:s',$v["pay_time"])); ?></td>
-								<td>在线充值</td>
+								<td><?php echo ($v["pay_tag"]); ?></td>
 								<td><?php if($v['status'] == 0): ?>未支付
 									<?php elseif($v['status'] == 1): ?>
 									支付失败
 									<?php elseif($v['status'] == 2): ?>
-									支付成功<?php endif; ?></td>
+									支付成功
+									<?php elseif($v['status'] == 3): ?>
+									充值审核中
+									<?php elseif($v['status'] == 4): ?>
+									充值成功
+									<?php elseif($v['status'] == 5): ?>
+									无效充值<?php endif; ?></td>
 								<td><?php echo (date('Y-m-d H:i:s',$v["creat_time"])); ?></td>
+								<td>
+									<?php if($v["status"] == 3): ?>
+									<a href="<?php echo U(GROUP_NAME.'/jinbidetail/pass_chongzhi',array('id'=>$v['id'],'status'=>4));?>">通过</a>
+									<a href="<?php echo U(GROUP_NAME.'/jinbidetail/pass_chongzhi',array('id'=>$v['id'],'status'=>5));?>">拒绝</a>
+
+									<?php else: ?>
+									已处理<?php endif; ?>
+
+
+								</td>
 							</tr><?php endforeach; endif; ?>
 						<tr>
 						</tr>

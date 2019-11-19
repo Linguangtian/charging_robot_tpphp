@@ -115,7 +115,7 @@
 											<td>{$v.amount}</td>
 											<td>{$v.charge}</td>
 											<td>{$v.payment}</td>
-											<td><if condition="$v['type'] eq 1">银行卡<elseif condition="$v['type'] eq 2"/>支付宝<else/>微信</if></td>
+											<td><if condition="$v['type'] eq 1">{$v.kaihuhang}<elseif condition="$v['type'] eq 2"/>支付宝<else/>微信</if></td>
 											<td>{$v.card}</td>
 											<td><a href="{$v.zhifu}" target="_blank"><img src="{$v.zhifu}"  style="width:40px;"/></a></td>
 											<td><a href="{$v.wei}" target="_blank"><img src="{$v.wei}"  style="width:40px;"/></a></td>

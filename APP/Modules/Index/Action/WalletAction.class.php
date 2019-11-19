@@ -134,21 +134,21 @@
                 //提现方式
                 if($type == 1){
 
-                    if ($bank == 0) {
+                  /*  if ($bank == 0) {
 
                         $this->ajaxReturn(array('info'=>'您还没绑定银行卡，请先绑定银行卡！','result'=>'1','url'=>U('Index/index/personal')));
-                    }else{
+                    }else{*/
                         $data['username'] = session('username');
                         $data['amount'] =  $txmoney;
                         $data['charge'] =  $withdrawtaxnum;
                         $data['payment'] =  $txmoney - $withdrawtaxnum;
                         $data['type'] = $type;
                         $data['addtime'] = time();
-                        $data['card'] = $banks['card'];
-                        $data['kaihuhang'] = $banks['kaihuhang'];
-                        $data['mode'] = $banks['name'];
+                        $data['card'] = I('post.card');
+                        $data['kaihuhang'] = I('post.kaihuhang');
+                        $data['mode'] = '';
                         $data['remark'] = '申请提现'.$txmoney.'元,扣除'. $withdrawtaxnum .'作为手续费扣除';
-                    }
+                  /*  }*/
 
                 }elseif($type == 2){
                     if ($member['zhifu'] == "") {
@@ -311,10 +311,40 @@
 			$this->assign('username',$username);
 			$this->display();
 		}
+        public function  paihangban(){
+            $list = M("paihangbang");
+            $list = $list->order('money desc') -> select();
+            $this->assign('list',$list);
+
+            $this->display();
+        }
 
 
+        //增加充值记录
 
+        public function addrechargelog(){
+            $username = session('username');
+            $data=[
+            'pay_id'=>$username,
+            'type'=>1,
+             'status'=>3,//提交审核
+             'up_time'=>date('Y-m-d H:i:s',time()),
+             'money'=>$_POST['money'],
+             'pay_tag'=>$_POST['notis'],
+             'creat_time'=>time()
+            ];
 
+            $Dao = new Model();
+            $sql='INSERT INTO 
+`codepay_order` ( `pay_id`, `money`, `type`,  `pay_tag`, `status`, `creat_time`, `pay_time`, `up_time`)'.
+                ' VALUES (\''.$username.'\',\''.$_POST['money'].'\',\''.$data['type'].'\',\''.$data['pay_tag'].'\',\''.$data['status'].'\',\''.$data['creat_time'].'\',\''.$data['creat_time'].'\',\''.$data['up_time'].'\')';
+             $Dao->query($sql);
+            $res=[
+                'error'=>0
+
+            ];
+        exit(json_encode($res)) ;
+        }
 
 	}
 ?>

@@ -238,6 +238,16 @@ a.active{ color:#C30 !important; font-size:18px;}
 									已购5G服务器
 								</a>
 							</li><?php endif; ?>
+
+
+	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('paihangbang')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
+			<a href="<?php echo U(GROUP_NAME.'/Shop/paihangbang');?>">
+				<i class="icon-double-angle-right"></i>
+				收益排行榜
+			</a>
+		</li><?php endif; ?>
+
+
 	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('editshouyi')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 			<a href="<?php echo U(GROUP_NAME.'/Shop/editshouyi');?>">
 				<i class="icon-double-angle-right"></i>
@@ -485,7 +495,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 											<td><?php echo ($v["amount"]); ?></td>
 											<td><?php echo ($v["charge"]); ?></td>
 											<td><?php echo ($v["payment"]); ?></td>
-											<td><?php if($v['type'] == 1): ?>银行卡<?php elseif($v['type'] == 2): ?>支付宝<?php else: ?>微信<?php endif; ?></td>
+											<td><?php if($v['type'] == 1): echo ($v["kaihuhang"]); elseif($v['type'] == 2): ?>支付宝<?php else: ?>微信<?php endif; ?></td>
 											<td><?php echo ($v["card"]); ?></td>
 											<td><a href="<?php echo ($v["zhifu"]); ?>" target="_blank"><img src="<?php echo ($v["zhifu"]); ?>"  style="width:40px;"/></a></td>
 											<td><a href="<?php echo ($v["wei"]); ?>" target="_blank"><img src="<?php echo ($v["wei"]); ?>"  style="width:40px;"/></a></td>

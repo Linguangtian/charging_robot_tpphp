@@ -24,25 +24,26 @@
   	
   	
   	<div class="pe-index-t">
-  		<p class="pe-index-t-t">我的头像 <img src="/Public/dianyun/img/lg.png"/> </p>
+  		<p class="pe-index-t-t">我的头像 <img src="/Public/dianyun/img/lg.png?v=101"/> </p>
   		<p class="pe-index-t-c">我的姓名 <span><?php echo ($minfo["truename"]); ?></span> </p>
   		<p class="pe-index-t-c">我的UID <span>XD<?php echo ($minfo["id"]); ?></span> </p>
   		<p class="pe-index-t-c">绑定手机 <span><?php echo ($minfo["mobile"]); ?></span> </p>
-  		<p class="pe-index-t-c">我的银行卡 <span><?php echo ($list["card"]); ?></span> </p>
+  	<!--	<p class="pe-index-t-c">我的银行卡 <span><?php echo ($list["card"]); ?></span> </p>-->
   	</div>
   	
-  	<p class="pe-index-zf">绑定收款账户</p>
+  <!--	<p class="pe-index-zf">绑定收款账户</p>-->
   	
-  	<div class="pe-index-pp">
+  <!--	<div class="pe-index-pp">
   		<p>提现支付宝</p>
   		<p class="pe-index-pppp"> <?php if(empty($minfo['zhifu'])): ?><a style="color: rgba(220, 235, 245, 1);" class="external" href="<?php echo U('Index/Index/zhifu');?>" style="color: #000;">
                                         点击绑定
                                     </a>
 									<?php else: ?>已绑定<?php endif; ?></p>
-  	</div>
+  	</div>-->
   	
-  	<a class="xgwdxx" href="<?php echo U('Index/Index/edit');?>">修改资料与绑定银行卡</a>
-  	
+<!--  	<a class="xgwdxx" href="<?php echo U('Index/Index/edit');?>">修改资料与绑定银行卡</a>-->
+<!--	<a class="xgwdxx" href="<?php echo U('Index/Index/edit');?>">修改资料</a>-->
+
   	
   	
   	

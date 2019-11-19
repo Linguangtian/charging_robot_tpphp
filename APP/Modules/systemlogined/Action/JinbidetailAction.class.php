@@ -164,4 +164,23 @@ class JinbidetailAction extends CommonAction {
 		$this->display(); // 输出模板
 	}
 
+	public  function pass_chongzhi(){
+        $Dao = new Model();
+        $id=I('id');
+        $status=I('status','',int);
+        $res= $Dao->query("select * from  codepay_order where id=".$id.' and status=3 limit 1');
+        if($res){
+            if($status==4){
+                M('member')->where(array('username'=>$res['0']['pay_id']))->setInc('money',$res['0']['money']);
+                account_log($res['0']['pay_id'],$res['0']['money'],' 充值',1);
+            }
+
+            $Dao->query("update codepay_order set status=".$status.' where id='.$id);
+        }
+        
+
+
+        alert('操作成功！',U(GROUP_NAME.'/jinbidetail/paylist'));
+    }
+
 }
