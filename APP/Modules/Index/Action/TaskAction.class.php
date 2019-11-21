@@ -109,6 +109,7 @@
                 $map['imagepath'] = $data['thumb'];
                 $map['zt'] = 1;
                 $map['UG_getTime'] = time();
+                $map['end_time'] = time()+$data['yxzq']*3600;
                 if (M('order')->add($map)) {
                     M('member')->where(array('username' => $username))->setInc('robotcount');
                 }

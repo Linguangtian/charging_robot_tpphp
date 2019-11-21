@@ -4,10 +4,12 @@
 
 
 		public function index(){
+
+
 			$member = M('member');
 			$username = session('username');
 			$minfo = $member->where(array('username'=>$username))->find();
-
+            $linxiu=is_linxiu($minfo['id']) ;
             $count = M('order') ->where(array('user'=>$username,'zt'=>1))->count();
             $chengzhu = C('chengzhu');
             $ztcount = M('order')->where(array('tuijian'=>$username,'zt'=>1))->count();
@@ -15,7 +17,9 @@
                 $data['level'] = 1;
                 M('member')->where(array('username'=>$username))->save($data);
             }
+
 			$this->assign('count',$count);
+			$this->assign('linxiu',$linxiu);
 			$this->assign('minfo',$minfo);
 			$this->display();
 		}

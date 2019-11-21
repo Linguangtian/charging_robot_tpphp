@@ -266,6 +266,31 @@ function account_log($member,$money,$desc,$jj,$type=0,$status=1,$jid,$tgaward){
 	  $data['status']    = $status;
 	  $data['tgaward']    = $tgaward;
 	  $jinbidetail->add($data);
+
+
+
+
+
+
+    //增加今日收入统计
+    if($type==1||$type==2||$type==99||$type==3){
+        $todate=date('Y-m-d ',time());
+        $todate_income_money = M('todate_income_money')->where(array('member'=>$member,'time'=>$todate))->find();
+        if($todate_income_money){
+            M("todate_income_money")->where(array('id'=>$todate_income_money['id']))->setInc('income_money',$money);
+        }else{
+            $todate_income = M('todate_income_money');
+            $data['member']=$member;
+            $data['time']=$todate;
+            $data['income_money']=$money;
+            $todate_income->add($data);
+        }
+
+    }
+
+
+
+
 }
 function account_log4($member,$money,$desc,$jj,$type=0,$status=1){
 	
@@ -1158,6 +1183,59 @@ function encrypt2($string,$operation,$key=''){
 
 
 
+function is_linxiu($id){
+  //   return 0;
+    $member = M('member');
+    $minfo = $member->where(array('id'=>$id))->find();
+
+    $linxiu=0;
+
+    $time=time();
+    $db     =   Db::getInstance(C('RBAC_DB_DSN'));
+    $sql='select count(1) from ds_member as m'
+         .' left join  ( select user from ds_order where end_time>'.$time.' group by user )as o on m.username=o.user'
+         .' where m.parent='.$minfo['username'];
+    $member=$db->query($sql);
+
+    $zhitui=$member['0']['count(1)'];
+
+    $team_count=team_count($minfo['id']);
+
+    //一领袖门槛直推人
+     $lxOne_direct_num= C('lxOne_direct_num');
+    $lxOne_team_num= C('lxOne_team_num');
+
+    if($zhitui<$lxOne_direct_num){
+        return ['linxiu'=>0,'zhitui'=>$zhitui,'team_count'=>$team_count];
+    }
+
+   //团队人数
+
+
+    if($team_count>=$lxOne_team_num){
+        $linxiu=1;
+    }
+
+
+    $lxTwo_direct_num= C('lxTwo_direct_num');
+    $lxTwo_team_num= C('lxTwo_team_num');
+    //是否二级领袖
+    if($team_count>=$lxTwo_team_num&&$zhitui>=$lxTwo_direct_num){
+        $linxiu=2;
+
+
+        $lxThree_direct_num= C('lxThree_direct_num');
+        $lxThree_team_num= C('lxThree_team_num');
+        if($team_count>=$lxThree_team_num&&$zhitui>=$lxThree_direct_num){
+            $linxiu=3;
+        }
+
+    }
+
+
+    return ['linxiu'=>$linxiu,'zhitui'=>$zhitui,'team_count'=>$team_count];
+
+}
 
 
 
@@ -1169,8 +1247,24 @@ function encrypt2($string,$operation,$key=''){
 
 
 
+function team_count($user_id){
+    $time=time();
+    $db     =   Db::getInstance(C('RBAC_DB_DSN'));
 
+    $sql='select username from ds_member where locate(\''.$user_id.'\',parentpath)';
+    $son_member=$db->query($sql);
+    $str='';
+    foreach ($son_member as $li){
+        $str.=$li['username'].',';
+    }
+    $str=substr($str,0,-1);
 
+    $sql='select count(1) from ds_order '
+        .' where  user in ('.$str.') and   end_time>'.$time.' ' ;
+    $member=$db->query($sql);
+
+    return $member['0']['count(1)'];
+}
 
 
 

@@ -523,6 +523,49 @@ a.active{ color:#C30 !important; font-size:18px;}
 														收益奖励<input type="text" id="shoujj" name="shoujj" value="<?php echo ($config["shoujj"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;<font color="red">领袖享受直推的收益奖励，例如：0.02元。</font>
 													</div>
 												</div>
+
+
+
+
+
+
+
+												<div class="control-group" >
+													<label class="control-label" for="chengzhu">领袖设置</label>
+
+													<div class="controls">
+														<div style="margin-top: 5px;">
+															一代:直推<input type="text" id="lxOne_direct_num" name="lxOne_direct_num" value="<?php echo ($config["lxOne_direct_num"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;人
+															&nbsp;团队<input type="text" id="lxOne_team_num" name="lxOne_team_num" value="<?php echo ($config["lxOne_team_num"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;台 &nbsp;<br/></div>
+
+														<div style="margin-top: 5px;">二代:直推<input type="text" id="lxTwo_direct_num" name="lxTwo_direct_num" value="<?php echo ($config["lxTwo_direct_num"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;人 &nbsp;团队<input type="text" id="lxTwo_team_num" name="lxTwo_team_num" value="<?php echo ($config["lxTwo_team_num"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;台 &nbsp;</div>
+														<div style="margin-top: 5px;">三代:直推<input type="text" id="lxThree_direct_num" name="lxThree_direct_num" value="<?php echo ($config["lxThree_direct_num"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;人 &nbsp;团队<input type="text" id="lxThree_team_num" name="lxThree_team_num" value="<?php echo ($config["lxThree_team_num"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;台 &nbsp;</div>
+													</div>
+												</div>
+
+												<div class="control-group" >
+													<label class="control-label" for="chengzhu">领袖奖励</label>
+
+													<div class="controls">
+														<div style="margin-top: 5px;">一代:购买<input type="text" id="shou1" name="lxOne_shop_reward" value="<?php echo ($config["lxOne_shop_reward"]); ?>" style=" width: 100px;" class="span3"/>% 奖励
+																					&nbsp;每日收益<input type="text" id="shou1" name="lxOne_day_reward" value="<?php echo ($config["lxOne_day_reward"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+																					&nbsp;享受<input type="text" id="shou1" name="lxOne_son_num" value="<?php echo ($config["lxOne_son_num"]); ?>" style=" width: 100px;" class="span3"/>代;
+														</div>
+
+														<div style="margin-top: 5px;">
+															二代:购买<input type="text" id="shou1" name="lxTwo_shop_reward" value="<?php echo ($config["lxTwo_shop_reward"]); ?>" style=" width: 100px;" class="span3"/>% 奖励
+															&nbsp;每日收益<input type="text" id="shou1" name="lxTwo_day_reward" value="<?php echo ($config["lxTwo_day_reward"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+															&nbsp;享受<input type="text" id="shou1" name="lxTwo_son_num" value="<?php echo ($config["lxTwo_son_num"]); ?>" style=" width: 100px;" class="span3"/>代;
+														</div>
+
+														<div style="margin-top: 5px;">
+															三代:购买<input type="text" id="shou1" name="lxThree_shop_reward" value="<?php echo ($config["lxThree_shop_reward"]); ?>" style=" width: 100px;" class="span3"/>% 奖励
+															&nbsp;每日收益<input type="text" id="shou1" name="lxThree_day_reward" value="<?php echo ($config["lxThree_day_reward"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+															&nbsp;享受<input type="text" id="shou1" name="lxThree_son_num" value="<?php echo ($config["lxThree_son_num"]); ?>" style=" width: 100px;" class="span3"/>代;
+														</div>
+													</div>
+												</div>
+
 												<div class="control-group" >
 													<label class="control-label" for="kefu">客服编号</label>
 
@@ -532,6 +575,17 @@ a.active{ color:#C30 !important; font-size:18px;}
 														QQ客服-003<input type="text" id="kefu3" name="kefu3" value="<?php echo ($config["kefu3"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
 													</div>
 												</div>
+												<div class="control-group" >
+													<label class="control-label" for="kefu">联系平台</label>
+
+													<div class="controls">
+														邮箱<input type="text" id="kefu1" name="email" value="<?php echo ($config["email"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
+														微信<input type="text" id="kefu2" name="wechat" value="<?php echo ($config["wechat"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
+														电话<input type="text" id="kefu3" name="tel" value="<?php echo ($config["tel"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
+													</div>
+												</div>
+
+
 												<div class="control-group">
 													<label class="control-label" for="faquan">发圈赠送5G服务器编号</label>
 													<div class="controls">

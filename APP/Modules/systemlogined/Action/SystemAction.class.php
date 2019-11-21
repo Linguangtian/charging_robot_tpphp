@@ -38,6 +38,38 @@
 		public function bonusConf(){
 			$path = './App/Conf/system.php';
 			$config = include $path;
+
+			$config['lxOne_direct_num']      = I('post.lxOne_direct_num',0,'floatval');
+			$config['lxOne_team_num']      = I('post.lxOne_team_num',0,'floatval');
+
+			$config['lxTwo_direct_num']      = I('post.lxTwo_direct_num',0,'floatval');
+			$config['lxTwo_team_num']      = I('post.lxTwo_team_num',0,'floatval');
+
+			$config['lxThree_direct_num']      = I('post.lxThree_direct_num',0,'floatval');
+			$config['lxThree_team_num']      = I('post.lxThree_team_num',0,'floatval');
+/*--------------------------------------------------*/
+
+
+			$config['lxOne_shop_reward']      = I('post.lxOne_shop_reward',0,'floatval');
+			$config['lxOne_day_reward']      = I('post.lxOne_day_reward',0,'floatval');
+			$config['lxOne_son_num']      = I('post.lxOne_son_num',0,'floatval');
+
+
+			$config['lxTwo_shop_reward']      = I('post.lxTwo_shop_reward',0,'floatval');
+			$config['lxTwo_day_reward']      = I('post.lxTwo_day_reward',0,'floatval');
+			$config['lxTwo_son_num']      = I('post.lxTwo_son_num',0,'floatval');
+
+
+			$config['lxThree_shop_reward']      = I('post.lxThree_shop_reward',0,'floatval');
+			$config['lxThree_day_reward']      = I('post.lxThree_day_reward',0,'floatval');
+			$config['lxThree_son_num']      = I('post.lxThree_son_num',0,'floatval');
+
+/*----------------------------------------------------------*/
+            $config['tel']      = I('post.tel',0,'floatval');
+            $config['wechat']      = I('post.wechat',0,'floatval');
+            $config['email']      = I('post.email',0,'floatval');
+
+
 			$config['ONE']      = I('post.ONE',0,'floatval');
 			$config['TWO']      = I('post.TWO',0,'floatval');
 			$config['THREE']      = I('post.THREE',0,'floatval');

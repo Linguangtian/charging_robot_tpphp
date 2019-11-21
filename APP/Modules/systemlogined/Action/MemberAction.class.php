@@ -109,7 +109,8 @@
 			$map['lixi']	= $data['gonglv'];
 			$map['kjsl'] =  $data['shouyi'];
 			$map['zt'] =  1;	
-			$map['UG_getTime'] =  time();		  
+			$map['UG_getTime'] =  time();
+                    $map['end_time'] = time()+$data['yxzq']*3600;
 			M('order')->add($map);
 			M("member")->where(array("id"=>$userinfo['id']))->setInc("mygonglv",$map['lixi']);		
 			//$product->where(array("id"=>$id))->setDec("stock");

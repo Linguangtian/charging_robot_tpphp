@@ -29,7 +29,7 @@
      	<div class="me-index-top-t">
      		<img src="/Public/dianyun/img/lg.png?v=102"/>
      		<p class="me-index-top-s"><?php echo ($minfo["mobile"]); ?></p>
-     		<p class="me-index-top-k"> <span>领袖</span>  推荐码：XD<?php echo ($minfo["id"]); ?></p>
+     		<p class="me-index-top-k"> <?php if($linxiu["linxiu"] > 0): ?><span><?php echo ($linxiu["linxiu"]); ?>级领袖</span><?php endif; ?> 推荐码：XD<?php echo ($minfo["id"]); ?></p>
      	</div>
      	
      	<div class="me-index-top-b">
@@ -39,13 +39,13 @@
      		</div>
      		
      		<div class="me-index-top-ab">
-     			<p class="me-index-top-uyy"><?php echo ($count); ?><span>台</span> </p>
-     			<p>5G服务器</p>
+     			<p class="me-index-top-uyy"><?php echo ($linxiu["zhitui"]); ?> </p>
+     			<p>有效直推</p>
      		</div>
      		
      		<div class="me-index-top-ab">
-     			<p class="me-index-top-uyy"><?php echo ($minfo["gamecount"]); ?><span>位</span> </p>
-     			<p>下级伙伴</p>
+     			<p class="me-index-top-uyy"><?php echo ($linxiu["team_count"]); ?><span>台</span> </p>
+     			<p>团队服务器</p>
      		</div>
      		
      	</div>
