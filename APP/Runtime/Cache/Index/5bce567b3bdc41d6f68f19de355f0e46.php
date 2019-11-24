@@ -11,10 +11,13 @@
 
     <title>首页</title>
 
-    
+
     <link rel="stylesheet" href="/Public/dianyun/css/app.css">
     <link rel="stylesheet" href="/Public/dianyun/css/iconfont.css">
     <link rel="stylesheet" href="/Public/css/style.css">
+	<script src="/Public/dianyun/shouye/jquery.min.js"></script>
+	<script src="/Public/dianyun/shouye/swiper.min.js"></script>
+	<link href="/Public/dianyun/shouye/swiper.min.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="/Public/js/TouchSlide.1.1.js"></script>
     <style type="text/css">
     	*{
@@ -81,15 +84,42 @@
 			left: 50%;
 			transform: translate(-50%,150%);
 		}
+		.index-c{
+			margin-top: 1rem;
+		}
+		.banner img{
+			max-height:10rem;
+			width: 100%;
+		}
     </style>
 </head>
 <body style="background: #151a37;" class="loading">
-	
-	
-	<div class="index-top">
-		<p class="hello">Hi，欢迎来到云智5G服务。</p>
-		<p class="gonggao">全新高性能共享5G服务器上架了</p>
+
+
+<div class="index-top">
+	<p class="hello">Hi，欢迎来到云智5G服务。</p>
+	<p class="gonggao">全新高性能共享5G服务器上架了</p>
+</div>
+
+	<!--	<div class="swiper-container" id="bannerbgslider" style="	margin-top: 5rem;">
+			<div class="swiper-wrapper banner">
+				<div class="swiper-slide"><img src="/Public/dianyun/shouye/bg1.jpg"  ></div>
+
+			</div>
+		</div>-->
+
+
+<div class="bannerbg">
+	<div class="bannerslider">
+		<div class="swiper-banner" id="bannerbgslider" style="	margin-top: 5rem;">
+			<div class="swiper-wrapper banner">
+				<?php if(is_array($banner)): foreach($banner as $key=>$v): ?><div class="swiper-slide"><a href="<?php echo ($v["href"]); ?>"><img src="<?php echo ($v["path"]); ?>"></a></div><?php endforeach; endif; ?>
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
 	</div>
+</div>
 	
 	<div class="index-c">
 		<ul>
@@ -338,6 +368,13 @@
           exp.setTime(exp.getTime() + mins*60*1000);
           document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
       }
+      //轮播图初始化
+      var swiper1 = new Swiper('.swiper-banner', {
+          pagination: {
+              el: '.swiper-pagination',
+          },
+          autoplay:true
+      });
 
 	</script>
 

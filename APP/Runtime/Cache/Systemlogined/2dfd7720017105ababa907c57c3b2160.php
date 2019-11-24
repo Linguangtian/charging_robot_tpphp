@@ -262,6 +262,16 @@ a.active{ color:#C30 !important; font-size:18px;}
 									已购5G服务器
 								</a>
 							</li><?php endif; ?>
+
+
+	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('paihangbang')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
+			<a href="<?php echo U(GROUP_NAME.'/Shop/paihangbang');?>">
+				<i class="icon-double-angle-right"></i>
+				收益排行榜
+			</a>
+		</li><?php endif; ?>
+
+
 	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Shop')][strtoupper('editshouyi')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="Memberuncheck">
 			<a href="<?php echo U(GROUP_NAME.'/Shop/editshouyi');?>">
 				<i class="icon-double-angle-right"></i>

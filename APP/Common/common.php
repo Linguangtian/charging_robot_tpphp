@@ -1199,7 +1199,16 @@ function is_linxiu($id){
 
     $zhitui=$member['0']['count(1)'];
 
-    $team_count=team_count($minfo['id']);
+
+    //团队有效台数
+    //$team_count=team_count($minfo['id']);
+
+    $sql='select count(1) from ds_member as m'
+        .' left join  ( select user from ds_order where end_time>'.$time.' group by user )as o on m.username=o.user'
+        .' where locate(\''.$id.'\',m.parentpath)';
+    $teat_member=$db->query($sql);
+    $team_count=$teat_member['0']['count(1)'];
+
 
     //一领袖门槛直推人
      $lxOne_direct_num= C('lxOne_direct_num');

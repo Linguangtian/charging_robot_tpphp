@@ -32,6 +32,13 @@
                 setcookie("is_notis", '1', time()+24*3600);
             }*/
 
+            $user = M("banner");
+            $banner = $user ->order('id asc') -> select();
+
+            $this -> assign("banner",$banner);
+
+
+
             $wechat = C('wechat');
             $gonggao = C('gonggao');
             $notice=[

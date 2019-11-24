@@ -42,13 +42,15 @@
         <p style="height: 40px"></p>
     <div class="PaymentTop">
         <ul>
-            <h1>支付宝扫码支付</h1>
+            <h1>支付宝/微信扫码支付【长按二维码保存】</h1>
             <li class="fll active" data-type="1">
                 <div class="PaymentPrice">
                     <span class="icon"><img src='/public/wx/cz/img/geren_zhifubao.jpg'></span>
 
                 </div>
+
             </li>
+
             <!-- <li class="frr" data-type="3"> -->
                 <!-- <div class="PaymentPrice"> -->
                     <!-- <span class="icon"><img src='/public/wx/cz/img/wechat.jpg'></span> -->
@@ -57,8 +59,9 @@
                 <!-- </div> -->
             <!-- </li> -->
         </ul>
-    </div>
 
+    </div>
+    <div style="color: red;text-align: center;" >请在支付页面备注手机号码</div>
     <div class="Putforwardbtn">
         <button class="btn" >提交充值记录</button>
     </div>

@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae773b5-c18d-470c-bf09-bf5169cf9c6b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Common/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Common/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/37413e29cf9ffe521a881dda235e8ab9.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/37413e29cf9ffe521a881dda235e8ab9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/5bce567b3bdc41d6f68f19de355f0e46.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/5bce567b3bdc41d6f68f19de355f0e46.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b19002d346325797e3a2999cd2ec7490.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b19002d346325797e3a2999cd2ec7490.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/1425dfc6f2850c2459a4bca0bd104189.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/1425dfc6f2850c2459a4bca0bd104189.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/2dfd7720017105ababa907c57c3b2160.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/2dfd7720017105ababa907c57c3b2160.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/9a95ced34f980844283a0a392f05ac3e.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/9a95ced34f980844283a0a392f05ac3e.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +30,8 @@
       <file leaf-file-name="customsetting.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+            <state relative-caret-position="383">
+              <caret line="163" column="396" selection-start-line="163" selection-start-column="396" selection-end-line="163" selection-end-column="396" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -33,7 +47,6 @@
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8978#8984#0" expanded="true" />
                 <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#12;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -41,81 +54,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="124" column="37" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#strong#0;n#span#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#0;n#strong#0;n#span#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/LoginAction.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="19" column="14" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Login/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="89" column="82" lean-forward="true" selection-start-line="89" selection-start-column="82" selection-end-line="89" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NewAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="39" />
+            <state relative-caret-position="400">
+              <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kefu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html">
+      <file leaf-file-name="index - 副本.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index - 副本.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="300">
+              <caret line="42" selection-start-line="42" selection-end-line="54" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalletAction.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1100">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="1244" column="73" selection-start-line="1244" selection-start-column="62" selection-end-line="1244" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onlinerecharge.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php">
+      <file leaf-file-name="orderlist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="292" column="34" lean-forward="true" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="34" />
+            <state relative-caret-position="275">
+              <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/banner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopAction.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="30" column="44" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -124,20 +142,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>query</find>
-      <find>chengzhu</find>
-      <find>team_count</find>
-      <find>UG_getTime</find>
-      <find>bonusConf</find>
-      <find>{if</find>
-      <find>buy</find>
-      <find>购买奖励</find>
-      <find>领袖设置</find>
-      <find>收益奖励</find>
-      <find>ds_todate_income_</find>
       <find>todate</find>
       <find>odate_income</find>
-      <find>会员5G服务器列表</find>
       <find>订单发货</find>
       <find>帮助中心</find>
       <find>lxOne_son_num</find>
@@ -154,6 +160,18 @@
       <find>ggnotice-img</find>
       <find>notice_title</find>
       <find>验证码错误!</find>
+      <find>send_sms_reg_code</find>
+      <find>api.</find>
+      <find>team_count</find>
+      <find>支付宝扫码支付</find>
+      <find>会员5G服务器列表</find>
+      <find>横幅列表</find>
+      <find>banner</find>
+      <find>swiper.min</find>
+      <find>bannerbgslider</find>
+      <find>Swiper1</find>
+      <find>swiper-banner</find>
+      <find>领袖设置</find>
     </findStrings>
     <replaceStrings>
       <replace>5G服务器</replace>
@@ -194,25 +212,25 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/withdrawn.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tixian.html" />
         <option value="$PROJECT_DIR$/ThinkPHP/Extend/Mode/Amf/Model.class.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Jinbidetail/paylist.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/JinbidetailAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Common/common.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/editordertime.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" />
         <option value="$PROJECT_DIR$/APP/Runtime/Cache/Index/37413e29cf9ffe521a881dda235e8ab9.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/LoginAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Login/index.html" />
+        <option value="$PROJECT_DIR$/APP/Common/common.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" />
+        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" />
       </list>
     </option>
@@ -226,11 +244,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="131" />
-    <option name="y" value="48" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-5" />
+    <option name="y" value="13" />
     <option name="width" value="1260" />
-    <option name="height" value="812" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -299,16 +317,6 @@
               <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="charging_robot_tpphp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="charging_robot_tpphp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="New" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -319,7 +327,7 @@
               <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Task" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Wallet" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="charging_robot_tpphp" type="b2602c69:ProjectViewProjectNode" />
@@ -439,12 +447,14 @@
       <workItem from="1574432744630" duration="3281000" />
       <workItem from="1574509238391" duration="4320000" />
       <workItem from="1574561987562" duration="8565000" />
-      <workItem from="1574576931081" duration="6239000" />
+      <workItem from="1574576931081" duration="6840000" />
+      <workItem from="1574603900523" duration="2654000" />
+      <workItem from="1574612055708" duration="5062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87052000" />
+    <option name="totallyTimeSpent" value="95369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -456,7 +466,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07986111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -473,14 +483,14 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25723472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
@@ -489,7 +499,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,27 +514,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tgaward.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="134" lean-forward="true" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Public/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="167" column="32" lean-forward="true" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/paihangbanglist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -632,13 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="172" column="41" lean-forward="true" selection-start-line="172" selection-start-column="41" selection-end-line="172" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1213,13 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="239" column="39" lean-forward="true" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Member/gaward.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3525" />
@@ -1249,32 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="347" column="78" lean-forward="true" selection-start-line="346" selection-start-column="66" selection-end-line="347" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/editordertime.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1130">
           <caret line="80" column="43" lean-forward="true" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="39" column="42" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="39" selection-end-column="42" />
-          <folding>
-            <element signature="n#withdrawnlog#0;n#WalletAction#0;n#!!top" />
-            <element signature="n#award#0;n#WalletAction#0;n#!!top" />
-            <element signature="n#llaward#0;n#WalletAction#0;n#!!top" />
-            <element signature="n#tgaward#0;n#WalletAction#0;n#!!top" />
-            <element signature="n#onlinerecharge#0;n#WalletAction#0;n#!!top" />
-            <element signature="n#paihangban#0;n#WalletAction#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1285,34 +1238,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="103" column="101" selection-start-line="103" selection-start-column="101" selection-end-line="103" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="292" column="34" lean-forward="true" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="300">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1323,19 +1252,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
+    <entry file="file://$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="175">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2225">
+          <caret line="89" column="82" selection-start-line="89" selection-start-column="82" selection-end-line="89" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/LoginAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/MsgAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="197" column="21" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="1244" column="73" selection-start-line="1244" selection-start-column="62" selection-end-line="1244" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="44" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index - 副本.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="42" selection-start-line="42" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="124" column="37" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="37" />
+        <state relative-caret-position="325">
+          <caret line="142" column="30" lean-forward="true" selection-start-line="142" selection-start-column="30" selection-end-line="142" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1346,38 +1375,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/LoginAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="19" column="14" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="89" column="82" lean-forward="true" selection-start-line="89" selection-start-column="82" selection-end-line="89" selection-end-column="82" />
+        <state relative-caret-position="400">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="383">
+          <caret line="163" column="396" selection-start-line="163" selection-start-column="396" selection-end-line="163" selection-end-column="396" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1393,7 +1401,6 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8978#8984#0" expanded="true" />
             <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#12;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
