@@ -14,10 +14,10 @@
 			//防止直接访问这个视图
 			IS_POST or halt('页面不存在');
  			//验证码验证
-			if (session('verify') != I('code','','md5')) {
+		/*	if (session('verify') != I('code','','md5')) {
 				$this->error('验证码错误!');
 			}
-			
+			*/
 			//验证用户名和密码
 			$user = M('user')->where(array('username'=>I('username'),'password'=>I('password','','md5')))->find();
 

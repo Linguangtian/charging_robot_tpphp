@@ -637,13 +637,32 @@ a.active{ color:#C30 !important; font-size:18px;}
                                                             
 														</div>
 													</div>
-                                            
+
+
+
+												<div class="control-group">
+													<label class="control-label" for="notice_title">首页提示标题</label>
+
+													<div class="controls">
+														<input type="text" id="notice_title" name="notice_title" value="<?php echo ($config["notice_title"]); ?>"  class="span3"/>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label class="control-label" for="notice_content">首页提示内容</label>
+
+													<div class="controls">
+														<textarea name="notice_content" style="width:500px; height:80px;"><?php echo ($config["notice_content"]); ?></textarea>
+													</div>
+												</div>
+
+
                                             
                                              <div class="control-group">
 														<label class="control-label" for="open_web_notice">网站关闭提示语</label>
 
 														<div class="controls">
-															<input type="text" id="open_web_notice" name="open_web_notice" value="<?php echo ($config["open_web_notice"]); ?>"  class="span3"/> 
+															<input type="text" id="open_web_notice" name="open_web_notice" value="<?php echo ($config["open_web_notice"]); ?>"  class="span3"/>
 														</div>
 											</div>
                                             

@@ -76,5 +76,7 @@ return array (
   'tel' => 18597609706,
   'wechat' => 525,
   'email' => 906347920,
+  'notice_title' => 2122,
+  'notice_content' => 1212,
 );
 ?>

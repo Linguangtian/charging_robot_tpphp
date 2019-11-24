@@ -22,9 +22,68 @@
     		padding: 0;
     		list-style: none;
     	}
+
+		.pop-background {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			z-index: 999999;
+			background: rgba(0,0,0,.5);
+		}
+
+		.flex {
+			width: 100%;
+			display: flex;
+			-webkit-box-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			justify-content: center;
+			align-content: center;
+			flex-wrap: nowrap;
+		}
+		.ggnotice {
+			width: 70%;
+			max-width: 400px;
+			height: auto;
+			min-height: 220px;
+			background: #ffefe6;
+			background: linear-gradient(180deg,#fff,#ffefe6);
+			border-radius: 4%;
+			-ms-flex-align: start;
+			align-items: flex-start;
+			-ms-flex-line-pack: start;
+			align-content: flex-start;
+			position: relative;
+		}
+		.fw {
+			flex-wrap: wrap;
+		}
+		.ggnotice-img {
+			width: 100%;
+			transform: translateY(-19.6%);
+		}
+		.ggnotice-html {
+			width: 90%;
+			padding: 10px 5%;
+			min-height: 100px;
+			color: #353535;
+			line-height: 24px;
+			font-size: 14px;
+			margin-top: -20px;
+		}
+		.close-img {
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%,150%);
+		}
     </style>
 </head>
-<body style="background: #151a37;">
+<body style="background: #151a37;" class="loading">
 	
 	
 	<div class="index-top">
@@ -56,8 +115,20 @@
 			
 		</ul>
 	</div>
-	
-	
+
+	<div class="pop-background flex" id="myModal" style="visibility: hidden;">
+		<div class="ggnotice flex fw">
+			<img src="/Public/dianyun/img/topnotice.png" class="ggnotice-img" id="ggnotice-img">
+			<div class="ggnotice-html"><p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:12pt"><span style="font-family:宋体"><strong><span style="font-size:13.5pt"><span style="font-family:宋体">
+					{$notice['title']} </span></span></strong></span></span></p>
+				<p>
+					{$notice['content']}
+				</p>
+				<p><a class="page_index_ckxxnr" href="#">查看详细内容 </a></p>
+			</div>
+			<img src="/Public/dianyun/img/close_notice.png" class="close-img">
+		</div>
+	</div>
 	
 	
 	
@@ -232,7 +303,47 @@
         interTime:3000
 
       });
-    </script>
+
+      // 获取 <span> 元素，用于关闭弹窗 that closes the modal
+      var span = document.getElementsByClassName("close-img")[0];
+
+
+
+
+      // 点击 <span> (x), 关闭弹窗
+      span.onclick = function() {
+          document.getElementById("myModal").style.visibility="hidden";
+         setCookie('notice',23);
+      }
+
+
+      window.onload = function(){
+
+          console.info(getCookie('notice'));
+          if(getCookie('notice')!='23'){
+           document.getElementById("myModal").style.visibility="visible";
+          }
+      };
+
+
+      function getCookie(name)
+      {
+          var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+          if(arr=document.cookie.match(reg))
+              return unescape(arr[2]);
+          else
+              return null;
+      }
+
+      function setCookie(name,value)
+      {
+          var mins = 60*12;
+          var exp = new Date();
+          exp.setTime(exp.getTime() + mins*60*1000);
+          document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+      }
+
+	</script>
 
 </body>
 </html>

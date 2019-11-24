@@ -44,7 +44,7 @@
      		</div>
      		
      		<div class="me-index-top-ab">
-     			<p class="me-index-top-uyy"><?php echo ($linxiu["team_count"]); ?><span>台</span> </p>
+				<p class="me-index-top-uyy"><?php if($linxiu["team_count"] == null): ?>0<else><?php echo ($linxiu["team_count"]); endif; ?><span>台</span> </p>
      			<p>团队服务器</p>
      		</div>
      		

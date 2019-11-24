@@ -76,13 +76,13 @@
 																</span>
 															</label>
 
-															<label>
+														<!--	<label>
 																<span class="block input-icon input-icon-right">
 																	<input name="code" type="text" class="span6" placeholder="验证码" />
 																	<a href="javascript:void(change_code(this));"><img src="<?php echo U(GROUP_NAME .'/Login/verify');?>" id="code"/>看不清</a>
 																</span>
 															</label>
-
+-->
 															<div class="space"></div>
 
 															<div class="row-fluid">

@@ -26,7 +26,20 @@
 					$this->assign('liuliang',$liuliang);
 				
 			}
-			
+
+       /*     $this->assign('is_notis',$_COOKIE['is_notis']);
+            if(!isset($_COOKIE['is_notis'])){
+                setcookie("is_notis", '1', time()+24*3600);
+            }*/
+
+            $wechat = C('wechat');
+            $gonggao = C('gonggao');
+            $notice=[
+              'title'=>C('notice_wechat'),
+              'content'=>C('notice_content')
+
+            ];
+            $this->assign('notice',$notice);
 		/*	$product = M("product");
             $typeData = $product -> where("is_on = 0") ->order("id asc") -> select();*/
 

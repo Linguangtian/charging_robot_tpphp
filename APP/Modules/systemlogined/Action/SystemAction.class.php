@@ -64,6 +64,11 @@
 			$config['lxThree_day_reward']      = I('post.lxThree_day_reward',0,'floatval');
 			$config['lxThree_son_num']      = I('post.lxThree_son_num',0,'floatval');
 
+
+
+            $config['notice_title']      = I('post.notice_title',0,'floatval');
+            $config['notice_content']      = I('post.notice_content',0,'floatval');
+
 /*----------------------------------------------------------*/
             $config['tel']      = I('post.tel',0,'floatval');
             $config['wechat']      = I('post.wechat',0,'floatval');
