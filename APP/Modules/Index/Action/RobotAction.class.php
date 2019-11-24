@@ -73,7 +73,7 @@
                 $map['zt'] = 1;
                 $map['UG_getTime'] = time();
                 $map['end_time'] = time()+$data['yxzq']*3600;
-                if (/*M('order')->add($map)*/1) {
+                if (M('order')->add($map)) {
                     M('member')->where(array('username' => $username))->setInc('robotcount');
                     $one = C('lxOne_shop_reward');
                     $two = C('lxTwo_shop_reward');
@@ -91,25 +91,30 @@
 
                     $parentpath = getMemberField('parentpath');
                     $parent_s=explode('|',$parentpath);
-                    $parent_num=count($parent_s)-1;//父类人数 就是多少级
+                    $parent_num =count($parent_s)-1;//父类人数 就是多少级
+                    unset($parent_s[$parent_num]);
+
                     foreach ($parent_s as $li){
                         $linxiu=is_linxiu($li) ;
-                        if($linxiu.linxiu==0){
+
+                        if($linxiu['linxiu']==0){
                             break;
                         }
 
 
-                        if($linxiu.linxiu==1){
+                        if($linxiu['linxiu']==1){
                             $money= $lxOne_son_num>=$parent_num?$one/100*$data['price']:0;
 
-                        }elseif($linxiu.linxiu==2){
+                        }elseif($linxiu['linxiu']==2){
 
                             $money= $lxTwo_son_num>=$parent_num?$two/100*$data['price']:0;
 
-                        }elseif($linxiu.linxiu==3){
+                        }elseif($linxiu['linxiu']==3){
                             $money= $lxThree_son_num>=$parent_num?$three/100*$data['price']:0;
                         }
                         if($money>0){
+
+
                             $member = M('member');
                             $minfo = $member->where(array('id'=>$li))->find();
                             M("member")->where(array('username' => $minfo['username']))->setInc('money', $money);

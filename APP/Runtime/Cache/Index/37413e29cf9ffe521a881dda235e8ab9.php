@@ -60,13 +60,13 @@
      		
      		
      		<li>
-     			<a href="<?php echo U('Index/Index/personal');?>"> <img src="/Public/dianyun/img/userLink-icon1.png"/>会员资料</a>
+     			<a href="<?php echo U('Index/Index/personal');?>"> <img src="/Public/dianyun/img/userLink-icon2.png"/>会员资料</a>
      		</li>
      		
      		
      		
      		<li style="float: right;">
-     			<a href="<?php echo U('Index/Wallet/404');?>"> <img src="/Public/dianyun/img/userLink-icon2.png"/>修改密码</a>
+     			<a href="<?php echo U('Index/Index/kefu');?>"> <img src="/Public/dianyun/img/userLink-icon1.png"/>联系客服</a>
      		</li>
      		
      		<li>
@@ -90,13 +90,13 @@
      		</li>
      		
      		<li>
-     			<a href="<?php echo U('Index/Wallet/bangzhu');?>"> <img src="/Public/dianyun/img/userLink-icon7.png"/>帮助中心</a>
+     			<a href="<?php echo U('Index/Wallet/bangzhu');?>"> <img src="/Public/dianyun/img/userLink-icon7.png"/>APP下载</a>
      		</li>
      		
      		
      		
      		<li style="float: right;">
-     			<a href="<?php echo U('Index/New/help');?>"> <img src="/Public/dianyun/img/userLink-icon8.png"/>关于街电</a>
+     			<a href="<?php echo U('Index/New/help');?>"> <img src="/Public/dianyun/img/userLink-icon8.png"/>关于我们</a>
      		</li>
      		
      	</ul>

@@ -237,7 +237,7 @@ function mmtjrennumadd($parent_id)
      * @param $money  产生的金额
      * @param $desc   描述
 	 * @param $jj     资金增减 1增加 0减少
-	 * @param $type   日志类型
+	 * @param $type   日志类型  999领袖获得下级收益
      * @return bool
      */
 function account_log($member,$money,$desc,$jj,$type=0,$status=1,$jid,$tgaward){

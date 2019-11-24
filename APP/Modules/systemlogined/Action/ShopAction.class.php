@@ -331,6 +331,28 @@
 		  
 		
 	  }
+
+
+
+	  /*订单编辑*/
+
+        public  function editordertime(){
+            $order = M('order')->where(array('id'=>I('id')))->find();
+            $order['end_str_time']=date('Y-m-d H:i:s',$order['end_time']);
+
+            if($_POST){
+                $order2 = M('order');
+                 $addtime=$_POST['addtime'];
+                $data['end_time']=$order['end_time']+$addtime*3600;
+                $order2->where(array('id'=>I('id')))->save($data);
+                $this->success('修改成功!',U(GROUP_NAME .'/Shop/orderlist'));exit;
+            }
+
+            $this->assign('order',$order);
+            $this->display();
+        }
+
+
         public function editshouyi(){
             $product=M('product')->select();
             $this->assign('product',$product);

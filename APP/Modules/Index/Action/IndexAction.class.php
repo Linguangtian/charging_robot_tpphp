@@ -288,6 +288,17 @@
             $kefu1 = C('kefu1');
             $kefu2 = C('kefu2');
 		    $kefu3 = C('kefu3');
+
+            $email = C('email');
+            $wechat = C('wechat');
+            $tel = C('tel');
+
+            $this->assign('email',$email);
+            $this->assign('wechat',$wechat);
+            $this->assign('tel',$tel);
+
+
+
             $this->assign('kefu1',$kefu1);
             $this->assign('kefu2',$kefu2);
             $this->assign('kefu3',$kefu3);

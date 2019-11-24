@@ -54,7 +54,7 @@
 									</div>
 								</div>
 							</div>
-
+							<if condition="kefu2">
 							<div class="col-100 h-jgg2">
 								<div class="row service-bar">
 									<div class="col-20"><img class="avatar" src="http://ae01.alicdn.com/kf/HTB1yjsZaBCw3KVjSZFl763JkFXak.png"></div>
@@ -68,28 +68,49 @@
 										</a>
 									</div>
 								</div>
-							</div><div class="col-100 h-jgg2">
-							<div class="row service-bar">
-								<div class="col-20"><img class="avatar" src="http://ae01.alicdn.com/kf/HTB1yjsZaBCw3KVjSZFl763JkFXak.png"></div>
-								<div class="col-50">
-									<label>QQ客服一003</label>
-									<span id="copy-numb" style="color: #fff;">{$kefu3}</span>                        </div>
-								<div class="col-30" style="padding-top:10px;">
-									<a href="javascript:void(0);" onclick="jsCopyb()" class="external button-clipboard" data-clipboard-target="#lblNo2">
-									<img src="http://ae01.alicdn.com/kf/HTB18UASavWG3KVjSZPc762kbXXaT.png" style="width:70px;height: auto;">       </a></div>
+							</div>
+							</if>
+
+							<div class="col-100 h-jgg2">
+								<div class="row service-bar">
+									<div class="col-20"><img class="avatar" src="http://ae01.alicdn.com/kf/HTB1yjsZaBCw3KVjSZFl763JkFXak.png"></div>
+									<div class="col-50">
+										<label>客服邮箱</label>
+										<span id="copy-numa" style="color: #fff;">{$email}</span>
+									</div>
+									<div class="col-30" style="padding-top:10px;">
+										<a href="javascript:void(0);" onclick="jsCopya()" class="external button-clipboard" data-clipboard-target="#lblNo1">
+											<img src="http://ae01.alicdn.com/kf/HTB18UASavWG3KVjSZPc762kbXXaT.png" style="width:70px;height: auto;">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-100 h-jgg2">
+								<div class="row service-bar">
+									<div class="col-20"><img class="avatar" src="http://ae01.alicdn.com/kf/HTB1yjsZaBCw3KVjSZFl763JkFXak.png"></div>
+									<div class="col-50">
+										<label>客服微信</label>
+										<span id="copy-numa" style="color: #fff;">{$wechat}</span>
+									</div>
+									<div class="col-30" style="padding-top:10px;">
+										<a href="javascript:void(0);" onclick="jsCopya()" class="external button-clipboard" data-clipboard-target="#lblNo1">
+											<img src="http://ae01.alicdn.com/kf/HTB18UASavWG3KVjSZPc762kbXXaT.png" style="width:70px;height: auto;">
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						</div>
 
-						<div class="row hide">
+						<div class="row ">
 							<div class="col-100 h-jgg2">
 								<div class="row service-bar">
 									<div class="col-20"><img src="/Public/dianyun/img/service-tel.png"></div>
 									<div class="col-60">
 										<label>服务电话</label>
-										<span></span>
+										<span style="color: #FFFFFF;">{$tel}</span>
 									</div>
-									<div class="col-20"><a href="tel://" class="external">
+									<div class="col-20"><a href="tel://{$tel}" class="external">
 										<img src="/Public/dianyun/img/service-dial.png" style="width:32px;height: auto;">
 									</a></div>
 								</div>
@@ -97,13 +118,13 @@
 						</div>
 
 						<div style="height:30px"></div>
-						<div class="row hide">
+						<!--<div class="row">
 							<div class="col-100">
-								<a href="tel://" class="external button button-large button-fill submitbtn">
+								<a href="tel://{$tel}" class="external button button-large button-fill submitbtn">
 									<img src="/Public/dianyun/img/service-dial2.png" style="width:auto; height:35px;">
 								</a>
 							</div>
-						</div>
+						</div>-->
 
 					</div>
 				</div>

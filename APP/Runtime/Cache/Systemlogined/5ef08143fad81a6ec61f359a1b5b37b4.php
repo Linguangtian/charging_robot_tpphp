@@ -484,21 +484,21 @@ a.active{ color:#C30 !important; font-size:18px;}
 										<div id="home" class="tab-pane in active">
 											<form class="form-horizontal" action="<?php echo U(GROUP_NAME.'/System/bonusConf');?>" method="post">
 
-                                            <div class="control-group" >
+                                        <!--    <div class="control-group" >
 														<label class="control-label" for="goumai">购买奖励</label>
 
 														<div class="controls">
 															已购一代<input type="text" id="one" name="ONE" value="<?php echo ($config["ONE"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             已购二代<input type="text" id="two" name="TWO" value="<?php echo ($config["TWO"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             已购三代<input type="text" id="two" name="THREE" value="<?php echo ($config["THREE"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
-															<font color="red">已购--此处设置推荐别人购买5G服务器时，自己已持有5G服务器，获得奖励多。</font>
+															<font color="red">已购&#45;&#45;此处设置推荐别人购买5G服务器时，自己已持有5G服务器，获得奖励多。</font>
                                                         </div>
 												<div style="height: 20px;"></div>
 														<div class="controls">
 															未购一代<input type="text" id="ones" name="ONES" value="<?php echo ($config["ONES"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             未购二代<input type="text" id="twos" name="TWOS" value="<?php echo ($config["TWOS"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
                                                             未购三代<input type="text" id="threes" name="THREES" value="<?php echo ($config["THREES"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
-															<font color="red">未购--此处设置推荐别人购买5G服务器时，自己未持有5G服务器，获得奖励少。</font>
+															<font color="red">未购&#45;&#45;此处设置推荐别人购买5G服务器时，自己未持有5G服务器，获得奖励少。</font>
                                                         </div>
 											</div>
 												<div class="control-group" >
@@ -524,7 +524,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 													</div>
 												</div>
 
-
+-->
 
 
 
@@ -572,7 +572,6 @@ a.active{ color:#C30 !important; font-size:18px;}
 													<div class="controls">
 														QQ客服-001<input type="text" id="kefu1" name="kefu1" value="<?php echo ($config["kefu1"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
 														QQ客服-002<input type="text" id="kefu2" name="kefu2" value="<?php echo ($config["kefu2"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
-														QQ客服-003<input type="text" id="kefu3" name="kefu3" value="<?php echo ($config["kefu3"]); ?>" style=" width: 100px;" class="span3"/>&nbsp;&nbsp;
 													</div>
 												</div>
 												<div class="control-group" >
