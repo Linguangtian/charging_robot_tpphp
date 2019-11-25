@@ -90,7 +90,7 @@
      		</li>
      		
      		<li>
-     			<a href="<?php echo U('Index/Wallet/bangzhu');?>"> <img src="/Public/dianyun/img/userLink-icon7.png"/>APP下载</a>
+     			<a href="<?php echo ($app_url); ?>"> <img src="/Public/dianyun/img/userLink-icon7.png"/>APP下载</a>
      		</li>
      		
      		

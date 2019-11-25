@@ -344,6 +344,8 @@
                 $order2 = M('order');
                  $addtime=$_POST['addtime'];
                 $data['end_time']=$order['end_time']+$addtime*3600;
+                $data['zt']=$data['end_time']>time()?1:$order['zt'];
+                $data['xyzq']=$order['yxzq']+$order['end_time'];
                 $order2->where(array('id'=>I('id')))->save($data);
                 $this->success('修改成功!',U(GROUP_NAME .'/Shop/orderlist'));exit;
             }

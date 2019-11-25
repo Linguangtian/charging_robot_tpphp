@@ -352,6 +352,8 @@
 			session('username',null);
 			session('member',null);
 			session('usersecondlogin',null);
+			session('is_notis',null);
+			unset($_SESSION['is_notis']);
 			$this->redirect(GROUP_NAME.'/Login/index');
 		}
 

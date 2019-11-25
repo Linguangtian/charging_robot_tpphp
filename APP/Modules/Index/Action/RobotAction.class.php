@@ -51,6 +51,33 @@
             $tuijian = M('member')->where(array('username'=>$username))->getField('parent');
 
 
+
+            if($id == $faquan) {
+                $jifen = M('member')->where(array('username' => $username))->getField('jifen');
+                if ($jifen < $data['price']) {
+                    alert('账户金币不足,快去赚取金币吧！', U('task/index'));
+                }
+
+                M("member")->where(array('username' => session('username')))->setDec('jifen', $data['price']);
+                $map = array();
+                $map['kjbh'] = $letter . date('d') . substr(time(), -5) . sprintf('%02d', rand(0, 99));
+                $map['user'] = $username;
+                $map['user_id'] = session('mid');
+                $map['project'] = $data['title'];
+                $map['sid'] = $data['id'];
+                $map['yxzq'] = $data['yxzq'];
+                $map['shouyi'] = $data['shouyi'];
+                $map['sumprice'] = $data['price'];
+                $map['addtime'] = date('Y-m-d H:i:s');
+                $map['imagepath'] = $data['thumb'];
+                $map['zt'] = 1;
+                $map['UG_getTime'] = time();
+                if (M('order')->add($map)) {
+                    M('member')->where(array('username' => $username))->setInc('robotcount');
+                }
+            }else {
+
+
                 $jinbi = getMemberField('money');
                 if ($jinbi < $data['price']) {
                     alert('账户余额不足,请先进行充值', U('wallet/onlinerecharge'));
@@ -72,63 +99,110 @@
                 $map['imagepath'] = $data['thumb'];
                 $map['zt'] = 1;
                 $map['UG_getTime'] = time();
-                $map['end_time'] = time()+$data['yxzq']*3600;
+                $map['end_time'] = time() + $data['yxzq'] * 3600;
                 if (M('order')->add($map)) {
                     M('member')->where(array('username' => $username))->setInc('robotcount');
-                    $one = C('lxOne_shop_reward');
-                    $two = C('lxTwo_shop_reward');
-                    $three = C('lxThree_shop_reward');
 
 
-                    $lxOne_son_num = C('lxThree_son_num');
-                    $lxTwo_son_num = C('lxTwo_son_num');
-                    $lxThree_son_num = C('lxThree_son_num');
+                    $one = C('ONE');
+                    $two = C('TWO');
+                    $three = C('THREE');
+                    $ones = C('ONES');
+                    $twos = C('TWOS');
+                    $threes = C('THREES');
+                    $parent = getMemberField('parent');
+                    $parent1 = M('member')->where(array('username' => $parent))->getField('parent');
+                    $parent2 = M('member')->where(array('username' => $parent1))->getField('parent');
 
+                    $parentcount = M('order')->where(array('user' => $parent))->count();
+                    $parentcount1 = M('order')->where(array('user' => $parent1))->count();
+                    $parentcount2 = M('order')->where(array('user' => $parent2))->count();
 
+                    $parent1_id = M('member')->where(array('username' => $parent))->getField('id');
 
+                    $linxiu = is_linxiu($parent1_id);
 
+                    if($linxiu['linxiu']==0){
+                        if ($parentcount > 0) {
 
+                            M("member")->where(array('username' => $parent))->setInc('money', $one);
+                            account_log($parent, $one, '1级购买奖励', 1, 2, 1, 0, $username);
 
-                    $parentpath = getMemberField('parentpath');
-                    $parent_s=explode('|',$parentpath);
-                    $parent_num =count($parent_s)-1;//父类人数 就是多少级
-                    unset($parent_s[$parent_num]);
-
-                    foreach ($parent_s as $li){
-                        $linxiu=is_linxiu($li) ;
-
-                        if($linxiu['linxiu']==0){
-                            break;
+                        } else {
+                            M("member")->where(array('username' => $parent))->setInc('money', $ones);
+                            account_log($parent, $ones, '1级购买奖励', 1, 2, 1, 0, $username);
                         }
+                    }
+                    $parent2_id = M('member')->where(array('username' => $parent1))->getField('id');
+                    $linxiu = is_linxiu($parent2_id);
 
 
-                        if($linxiu['linxiu']==1){
-                            $money= $lxOne_son_num>=$parent_num?$one/100*$data['price']:0;
+                    if($linxiu['linxiu']==0){
+                        if ($parentcount1 > 0) {
+                            M("member")->where(array('username' => $parent1))->setInc('money', $two);
+                            account_log($parent1, $two, '2级购买奖励', 1, 2, 1, 0, $username);
 
-                        }elseif($linxiu['linxiu']==2){
-
-                            $money= $lxTwo_son_num>=$parent_num?$two/100*$data['price']:0;
-
-                        }elseif($linxiu['linxiu']==3){
-                            $money= $lxThree_son_num>=$parent_num?$three/100*$data['price']:0;
+                        } else {
+                            M("member")->where(array('username' => $parent1))->setInc('money', $twos);
+                            account_log($parent1, $twos, '2级购买奖励', 1, 2, 1, 0, $username);
                         }
-                        if($money>0){
+                    }
 
+                    $parent3_id = M('member')->where(array('username' => $parent2))->getField('id');
+                    $linxiu = is_linxiu($parent3_id);
+                    if($linxiu['linxiu']==0){
+                        if ($parentcount2 > 0) {
+                            M("member")->where(array('username' => $parent2))->setInc('money', $three);
+                            account_log($parent2, $three, '3级购买奖励', 1, 2, 1, 0, $username);
 
-                            $member = M('member');
-                            $minfo = $member->where(array('id'=>$li))->find();
-                            M("member")->where(array('username' => $minfo['username']))->setInc('money', $money);
-                            account_log($minfo['username'], $money, $parent_num.'级会员购买奖励', 1, 2, 1, 0, $username);
-
+                        } else {
+                            M("member")->where(array('username' => $parent2))->setInc('money', $threes);
+                            account_log($parent2, $threes, '3级购买奖励', 1, 2, 1, 0, $username);
                         }
-
-                        //代1
-                         $parent_num--;
                     }
 
 
 
+                    /*---------------------------------领袖---------------*/
+                    $one = C('lxOne_shop_reward');
+                    $two = C('lxTwo_shop_reward');
+                    $three = C('lxThree_shop_reward');
+                    $lxOne_son_num = C('lxThree_son_num');
+                    $lxTwo_son_num = C('lxTwo_son_num');
+                    $lxThree_son_num = C('lxThree_son_num');
+                    $parentpath = getMemberField('parentpath');
+                    $parent_s = explode('|', $parentpath);
+                    $parent_num = count($parent_s) - 1;//父类人数 就是多少级
+                    unset($parent_s[$parent_num]);
+
+                    foreach ($parent_s as $li) {
+                        $linxiu = is_linxiu($li);
+                        if ($linxiu['linxiu'] == 0) {
+                            break;
+                        }
+                        if ($linxiu['linxiu'] == 1) {
+                            $money = $lxOne_son_num >= $parent_num ? $one / 100 * $data['price'] : 0;
+                        } elseif ($linxiu['linxiu'] == 2) {
+                            $money = $lxTwo_son_num >= $parent_num ? $two / 100 * $data['price'] : 0;
+                        } elseif ($linxiu['linxiu'] == 3) {
+                            $money = $lxThree_son_num >= $parent_num ? $three / 100 * $data['price'] : 0;
+                        }
+                        if ($money > 0) {
+                            $member = M('member');
+                            $minfo = $member->where(array('id' => $li))->find();
+                            M("member")->where(array('username' => $minfo['username']))->setInc('money', $money);
+                            account_log($minfo['username'], $money, $parent_num . '级会员购买奖励[领袖奖励]', 1, 2, 1, 0, $username);
+
+                        }
+
+                        //代1
+                        $parent_num--;
+                    }
+                    /*---------------------------------领袖end------------*/
+
+
                 }
+            }
                 $user_id = session('mid');
                 $p_id=M('member')->where("id = {$user_id}")->getField('parent_id');
                 $daishu=C('daishu');
@@ -265,15 +339,20 @@
             $parent1 = M('member')->where(array('username' => $parent))->getField('parent');
             $parent2 = M('member')->where(array('username' => $parent1))->getField('parent');
 
-            M("member")->where(array('username' => $parent))->setInc('money', $shou1);
-            account_log($parent, $shou1, '1级收益奖励', 1, 2, 1, 0, $username);
 
-            M("member")->where(array('username' => $parent1))->setInc('money', $shou2);
-            account_log($parent1, $shou2, '2级收益奖励', 1, 2, 1, 0, $username);
+            if($parent&&$shou1>0){
+                M("member")->where(array('username' => $parent))->setInc('money', $shou1);
+                account_log($parent, $shou1, '1级收益奖励', 1, 2, 1, 0, $username);
 
-            M("member")->where(array('username' => $parent2))->setInc('money', $shou3);
-            account_log($parent1, $shou3, '3级收益奖励', 1, 2, 1, 0, $username);
-			
+            }
+            if($parent1&&$shou2>0) {
+                M("member")->where(array('username' => $parent1))->setInc('money', $shou2);
+                account_log($parent1, $shou2, '2级收益奖励', 1, 2, 1, 0, $username);
+            }
+             if($parent2&&$shou3>0) {
+                    M("member")->where(array('username' => $parent2))->setInc('money', $shou3);
+                    account_log($parent1, $shou3, '3级收益奖励', 1, 2, 1, 0, $username);
+           }
             $p_id=M('member')->where("id = {$user_id}")->getField('parent_id');
 
             $daishu=C('daishu');

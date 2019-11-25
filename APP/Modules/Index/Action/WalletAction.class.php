@@ -17,7 +17,8 @@
                 $data['level'] = 1;
                 M('member')->where(array('username'=>$username))->save($data);
             }
-
+            $app_url= C('App_dow');
+			$this->assign('app_url',$app_url);
 			$this->assign('count',$count);
 			$this->assign('linxiu',$linxiu);
 			$this->assign('minfo',$minfo);

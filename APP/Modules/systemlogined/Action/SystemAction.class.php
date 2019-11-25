@@ -39,6 +39,9 @@
 			$path = './App/Conf/system.php';
 			$config = include $path;
 
+			$config['App_dow']      = I('post.lxOne_direct_num',0,'App_dow');
+
+
 			$config['lxOne_direct_num']      = I('post.lxOne_direct_num',0,'floatval');
 			$config['lxOne_team_num']      = I('post.lxOne_team_num',0,'floatval');
 
@@ -67,7 +70,7 @@
 
 
             $config['notice_title']      = I('post.notice_title',0,'floatval');
-            $config['notice_content']      = I('post.notice_content',0,'floatval');
+            $config['notice_content']      = I('post.notice_content');
 
 /*----------------------------------------------------------*/
             $config['tel']      = I('post.tel',0,'floatval');

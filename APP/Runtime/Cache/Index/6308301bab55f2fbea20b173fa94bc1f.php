@@ -34,7 +34,7 @@
   		<p class="pe-index-t-c">绑定手机 <span><?php echo ($minfo["mobile"]); ?></span> </p>
   	</div>
   	
-<!--  		<a class="xgwdxx" href="<?php echo U('Index/Index/card');?>">绑定银行卡</a>-->
+<!--<a class="xgwdxx" href="<?php echo U('Index/Index/card');?>">绑定银行卡</a>-->
 
 
 

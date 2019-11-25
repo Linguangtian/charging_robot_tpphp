@@ -27,10 +27,10 @@
 				
 			}
 
-       /*     $this->assign('is_notis',$_COOKIE['is_notis']);
-            if(!isset($_COOKIE['is_notis'])){
-                setcookie("is_notis", '1', time()+24*3600);
-            }*/
+            $this->assign('is_notis',$_SESSION['is_notis']);
+            if(!isset($_SESSION['is_notis'])){
+                $_SESSION['is_notis']=1;
+            }
 
             $user = M("banner");
             $banner = $user ->order('id asc') -> select();
@@ -77,8 +77,10 @@
         }
 
 		public function help(){
-            $new=M('announce')->where(array('tid'=>2))->order("id asc")->select();
-            $this->assign('new',$new);
+            $ann = M('xiangmu')->where(array('id'=>1))->find();
+            $this->assign('ann',$ann);
+
+
 			$this->display();
 
 		}
