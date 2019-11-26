@@ -104,12 +104,12 @@
                     M('member')->where(array('username' => $username))->setInc('robotcount');
 
 
-                    $one = C('ONE');
-                    $two = C('TWO');
-                    $three = C('THREE');
-                    $ones = C('ONES');
-                    $twos = C('TWOS');
-                    $threes = C('THREES');
+                    $one = C('ONE')/ 100 * $data['price'];
+                    $two = C('TWO')/ 100 * $data['price'];
+                    $three = C('THREE')/ 100 * $data['price'];
+                    $ones = C('ONES')/ 100 * $data['price'];
+                    $twos = C('TWOS')/ 100 * $data['price'];
+                    $threes = C('THREES')/ 100 * $data['price'];
                     $parent = getMemberField('parent');
                     $parent1 = M('member')->where(array('username' => $parent))->getField('parent');
                     $parent2 = M('member')->where(array('username' => $parent1))->getField('parent');
@@ -118,11 +118,7 @@
                     $parentcount1 = M('order')->where(array('user' => $parent1))->count();
                     $parentcount2 = M('order')->where(array('user' => $parent2))->count();
 
-                    $parent1_id = M('member')->where(array('username' => $parent))->getField('id');
 
-                    $linxiu = is_linxiu($parent1_id);
-
-                    if($linxiu['linxiu']==0){
                         if ($parentcount > 0) {
 
                             M("member")->where(array('username' => $parent))->setInc('money', $one);
@@ -132,12 +128,11 @@
                             M("member")->where(array('username' => $parent))->setInc('money', $ones);
                             account_log($parent, $ones, '1级购买奖励', 1, 2, 1, 0, $username);
                         }
-                    }
-                    $parent2_id = M('member')->where(array('username' => $parent1))->getField('id');
-                    $linxiu = is_linxiu($parent2_id);
 
 
-                    if($linxiu['linxiu']==0){
+
+
+
                         if ($parentcount1 > 0) {
                             M("member")->where(array('username' => $parent1))->setInc('money', $two);
                             account_log($parent1, $two, '2级购买奖励', 1, 2, 1, 0, $username);
@@ -146,11 +141,9 @@
                             M("member")->where(array('username' => $parent1))->setInc('money', $twos);
                             account_log($parent1, $twos, '2级购买奖励', 1, 2, 1, 0, $username);
                         }
-                    }
 
-                    $parent3_id = M('member')->where(array('username' => $parent2))->getField('id');
-                    $linxiu = is_linxiu($parent3_id);
-                    if($linxiu['linxiu']==0){
+
+
                         if ($parentcount2 > 0) {
                             M("member")->where(array('username' => $parent2))->setInc('money', $three);
                             account_log($parent2, $three, '3级购买奖励', 1, 2, 1, 0, $username);
@@ -159,7 +152,7 @@
                             M("member")->where(array('username' => $parent2))->setInc('money', $threes);
                             account_log($parent2, $threes, '3级购买奖励', 1, 2, 1, 0, $username);
                         }
-                    }
+
 
 
 
@@ -178,7 +171,7 @@
                     foreach ($parent_s as $li) {
                         $linxiu = is_linxiu($li);
                         if ($linxiu['linxiu'] == 0) {
-                            break;
+                            continue;
                         }
                         if ($linxiu['linxiu'] == 1) {
                             $money = $lxOne_son_num >= $parent_num ? $one / 100 * $data['price'] : 0;

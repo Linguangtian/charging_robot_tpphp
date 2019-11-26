@@ -3,40 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ae773b5-c18d-470c-bf09-bf5169cf9c6b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Common/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Common/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Conf/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Conf/system.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tixian.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tixian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/37413e29cf9ffe521a881dda235e8ab9.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/37413e29cf9ffe521a881dda235e8ab9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/5bce567b3bdc41d6f68f19de355f0e46.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/5bce567b3bdc41d6f68f19de355f0e46.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/6308301bab55f2fbea20b173fa94bc1f.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/6308301bab55f2fbea20b173fa94bc1f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/a69aa2172f0b6156e8e987ed0e755428.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/a69aa2172f0b6156e8e987ed0e755428.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/d742cd42f1d6095440f71f6a352bc86b.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/d742cd42f1d6095440f71f6a352bc86b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/e68246cd5586cc3d5f429dc9191b6e73.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/e68246cd5586cc3d5f429dc9191b6e73.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/0010c764dcdb9b82783a202da041b426.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/0010c764dcdb9b82783a202da041b426.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/1425dfc6f2850c2459a4bca0bd104189.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/1425dfc6f2850c2459a4bca0bd104189.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/460fe1deb5ee2911a249685c112e77ca.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/460fe1deb5ee2911a249685c112e77ca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5116e99dbf0a71bf43dda74457c0a92e.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5116e99dbf0a71bf43dda74457c0a92e.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6a31c47f11a359cf130f72322e412b30.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6a31c47f11a359cf130f72322e412b30.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6d1387ea2e1406d0c07f7214e6b5877e.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6d1387ea2e1406d0c07f7214e6b5877e.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/843fbf44d9b35ef8acf8861abb9e290f.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/843fbf44d9b35ef8acf8861abb9e290f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/8aa88e743b6d54f00d63ea890ee414b2.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/8aa88e743b6d54f00d63ea890ee414b2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/94f24bd6bbe8e3e4007703e7afe0f970.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/94f24bd6bbe8e3e4007703e7afe0f970.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/e9534e4697ae8199f4f1d0e8831981bd.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/e9534e4697ae8199f4f1d0e8831981bd.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,11 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="personal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1009">
+            <state relative-caret-position="1125">
               <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -59,15 +28,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/MsgAction.class.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="SemAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4753">
+            <state relative-caret-position="4925">
               <caret line="197" column="21" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
             </state>
           </provider>
@@ -76,7 +40,7 @@
       <file leaf-file-name="WalletAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="-850">
               <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
@@ -85,7 +49,7 @@
       <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
+            <state relative-caret-position="30700">
               <caret line="1228" selection-start-line="1228" selection-end-line="1228" />
             </state>
           </provider>
@@ -101,14 +65,9 @@
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="5325">
               <caret line="213" column="39" selection-start-line="213" selection-start-column="36" selection-end-line="213" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -124,7 +83,7 @@
       <file leaf-file-name="index - 副本.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index - 副本.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
+            <state relative-caret-position="3275">
               <caret line="131" column="54" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="54" />
             </state>
           </provider>
@@ -133,8 +92,66 @@
       <file leaf-file-name="RobotAction.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="351" column="24" selection-start-line="351" selection-start-column="24" selection-end-line="351" selection-end-column="24" />
+            <state relative-caret-position="525">
+              <caret line="187" lean-forward="true" selection-end-line="374" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5ef08143fad81a6ec61f359a1b5b37b4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="512" column="85" selection-start-line="512" selection-start-column="85" selection-end-line="512" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customsetting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="649">
+              <caret line="134" column="52" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3218#3224#0" expanded="true" />
+                <element signature="e#3224#3230#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3394#3400#0" expanded="true" />
+                <element signature="e#3400#3406#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3574#3580#0" expanded="true" />
+                <element signature="e#3580#3586#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3941#3947#0" expanded="true" />
+                <element signature="e#3947#3953#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4120#4126#0" expanded="true" />
+                <element signature="e#4126#4132#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4305#4311#0" expanded="true" />
+                <element signature="e#4311#4317#0" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4970#4976#0" expanded="true" />
+                <element signature="e#4976#4982#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5175#5181#0" expanded="true" />
+                <element signature="e#5181#5187#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5380#5386#0" expanded="true" />
+                <element signature="e#5386#5392#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,9 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bannerbgslider</find>
-      <find>Swiper1</find>
-      <find>swiper-banner</find>
       <find>领袖设置</find>
       <find>首页提示内容</find>
       <find>会员5G服务器列表</find>
@@ -173,6 +187,9 @@
       <find>pcontent</find>
       <find>duihuan</find>
       <find>级收益奖励</find>
+      <find>lxOne_shop_reward</find>
+      <find>&lt;!--</find>
+      <find>三代</find>
     </findStrings>
     <replaceStrings>
       <replace>5G服务器</replace>
@@ -224,7 +241,6 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html" />
         <option value="$PROJECT_DIR$/APP/Runtime/Cache/Index/e68246cd5586cc3d5f429dc9191b6e73.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tixian.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php" />
@@ -235,6 +251,8 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/help.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" />
         <option value="$PROJECT_DIR$/APP/Common/common.php" />
+        <option value="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" />
       </list>
     </option>
@@ -248,11 +266,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="89" />
-    <option name="y" value="66" />
-    <option name="width" value="1260" />
-    <option name="height" value="724" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="658" />
+    <option name="y" value="41" />
+    <option name="width" value="1180" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -262,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -408,7 +427,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,16 +483,16 @@
       <workItem from="1574603900523" duration="2654000" />
       <workItem from="1574612055708" duration="5583000" />
       <workItem from="1574687267112" duration="8178000" />
-      <workItem from="1574696036500" duration="4457000" />
+      <workItem from="1574696036500" duration="5057000" />
+      <workItem from="1574774651456" duration="4088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108525000" />
+    <option name="totallyTimeSpent" value="113213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.08875" />
@@ -500,19 +518,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25723472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.08875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -530,6 +548,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index - 副本.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3275">
+          <caret line="131" column="54" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8775">
+          <caret line="351" column="24" selection-start-line="351" selection-start-column="24" selection-end-line="351" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codepay/notify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5400" />
@@ -1170,13 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Login/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2225">
@@ -1216,53 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="204" column="131" selection-start-line="204" selection-start-column="124" selection-end-line="204" selection-end-column="131" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3218#3224#0" expanded="true" />
-            <element signature="e#3224#3230#0" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3394#3400#0" expanded="true" />
-            <element signature="e#3400#3406#0" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3574#3580#0" expanded="true" />
-            <element signature="e#3580#3586#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3941#3947#0" expanded="true" />
-            <element signature="e#3947#3953#0" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4120#4126#0" expanded="true" />
-            <element signature="e#4126#4132#0" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4305#4311#0" expanded="true" />
-            <element signature="e#4311#4317#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11411#11417#0" expanded="true" />
-            <element signature="e#11417#11423#0" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#12;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,7 +1335,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
+        <state relative-caret-position="1125">
           <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1365,36 +1343,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/MsgAction.class.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4753">
+        <state relative-caret-position="4925">
           <caret line="197" column="21" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
+        <state relative-caret-position="30700">
           <caret line="1228" selection-start-line="1228" selection-end-line="1228" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="5325">
           <caret line="213" column="39" selection-start-line="213" selection-start-column="36" selection-end-line="213" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1408,7 +1373,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index - 副本.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="3275">
           <caret line="131" column="54" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="54" />
         </state>
       </provider>
@@ -1420,10 +1385,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="512" column="85" selection-start-line="512" selection-start-column="85" selection-end-line="512" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="134" column="52" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3218#3224#0" expanded="true" />
+            <element signature="e#3224#3230#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3394#3400#0" expanded="true" />
+            <element signature="e#3400#3406#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3574#3580#0" expanded="true" />
+            <element signature="e#3580#3586#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3941#3947#0" expanded="true" />
+            <element signature="e#3947#3953#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4120#4126#0" expanded="true" />
+            <element signature="e#4126#4132#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4305#4311#0" expanded="true" />
+            <element signature="e#4311#4317#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4970#4976#0" expanded="true" />
+            <element signature="e#4976#4982#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5175#5181#0" expanded="true" />
+            <element signature="e#5181#5187#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5380#5386#0" expanded="true" />
+            <element signature="e#5386#5392#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="351" column="24" selection-start-line="351" selection-start-column="24" selection-end-line="351" selection-end-column="24" />
+        <state relative-caret-position="525">
+          <caret line="187" lean-forward="true" selection-end-line="374" selection-end-column="2" />
         </state>
       </provider>
     </entry>
