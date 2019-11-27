@@ -111,7 +111,10 @@
             					<p>已运行：
             						<?php if($v['zt'] == 1): echo (set_number($v["a_time"],'0')); ?>小时
             							<?php else: ?> --<?php endif; ?>
+									<p>购买时间：<?php echo ($v["addtime"]); ?></p>
+									<p>截止时间：<?php echo (date('Y-m-d H:i:s',$v["end_time"])); ?>	</p>
             						<p>已收益：<?php echo (four_number($v["already_profit"])); ?>元</p>
+
             				</div>
             
             				<div class="lqkd_r">
@@ -121,7 +124,7 @@
             							<a href="javascript:alert(&#39;请勿操作，5G服务器在努力的工作中！&#39;);">运行中</a><?php endif; ?>-->
 
 
-											<a href="<?php echo U('Robot/jiesuan',array('id'=>$v['id']));?>" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取收益</a>
+											<a href="<?php echo U('Robot/jiesuan',array('id'=>$v['id']));?>" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">签到</a>
 
 
             						<?php else: ?>

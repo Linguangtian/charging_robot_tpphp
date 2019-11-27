@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ae773b5-c18d-470c-bf09-bf5169cf9c6b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Conf/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Conf/system.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/0f5e4fdc6ce265dc22dd09e39bece04f.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/0f5e4fdc6ce265dc22dd09e39bece04f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/997dfcb1233a6b786a401ad63ed34705.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/997dfcb1233a6b786a401ad63ed34705.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +19,8 @@
       <file leaf-file-name="RobotAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="322" column="13" lean-forward="true" selection-start-line="322" selection-start-column="13" selection-end-line="322" selection-end-column="13" />
+            <state relative-caret-position="925">
+              <caret line="325" column="31" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="31" />
               <folding>
                 <element signature="n#pcontent#0;n#RobotAction#0;n#!!top" />
               </folding>
@@ -35,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderlist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="orderlist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="107" column="88" selection-start-line="107" selection-start-column="88" selection-end-line="107" selection-end-column="88" />
+            <state relative-caret-position="375">
+              <caret line="105" column="67" lean-forward="true" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -53,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robot.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="robot.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="429">
+              <caret line="117" column="91" lean-forward="true" selection-start-line="116" selection-start-column="28" selection-end-line="117" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#if#1;n#if#0;n#div#1;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -162,10 +155,10 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" />
       </list>
     </option>
   </component>
@@ -178,9 +171,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="313" />
-    <option name="y" value="68" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-154" />
+    <option name="y" value="62" />
     <option name="width" value="1284" />
     <option name="height" value="813" />
   </component>
@@ -308,15 +301,15 @@
       <workItem from="1574687267112" duration="8178000" />
       <workItem from="1574696036500" duration="5057000" />
       <workItem from="1574774651456" duration="4088000" />
-      <workItem from="1574866186000" duration="7545000" />
+      <workItem from="1574866186000" duration="8341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120758000" />
+    <option name="totallyTimeSpent" value="121554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-154" y="62" width="1284" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -325,7 +318,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16736111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19006309" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1246,26 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#if#1;n#if#0;n#div#1;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="322" column="13" lean-forward="true" selection-start-line="322" selection-start-column="13" selection-end-line="322" selection-end-column="13" />
-          <folding>
-            <element signature="n#pcontent#0;n#RobotAction#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1273,10 +1246,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="325" column="31" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="31" />
+          <folding>
+            <element signature="n#pcontent#0;n#RobotAction#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="107" column="88" selection-start-line="107" selection-start-column="88" selection-end-line="107" selection-end-column="88" />
+        <state relative-caret-position="375">
+          <caret line="105" column="67" lean-forward="true" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="117" column="91" lean-forward="true" selection-start-line="116" selection-start-column="28" selection-end-line="117" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#if#1;n#if#0;n#div#1;n#li#0;n#foreach#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

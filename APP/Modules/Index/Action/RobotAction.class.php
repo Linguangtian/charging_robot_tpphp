@@ -353,7 +353,7 @@
             }
              if($parent2&&$shou3>0) {
                     M("member")->where(array('username' => $parent2))->setInc('money', $shou3);
-                    account_log($parent1, $shou3, '3级收益奖励', 1, 2, 1, 0, $username);
+                    account_log($parent2, $shou3, '3级收益奖励', 1, 2, 1, 0, $username);
            }
             $p_id=M('member')->where("id = {$user_id}")->getField('parent_id');
 

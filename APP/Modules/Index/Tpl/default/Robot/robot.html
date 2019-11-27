@@ -114,7 +114,10 @@
             							{$v.a_time|set_number=###,'0'}小时
             							<else/> --
             						</if>
+							<!--		<p>购买时间：{$v.addtime|date==###,'0'}</p>
+									<p>jeizhi：{$v.end_time|date='Y-m-d H:i:s',###}	</p>-->
             						<p>已收益：{$v.already_profit|four_number=###}元</p>
+
             				</div>
             
             				<div class="lqkd_r">
@@ -127,7 +130,7 @@
             						</if>-->
 
 
-											<a href="{:U('Robot/jiesuan',array('id'=>$v['id']))}" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取收益</a>
+											<a href="{:U('Robot/jiesuan',array('id'=>$v['id']))}" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">签到</a>
 
 
             						<else/>
