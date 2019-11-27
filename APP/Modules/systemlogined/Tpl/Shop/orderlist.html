@@ -105,7 +105,7 @@
 										<td class="hidden-480"><if condition = "$v['zt'] eq 0">未运行<else/>{$v.UG_getTime|date='Y-m-d H:i:s',###}</if></td>
 											<td class="hidden-480">{$v.end_time|date='Y-m-d H:i:s',###}	</td>
 
-											<td class="hidden-480"><if condition = "$v['zt'] eq 0">未运行<elseif condition = "$v['zt'] eq 1" />运行中<else/>已到期</if>				</td>
+											<td class="hidden-480">		{$v.status_alias}	</td>
 
 										<td>
 										<a href="{:U(GROUP_NAME .'/shop/editordertime',array('id'=>$v['id']))}">增加运行时间</a>

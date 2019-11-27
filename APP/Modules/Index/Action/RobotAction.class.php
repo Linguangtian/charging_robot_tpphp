@@ -102,8 +102,6 @@
                 $map['end_time'] = time() + $data['yxzq'] * 3600;
                 if (M('order')->add($map)) {
                     M('member')->where(array('username' => $username))->setInc('robotcount');
-
-
                     $one = C('ONE')/ 100 * $data['price'];
                     $two = C('TWO')/ 100 * $data['price'];
                     $three = C('THREE')/ 100 * $data['price'];
@@ -248,16 +246,17 @@
             $jiesuan_time = C('jiesuan_time');
 
             $orders = $order->where("user_id = {$user_id} and zt = {$zt}") ->order('id desc') -> select();
+            $now_day_start=strtotime(date('Y-m-d',time()));
+
             foreach($orders as $k=>$v){
 
-                $a_time = (time()-strtotime($v['addtime']))/3600;
-
-                $orders[$k]['a_time']=round($a_time,2);
-                if(time()-$v['UG_getTime'] < $jiesuan_time*3600){
-                    $orders[$k]['is_jiesuan']=0;
-                }else{
-                    $orders[$k]['is_jiesuan']=1;//可以结算
+                if($v['end_time']<$now_day_start){
+                    $data['zt']=2;
+                    M('order')->where("id = {$v['id']}")->save($data);
+                    unset($orders[$k]);
                 }
+
+
             }
             $sum = $order ->where(array('user_id'=>$user_id))->sum('already_profit');
             $rwsm = C('rwsm');
@@ -294,31 +293,41 @@
             if(empty($order)){
                 $this->ajaxReturn(array('result'=>0,'info'=>'该5G服务器不存在！'));
             }
+            /*
+             *
+             * 上次领取收益时间
+             *
+             * $order['UG_getTime']  时间戳
+             * */
+
             //判断与上次结算时间有没有达到24小时
-            $jiesuan_time=C('jiesuan_time');
-            if(empty($jiesuan_time)){
-                $jiesuan_time=24;
-            }
-            if(time()-$order['UG_getTime'] < $jiesuan_time*3600){
+
+            /*   if(time()-$order['UG_getTime'] < $jiesuan_time*3600){
                 alert('领取收益间隔不到'.$jiesuan_time.'小时！',U('Robot/robot'));
-            }
-            //算出已经结算的时间
-            $a_time=$order['UG_getTime']-strtotime($order['addtime']);
-            //本次将要结算的时间
-            $n_time=time()-$order['UG_getTime'];
-            $time=0;//参加计算的时间；
-            $data=array();
-            $data['UG_getTime']=time();
-            $is_over=1;
-            if($a_time+$n_time > $order['yxzq']*3600){
-                $time=($order['yxzq']*3600)-$a_time;
-                $data['zt']=2;
-                $is_over=0;
+            }*/
+
+            $now_day_start=strtotime(date('Y-m-d',time()));
+
+            if($now_day_start<=$order['UG_getTime']){
+                //上次领取是今天  $order['UG_getTime']
+                //从上次领取时间到  这次要结算的时间
+                $jiesuan_time=$order['end_time']>time()?time():$order['end_time'];
+
+                $n_time=$jiesuan_time-$order['UG_getTime'];//$a_time
+
+
             }else{
-                $time=$n_time;
+                //上次领取是昨天 $now_day_start
+                $n_time=time()-$now_day_start;
+
+            }
+            $shouyi=$n_time*$order['shouyi']/3600;//本次收益
+
+            if($order['end_time']<=time()){
+                $data['zt']=2;   //运行结束
+                $is_over=0;
             }
 
-            $shouyi=$time/3600*$order['shouyi'];//本次收益
 
             M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id}")->setInc('already_profit',$shouyi);
             M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id}")->save($data);

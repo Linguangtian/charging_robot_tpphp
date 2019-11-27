@@ -119,14 +119,20 @@
             
             				<div class="lqkd_r">
             
-            					<if condition="$v.zt eq 1">
-            						<if condition="$v.is_jiesuan eq 1">
+            						<if condition="$v.zt eq 1">
+            						<!--<if condition="$v.is_jiesuan eq 1">
             							<a href="{:U('Robot/jiesuan',array('id'=>$v['id']))}" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取收益</a>
             							<else/>
             							<a href="javascript:alert(&#39;请勿操作，5G服务器在努力的工作中！&#39;);">运行中</a>
+            						</if>-->
+
+
+											<a href="{:U('Robot/jiesuan',array('id'=>$v['id']))}" style="padding:3px 5px; background:#8637f6; color:#FFFFFF; border-radius:4px;">领取收益</a>
+
+
+            						<else/>
+										----
             						</if>
-            						<else/> ----
-            					</if>
             
             				</div>
             

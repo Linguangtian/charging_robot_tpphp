@@ -324,7 +324,21 @@
 			$Page       = new Page($count,20);
 			$show = $Page -> show();
 			$orders = $order -> limit($Page ->firstRow.','.$Page -> listRows)->order('id desc') -> select();
+			foreach ($orders as &$li){
+
+			    if($li['end_time']>time()){
+                    $li['status_alias']='运行中';
+
+                }else{
+
+                    $li['status_alias']='已到期';
+                }
+
+            }
+
+
             $this -> assign("page",$show);
+            $this -> assign("new_time",time());
 
 			$this -> assign("orders",$orders);
 			$this -> display(); 		  

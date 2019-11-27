@@ -53,7 +53,7 @@
    	<ul>
    		<foreach name="list" item="v">
    		<li>
-   			<p> <span>{$v.addtime|date='Y-m-d',###}</span> <span  >{$v.desc}</span>  <span><if condition="$v.adds eq 0.00">-{$v.reduce|two_number=###}<else/>+{$v.adds|two_number=###}</if></span> </p>
+   			<p> <span>{$v.addtime|date='Y-m-d H:i',###}</span> <span  >{$v.desc}</span>  <span><if condition="$v.adds eq 0.00">-{$v.reduce|two_number=###}<else/>+{$v.adds|two_number=###}</if></span> </p>
    		</li>
    		</foreach>
    	</ul>

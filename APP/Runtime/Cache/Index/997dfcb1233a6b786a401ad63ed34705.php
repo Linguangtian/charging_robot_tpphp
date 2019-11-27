@@ -52,7 +52,7 @@
    <div class="award-index-ui">
    	<ul>
    		<?php if(is_array($list)): foreach($list as $key=>$v): ?><li>
-   			<p> <span><?php echo (date('Y-m-d',$v["addtime"])); ?></span> <span  ><?php echo ($v["desc"]); ?></span>  <span><?php if($v["adds"] == 0.00): ?>-<?php echo (two_number($v["reduce"])); else: ?>+<?php echo (two_number($v["adds"])); endif; ?></span> </p>
+   			<p> <span><?php echo (date('Y-m-d H:i',$v["addtime"])); ?></span> <span  ><?php echo ($v["desc"]); ?></span>  <span><?php if($v["adds"] == 0.00): ?>-<?php echo (two_number($v["reduce"])); else: ?>+<?php echo (two_number($v["adds"])); endif; ?></span> </p>
    		</li><?php endforeach; endif; ?>
    	</ul>
    </div>
