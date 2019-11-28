@@ -281,6 +281,17 @@
 			</a>
 		</li>
 	</if>
+
+
+	<if condition="(isset($acc[strtoupper(GROUP_NAME)][strtoupper('Info')][strtoupper('tanchu')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))">
+		<li url="InfoannType">
+			<a href="{:U(GROUP_NAME.'/Info/tanchu')}">
+				<i class="icon-double-angle-right"></i>
+				弹出公告
+			</a>
+		</li>
+	</if>
+
 <if condition="(isset($acc[strtoupper(GROUP_NAME)][strtoupper('Info')][strtoupper('msgReceive')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))">	
 							<li url="InfomsgReceive">
 								<a href="{:U(GROUP_NAME.'/Info/msgReceive')}">

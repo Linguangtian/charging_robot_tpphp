@@ -36,11 +36,12 @@
             $banner = $user ->order('id asc') -> select();
 
             $this -> assign("banner",$banner);
-
+            $tanchu = M('xiangmu')->where(array('id'=>2))->find();
 
 
             $wechat = C('wechat');
             $gonggao = C('gonggao');
+
             $notice=[
               'title'=>C('notice_wechat'),
               'content'=>C('notice_content')
@@ -54,11 +55,13 @@
                     ' left join (select count(1) as total,sid from ds_order where user='.$username.' and zt = 1 group by sid ) as b'
 /*                    ' left join (select count(1) as total,sid from ds_order where user='.$username.' and zt = 1 and UG_getTime >\''.time().'\' group by sid ) as b'*/
                     .' on b.sid=a.id '
-                .' where a.is_on = 0 order by a.id asc';
+
+            .' where a.is_on = 0 order by a.id asc';
             $typeData=$db->query($sql);
 
-
             $this->assign("typeData",$typeData);
+
+            $this->assign("tanchu",$tanchu['content']);
 
             $this->assign('status',$status);
             $this->assign('mai_log',$mai_log);

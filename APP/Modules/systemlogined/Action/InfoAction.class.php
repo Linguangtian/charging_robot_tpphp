@@ -132,11 +132,37 @@
 		}
 
         //修改公告视图
+        public function tanchu(){
+            $ann = M('xiangmu')->where(array('id'=>2))->find();
+            $this->assign('ann',$ann);
+            $this->display();
+        }
+
+        //修改项目处理
+        public function edittanchu(){
+            $_POST['edittime'] = time();
+            $id = I('aid');
+            unset($_POST['aid']);
+
+            M('xiangmu')->where(array('id'=>2))->data($_POST)->save();
+            //添加日志操作
+            $desc = '弹出';
+            write_log(session('username'),'admin',$desc);
+
+            $this->success('修改成功',U(GROUP_NAME.'/Info/tanchu'));
+        }
+
+
+
+        //修改公告视图
         public function xiangmu(){
             $ann = M('xiangmu')->where(array('id'=>1))->find();
             $this->assign('ann',$ann);
             $this->display();
         }
+
+
+
         //修改项目处理
         public function editxiangmu(){
             $_POST['edittime'] = time();

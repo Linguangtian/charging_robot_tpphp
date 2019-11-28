@@ -8,6 +8,8 @@
             $jifen = M('member')->where(array('username'=>$username))->getField('jifen');
             $banner = M('banner')->order('addtime desc')->select();
             $duihuan = C('duihuan');
+            $rwsm = C('rwsm');
+            $this->assign('rwsm',$rwsm);
             $this->assign('jifen',$jifen);
             $this->assign('duihuan',$duihuan);
             $this->assign('banner',$banner);

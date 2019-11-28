@@ -98,7 +98,7 @@
 
 <div class="index-top">
 	<p class="hello">Hi，欢迎来到云智5G服务。</p>
-	<p class="gonggao">全新高性能共享5G服务器上架了</p>
+	<p class="gonggao"><?php echo ($gonggao); ?></p>
 </div>
 
 <!--	<div class="swiper-container" id="bannerbgslider" style="	margin-top: 5rem;">
@@ -152,9 +152,9 @@
 		<div class="ggnotice-html"><p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:12pt"><span style="font-family:宋体"><strong><span style="font-size:13.5pt"><span style="font-family:宋体">
 					<?php echo ($notice['title']); ?> </span></span></strong></span></span></p>
 			<p>
-				<?php echo ($notice['content']); ?>
+				<?php echo ($tanchu); ?>
 			</p>
-			<p><a class="page_index_ckxxnr" href="#">查看详细内容 </a></p>
+		<!--	<p><a class="page_index_ckxxnr" href="#">查看详细内容 </a></p>-->
 		</div>
 		<img src="/Public/dianyun/img/close_notice.png" class="close-img">
 	</div>
