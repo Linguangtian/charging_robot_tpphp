@@ -474,7 +474,7 @@ a.active{ color:#C30 !important; font-size:18px;}
                                             <th>收益/每小时</th>
                                             <th>购买价格</th>
 											<th>购买时间</th>
-											<th>运行时间</th>
+
 											<th>结束时间</th>
                                             <th>状态</th>
                                             <th>操作</th>
@@ -492,7 +492,7 @@ a.active{ color:#C30 !important; font-size:18px;}
                                         <td class="hidden-480"><?php echo ($v["sumprice"]); ?></td>
 									    <td class="hidden-480"><?php echo ($v["addtime"]); ?></td>
 										<td class="hidden-480"><?php if($v['zt'] == 0): ?>未运行<?php else: echo (date('Y-m-d H:i:s',$v["UG_getTime"])); endif; ?></td>
-											<td class="hidden-480"><?php echo (date('Y-m-d H:i:s',$v["end_time"])); ?>	</td>
+										
 
 											<td class="hidden-480">		<?php echo ($v["status_alias"]); ?>	</td>
 

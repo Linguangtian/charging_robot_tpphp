@@ -84,7 +84,7 @@
                                             <th>收益/每小时</th>
                                             <th>购买价格</th>
 											<th>购买时间</th>
-											<th>运行时间</th>
+
 											<th>结束时间</th>
                                             <th>状态</th>
                                             <th>操作</th>
@@ -103,7 +103,7 @@
                                         <td class="hidden-480">{$v.sumprice}</td>
 									    <td class="hidden-480">{$v.addtime}</td>
 										<td class="hidden-480"><if condition = "$v['zt'] eq 0">未运行<else/>{$v.UG_getTime|date='Y-m-d H:i:s',###}</if></td>
-											<td class="hidden-480">{$v.end_time|date='Y-m-d H:i:s',###}	</td>
+										
 
 											<td class="hidden-480">		{$v.status_alias}	</td>
 

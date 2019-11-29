@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae773b5-c18d-470c-bf09-bf5169cf9c6b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/0f5e4fdc6ce265dc22dd09e39bece04f.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/0f5e4fdc6ce265dc22dd09e39bece04f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b19002d346325797e3a2999cd2ec7490.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b19002d346325797e3a2999cd2ec7490.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/2dfd7720017105ababa907c57c3b2160.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/2dfd7720017105ababa907c57c3b2160.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/460fe1deb5ee2911a249685c112e77ca.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/460fe1deb5ee2911a249685c112e77ca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/52c0b17263c3a920b9ef001e02c33e84.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/52c0b17263c3a920b9ef001e02c33e84.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/a8060a44ff504b51e5bcd24d013764ac.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/a8060a44ff504b51e5bcd24d013764ac.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/c605c1544e745beb66e9dae758379c70.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/c605c1544e745beb66e9dae758379c70.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/e3c145fa2c0c1b84fd410d58b6cab50f.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/e3c145fa2c0c1b84fd410d58b6cab50f.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewAction.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="275">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderlist.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -109,28 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="230" column="132" selection-start-line="230" selection-start-column="128" selection-end-line="230" selection-end-column="132" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#foreach#0;n#ul#0;n#marquee#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>title</find>
       <find>hidd</find>
       <find>修改密码</find>
       <find>金币不</find>
@@ -158,8 +138,9 @@
       <find>zt</find>
       <find>time</find>
       <find>exit</find>
-      <find>kjbh</find>
       <find>$letter</find>
+      <find>运行时间</find>
+      <find>kjbh</find>
     </findStrings>
     <replaceStrings>
       <replace>5G服务器</replace>
@@ -221,7 +202,6 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/TaskAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Task/index.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Public/sidebar.html" />
@@ -231,6 +211,7 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" />
       </list>
     </option>
   </component>
@@ -244,8 +225,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="63" />
+    <option name="x" value="18" />
+    <option name="y" value="517" />
     <option name="width" value="1441" />
     <option name="height" value="685" />
   </component>
@@ -434,27 +415,28 @@
       <workItem from="1574866186000" duration="8481000" />
       <workItem from="1574942641121" duration="6397000" />
       <workItem from="1575036617513" duration="707000" />
-      <workItem from="1575040272054" duration="6693000" />
+      <workItem from="1575040272054" duration="7085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135491000" />
+    <option name="totallyTimeSpent" value="135883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="62" width="1441" height="685" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.08875" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07638889" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -463,7 +445,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -708,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -851,8 +825,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="275">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
         </state>
       </provider>
     </entry>
