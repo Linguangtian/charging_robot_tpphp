@@ -108,16 +108,12 @@
             				<p class="sssee"><img src="/Public/dianyun/img/yyy.png" /><?php echo ($v["project"]); ?> <span>运行中</span></p>
             
             				<div class="yyx_f">
-            					<p>已运行：
-            						<?php if($v['zt'] == 1): echo (set_number($v["a_time"],'0')); ?>小时
-            							<?php else: ?> --<?php endif; ?>
 
 
-								</p>
             						<p>
 										已收益：<?php echo (four_number($v["already_profit"])); ?>元
 									</p>
-
+								<p>截止时间：<?php echo (date('Y-m-d H:s:i',$v["end_time"])); ?></p>
             				</div>
             
             				<div class="lqkd_r">

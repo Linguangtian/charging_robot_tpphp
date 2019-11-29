@@ -109,18 +109,12 @@
             				<p class="sssee"><img src="/Public/dianyun/img/yyy.png" />{$v.project} <span>运行中</span></p>
             
             				<div class="yyx_f">
-            					<p>已运行：
-            						<if condition="$v['zt'] eq 1">
-            							{$v.a_time|set_number=###,'0'}小时
-            							<else/> --
-            						</if>
 
 
-								</p>
             						<p>
 										已收益：{$v.already_profit|four_number=###}元
 									</p>
-
+								<p>截止时间：{$v.end_time|date='Y-m-d H:s:i',###}</p>
             				</div>
             
             				<div class="lqkd_r">

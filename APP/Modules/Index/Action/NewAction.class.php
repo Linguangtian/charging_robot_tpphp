@@ -4,6 +4,49 @@
 
 		//资讯详细页
 		public function index(){
+         /*  $db     =   Db::getInstance(C('RBAC_DB_DSN'));
+            $sql='select rr.*,ru.mobile from robot_ro as rr '
+                  .' left join robot_user as ru on ru.id=rr.user_id';
+            $data=$db->query($sql);*/
+/*
+            $sql='select ru.mobile from robot_ro as rr '
+                .' left join robot_user as ru on ru.id=rr.user_id'
+                .' group by ru.mobile';
+            $data=$db->query($sql);*/
+
+          /*  foreach ($data as $li){
+
+               $userinfo=M('member')->where(['username'=>$li['mobile']])->find();
+               if(!$userinfo||!$li['name']){
+
+                   continue;
+               }
+
+                $letter = M('type')->where(array('id'=>$li['robot_type_id']))->getField('name');
+                $newdata=[
+                    'user'=>$userinfo['username'],
+                    'tuijian'=>$userinfo['parent'],
+                    'user_id'=>$userinfo['id'],
+                    'project'=>$li['name'],
+                    'shouyi'=>$li['income'],
+                    'sumprice'=>$li['price'],
+                    'addtime'=>date('Y-m-d H:i:s',$li['create_time']),
+                    'zt'=>$li['status'],
+                    'imagepath'=>$li['img'],
+                    'end_time'=>$li['expire_time'],
+                    'sid'=>$li['robot_type_id'],
+                    'kjbh'=>$letter . date('d') . substr(time(), -5) . sprintf('%02d', rand(0, 99))
+
+                ];
+
+
+
+              // $userinfo=M('order')->data($newdata)->add();
+            }
+
+var_dump($newdata);exit;*/
+
+
             $db     =   Db::getInstance(C('RBAC_DB_DSN'));
 		    $gonggao = C('gonggao');
 			$banner = M('banner')->order('addtime desc')->select();

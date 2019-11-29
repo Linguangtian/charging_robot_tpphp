@@ -233,19 +233,20 @@ Class RobotAction extends CommonAction{
     }
 
     public function robot(){
-
+        $nowtime=time();
         $zt=I('get.zt',1,'intval');
         $user_id=session('mid');
         $order = M("order");
         import("ORG.Util.Page");
-        $count = $order ->where("user_id = {$user_id} and zt = {$zt}")->count();
-        $count1 = $order ->where(array('user_id'=>$user_id,'zt'=>$zt))->count();
+        $count = $order ->where("user_id = {$user_id}  and end_time>{$nowtime}" )->count();
+        $count1 = $order ->where("user_id = {$user_id}  and end_time>{$nowtime}" )->count();
         $Page       = new Page($count,8);
         $Page->setConfig('theme', '%first% %upPage% %linkPage% %downPage% %end%');
         $show = $Page -> show();
         $jiesuan_time = C('jiesuan_time');
-        $nowtime=time();
-        $orders = $order->where("user_id = {$user_id} and zt = {$zt} and end_time>{$nowtime}" ) ->order('id desc') -> select();
+
+        $orders = $order->where("user_id = {$user_id}  and end_time>{$nowtime}" ) ->order('id desc') -> select();
+
         $now_day_start=date('Y-m-d',time());
 
         foreach($orders as $k=>&$v){
@@ -288,9 +289,10 @@ Class RobotAction extends CommonAction{
             alert('参数丢失！',U('Robot/robot'));
         }
         $nowtime=time();
-        $order=M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id} and end_time>{$nowtime}")->find();
+        $order=M('order')->where("id = {$id}  and user_id = {$user_id} and end_time>{$nowtime}")->find();
 
         if(empty($order)){
+            alert('该5G服务器不存在！',U('Robot/robot'));exit;
             $this->ajaxReturn(array('result'=>0,'info'=>'该5G服务器不存在！'));
         }
         /*
@@ -316,6 +318,7 @@ Class RobotAction extends CommonAction{
             $n_time=24*3600;
 
         }else{
+            alert('今日已签到！',U('Robot/robot'));exit;
             $this->ajaxReturn(array('result'=>0,'info'=>'今日已签到！'));
         }
 
@@ -341,8 +344,8 @@ Class RobotAction extends CommonAction{
         }
 
 
-        M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id}")->setInc('already_profit',$shouyi);
-        M('order')->where("id = {$id} and zt = 1 and user_id = {$user_id}")->save($data);
+        M('order')->where("id = {$id} and user_id = {$user_id}")->setInc('already_profit',$shouyi);
+        M('order')->where("id = {$id}  and user_id = {$user_id}")->save($data);
 
         M('member')->where("id = {$user_id}")->setInc("money",$shouyi);
         account_log($username,$shouyi,'5G服务器签到收益',1,1,1,$order['id']);
