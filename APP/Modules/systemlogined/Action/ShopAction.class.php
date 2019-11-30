@@ -324,6 +324,7 @@
 			$Page       = new Page($count,20);
 			$show = $Page -> show();
 			$orders = $order -> limit($Page ->firstRow.','.$Page -> listRows)->order('id desc') -> select();
+
 			foreach ($orders as &$li){
 
 			    if($li['end_time']>time()){
@@ -341,9 +342,9 @@
             $this -> assign("new_time",time());
 
 			$this -> assign("orders",$orders);
-			$this -> display(); 		  
-		  
-		
+			$this -> display();
+
+
 	  }
 
 

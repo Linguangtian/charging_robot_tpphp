@@ -491,9 +491,8 @@ a.active{ color:#C30 !important; font-size:18px;}
                                         <td><?php echo ($v["shouyi"]); ?></td>
                                         <td class="hidden-480"><?php echo ($v["sumprice"]); ?></td>
 									    <td class="hidden-480"><?php echo ($v["addtime"]); ?></td>
-										<td class="hidden-480"><?php if($v['zt'] == 0): ?>未运行<?php else: echo (date('Y-m-d H:i:s',$v["UG_getTime"])); endif; ?></td>
-										
 
+											<td class="hidden-480"><?php echo (date('Y-m-d H:i:s',$v["end_time"])); ?></td>
 											<td class="hidden-480">		<?php echo ($v["status_alias"]); ?>	</td>
 
 										<td>
