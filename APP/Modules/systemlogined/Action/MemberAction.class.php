@@ -247,7 +247,8 @@
 		public function editMemberHandle(){
 			$password = I('password');
 			$truename = I('truename');
-			
+
+
 			$id = I('id');
 			unset($_POST['id']);
 			if ($password!= '') {

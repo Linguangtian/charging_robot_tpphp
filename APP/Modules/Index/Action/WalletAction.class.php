@@ -245,7 +245,7 @@
             $show = $page->show();// 分页显示输出
             $list = $data->where($map)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 
-            $shouyi = M('jinbidetail')->where(array('member'=>$map['member']))->sum('adds');
+            $shouyi = M('member')->where(array('username'=>session('username')))->getField('commission_money');
             $yue = M('member')->where(array('username'=>session('username')))->getField('money');
             $yiti = M('emoneydetail')->where(array('username'=>$map['member'],'status'=>1))->sum('amount');
             $shouyi = sprintf('%.2f',$shouyi);
@@ -276,7 +276,7 @@
             $show = $page->show();// 分页显示输出
             $list = $data->where($map)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 
-            $shouyi = M('jinbidetail')->where(array('member'=>$map['member']))->sum('adds');
+            $shouyi = M('member')->where(array('username'=>session('username')))->getField('commission_money');
             $yue = M('member')->where(array('username'=>session('username')))->getField('money');
             $yiti = M('emoneydetail')->where(array('username'=>$map['member'],'status'=>1))->sum('amount');
             $shouyi = sprintf('%.2f',$shouyi);
@@ -305,7 +305,7 @@
 
 
 
-            $shouyi = M('jinbidetail')->where(array('member'=>$map['member']))->sum('adds');
+            $shouyi = M('member')->where(array('username'=>session('username')))->getField('commission_money');
             $yue = M('member')->where(array('username'=>session('username')))->getField('money');
             $yiti = M('emoneydetail')->where(array('username'=>$map['member'],'status'=>1))->sum('amount');
             $shouyi = sprintf('%.2f',$shouyi);

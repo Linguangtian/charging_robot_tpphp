@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/llaward.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/llaward.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tgaward.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tgaward.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="WalletAction.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="305" selection-start-line="305" selection-end-line="305" />
+            <state relative-caret-position="424">
+              <caret line="307" column="111" selection-start-line="307" selection-start-column="111" selection-end-line="307" selection-end-column="111" />
             </state>
           </provider>
         </entry>
@@ -41,8 +39,8 @@
       <file leaf-file-name="NewAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4675">
-              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="550">
+              <caret line="70" column="42" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -115,7 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>robot</find>
       <find>项目说明</find>
       <find>xiangmu</find>
       <find>$now_day_start</find>
@@ -145,6 +142,7 @@
       <find>llaward</find>
       <find>密码不正确!</find>
       <find>award</find>
+      <find>getField</find>
     </findStrings>
     <replaceStrings>
       <replace>5G服务器</replace>
@@ -229,11 +227,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="185" />
-    <option name="y" value="68" />
-    <option name="width" value="1441" />
-    <option name="height" value="700" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="169" />
+    <option name="y" value="102" />
+    <option name="width" value="1284" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -443,15 +441,15 @@
       <workItem from="1574942641121" duration="6397000" />
       <workItem from="1575036617513" duration="707000" />
       <workItem from="1575040272054" duration="7282000" />
-      <workItem from="1575080495158" duration="16952000" />
+      <workItem from="1575080495158" duration="17447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153032000" />
+    <option name="totallyTimeSpent" value="153527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="185" y="68" width="1441" height="700" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -460,7 +458,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19791667" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1231,15 +1229,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4675">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="550">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
+        <state relative-caret-position="424">
+          <caret line="307" column="111" selection-start-line="307" selection-start-column="111" selection-end-line="307" selection-end-column="111" />
         </state>
       </provider>
     </entry>

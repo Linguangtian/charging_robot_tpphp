@@ -8,7 +8,7 @@
           /*  $db     =   Db::getInstance(C('RBAC_DB_DSN'));
             $sql='select ruml.*,ru.mobile from robot_user_money_log as ruml   '
                 .' left join robot_user as ru on ru.id=ruml.user_id';
-            $data=$db->query($sql);*/
+            $data=$db->query($sql);
 
 
             /*
@@ -54,7 +54,7 @@
             }
 echo 33;exit;*/
 
-/*            $db     =   Db::getInstance(C('RBAC_DB_DSN'));
+     /* $db     =   Db::getInstance(C('RBAC_DB_DSN'));
 
             $sql='select * from robot_user ';
             $data=$db->query($sql);
@@ -66,9 +66,9 @@ echo 33;exit;*/
                     continue;
                 }
                 $newdata=array();
-                $newdata['password'] =$li['password'];
-                $newdata['salt'] =$li['salt'];
+
                 $newdata['money'] =$li['income_money'];
+                $newdata['commission_money'] =$li['commission_money'];
                 $newdata['dongjie'] =$li['frozen_money'];
 
                 $userinfo=M('member')->where(['username'=>$li['mobile']])->save($newdata);

@@ -244,14 +244,23 @@ function account_log($member,$money,$desc,$jj,$type=0,$status=1,$jid,$tgaward){
 	
 	  $jinbidetail = M('jinbidetail');  
 	  $oldjinbi = M('member')->where(array('username'=>$member))->getField('money');
+	  $commission_money = M('member')->where(array('username'=>$member))->getField('commission_money');
 
-	  
+
+
+
+
 	  $data = array();
 	  $data['member']  = $member;
-	  if($jj==1){
+    if($type==1||$type==2||$type==99||$type==3){
+        $data['commission_money'] = $money + $commission_money;
+    }
+
+    if($jj==1){
 		    $oldjinbi = $oldjinbi - $money;
 		    $data['adds']    = $money;
 	        $data['balance'] = $money + $oldjinbi;	  
+
 	  }else{
 		    $oldjinbi = $oldjinbi + $money;
             $data['reduce']  = $money;

@@ -111,7 +111,7 @@
 
 <div class="bannerbg">
 	<div class="bannerslider">
-		<div class="swiper-banner" id="bannerbgslider" style="	margin-top: 5rem;">
+		<div class="swiper-container" id="bannerbgslider" style="	margin-top: 5rem;">
 			<div class="swiper-wrapper banner">
 				<foreach name="banner" item="v">
 					<div class="swiper-slide"><a href="{$v.href}"><img src="{$v.path}"></a></div>
@@ -379,8 +379,9 @@
         exp.setTime(exp.getTime() + mins*60*1000);
         document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
     }
+
     //轮播图初始化
-    var swiper1 = new Swiper('.swiper-banner', {
+   var swiper1 = new Swiper('.swiper-container', {
         pagination: {
           //  el: '.swiper-pagination',
         },

@@ -111,6 +111,7 @@
 										<th>注册时间</th>
 										<th>注册地址</th>
 										<th>最后登陆时间</th>
+										<th>总收益</th>
 										<th><a href="{:U('systemlogined/Member/check',array('_order'=>'money','_sort'=>0))}">钱包结余↑</a></th>
 										<th><a href="{:U('systemlogined/Member/check',array('_order'=>'dongjie','_sort'=>0))}">冻结钱包↑</a></th>
 										<th>状态</th>
@@ -132,6 +133,7 @@
 											<td>{$v.regdate|date='Y-m-d H:i',###}</td>
 											<td>{$v.regaddress}</td>
 											<td>{$v.online_time|date='Y-m-d H:i',###}</td>
+											<td>{$v.commission_money}</td>
 
 											<td>{$v.money}</td>
 											<td>{$v.dongjie}</td>
