@@ -245,7 +245,7 @@
             $show = $page->show();// 分页显示输出
             $list = $data->where($map)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 
-            $shouyi = M('order')->where(array('user'=>$map['member']))->sum('already_profit');
+            $shouyi = M('jinbidetail')->where(array('member'=>$map['member']))->sum('adds');
             $yue = M('member')->where(array('username'=>session('username')))->getField('money');
             $yiti = M('emoneydetail')->where(array('username'=>$map['member'],'status'=>1))->sum('amount');
             $shouyi = sprintf('%.2f',$shouyi);
@@ -263,7 +263,7 @@
 
 
 
-        //流量奖励
+        //签到
         public function llaward(){
 
             $data = M('jinbidetail');
@@ -276,7 +276,7 @@
             $show = $page->show();// 分页显示输出
             $list = $data->where($map)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 
-            $shouyi = M('order')->where(array('user'=>$map['member']))->sum('already_profit');
+            $shouyi = M('jinbidetail')->where(array('member'=>$map['member']))->sum('adds');
             $yue = M('member')->where(array('username'=>session('username')))->getField('money');
             $yiti = M('emoneydetail')->where(array('username'=>$map['member'],'status'=>1))->sum('amount');
             $shouyi = sprintf('%.2f',$shouyi);
@@ -303,7 +303,9 @@
 			$show = $page->show();// 分页显示输出
 			$list = $data->where($map)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 
-            $shouyi = M('order')->where(array('user'=>$map['member']))->sum('already_profit');
+
+
+            $shouyi = M('jinbidetail')->where(array('member'=>$map['member']))->sum('adds');
             $yue = M('member')->where(array('username'=>session('username')))->getField('money');
             $yiti = M('emoneydetail')->where(array('username'=>$map['member'],'status'=>1))->sum('amount');
             $shouyi = sprintf('%.2f',$shouyi);
