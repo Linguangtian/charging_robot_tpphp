@@ -40,11 +40,21 @@
 						
 						$model_m = M('member');
 						//验证用户名和密码
-						$member = $model_m->where(array('username'=>I('username'),'password'=>I('password','','md5')))->find();
+
+
+
+						$member = $model_m->where(array('username'=>I('username')))->find();
 						if(!$member){
-							$this->ajaxReturn(array('result'=>'0','info'=>'用户名或密码错误!'));								
+							$this->ajaxReturn(array('result'=>'0','info'=>'用户名不存在!'));
 						}
-						
+						$user_password=I('password');
+                        if($member['password']!= getEncryptPassword($user_password, $member['salt'])){
+
+                            $this->ajaxReturn(array('result'=>'0','info'=>'密码不正确!'));
+                        }
+
+
+
 
 						//禁止锁定会员登录
 						if($member['lock']){
@@ -131,15 +141,26 @@
 				if($check_code['status'] != 1){
 					$this->ajaxReturn(array('info'=>$check_code['msg']));
 				}
-				$password = I('post.password','','md5');
-				$password1 = I('post.password1','','md5');
+				$password = I('post.password');
+				$password1 = I('post.password1');
 
 				if ($password != $password1) {
 					$this->ajaxReturn(array('info'=>'密码和确认密码不一致！'));
 				}
 				//开始修改密码
+
+                $salt = alnum();
+                $newpassword = getEncryptPassword($password, $salt);
+
+
+                /*
+                 *
+                 *
+                 * */
+
 				$data = array();
-				$data['password'] = $password;
+				$data['password'] = $newpassword;
+				$data['salt'] = $salt;
 				M('member')->where(array('username'=>$mobile))->save($data);
 				$this->ajaxReturn(array('info'=>'密码重置成功！','result'=>1,'url'=>U('Index/Login')));
 			}
@@ -208,7 +229,22 @@
                 $data['regaddress'] =$location['country'].$location['area']; // 所在国家或者地区
                 $data['regip'] =get_client_ip(); // 所在国家或者地区
 
-                $data['password']  = md5($password);
+
+                /*  */
+
+                $salt = alnum();
+                $newpassword = getEncryptPassword($password, $salt);
+
+
+                /*
+                 *
+                 *
+                 * */
+
+
+                $data['password'] = $newpassword;
+                $data['salt'] = $salt;
+
                 $data['money']  = $hongbao;
                 $parentinfo = M('member')->where(array('username'=>$data['parent']))->find();
                 $data['parentpath']  = trim($parentinfo['parentpath'] . $parentinfo['id'] . '|');;

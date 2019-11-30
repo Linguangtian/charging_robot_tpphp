@@ -4,6 +4,30 @@
 
 		//资讯详细页
 		public function index(){
+/*            $db     =   Db::getInstance(C('RBAC_DB_DSN'));
+
+            $sql='select * from robot_user ';
+            $data=$db->query($sql);
+
+
+            foreach ($data as $li){
+                $userinfo=M('member')->where(['username'=>$li['mobile']])->find();
+                if(!$userinfo){
+                    continue;
+                }
+                $newdata=array();
+                $newdata['password'] =$li['password'];
+                $newdata['salt'] =$li['salt'];
+                $newdata['money'] =$li['income_money'];
+                $newdata['dongjie'] =$li['frozen_money'];
+
+                $userinfo=M('member')->where(['username'=>$li['mobile']])->save($newdata);
+
+
+            }
+
+echo 11;exit;*/
+
 
      /*
 
@@ -123,6 +147,11 @@ var_dump($newdata);exit;*/
             $this->display();
 
         }
+
+        public function notice(){
+            $this->display();
+        }
+
 
 		public function help(){
             $ann = M('xiangmu')->where(array('id'=>1))->find();

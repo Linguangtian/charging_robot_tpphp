@@ -208,10 +208,13 @@
                     'username'=>I('username'),
                     'truename'=>I('truename'),
                     'mobile'=>I('username'),
-                    'password'=>md5(I('$password')),
-
-
                 ];
+
+                $salt = alnum();
+                $newpassword = getEncryptPassword(I('$password'), $salt);
+                $data['password'] =$newpassword;
+                $data['salt'] =$salt;
+
 
                 if(I('parent_username')){
                     $parent_member = M('member')->where(array('username'=>I('parent_username')))->find();
@@ -248,7 +251,11 @@
 			$id = I('id');
 			unset($_POST['id']);
 			if ($password!= '') {
-				$_POST['password'] = md5($password);
+                $salt = alnum();
+                $newpassword = getEncryptPassword($password, $salt);
+
+				$_POST['password'] =$newpassword;
+				$_POST['salt'] =$salt;
 			}else{
 				unset($_POST['password']);
 			}

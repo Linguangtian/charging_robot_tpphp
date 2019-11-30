@@ -32,6 +32,12 @@
 			$this->display();
 		}
 
+        public function notice(){
+
+            $this->display();
+        }
+
+
         //资料修改
         public function edit(){
             $member = M('member');

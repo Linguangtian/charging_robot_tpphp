@@ -260,6 +260,9 @@
             $this->display();
         }
 
+
+
+
         //流量奖励
         public function llaward(){
 
