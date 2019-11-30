@@ -316,14 +316,31 @@
       }	
       //订单管理
       public function orderlist(){
-		  
+
+	    $typename = I('typename');
+	    $type = I('type');
 			$order = M("order");
-			
+            if($typename){
+                if($type==2){
+                    $map['project'] = array('like', '%' .$typename . '%');
+
+                }else{
+
+                    $map['user'] = array('like', '%' .$typename . '%');
+
+                }
+            }else{   $map=['1'=>1];}
+
+
+
+
+
 		    import("@.ORG.Util.Page");
-			$count = $order ->count();
+			$count = $order ->where($map)->count();
+
 			$Page       = new Page($count,20);
 			$show = $Page -> show();
-			$orders = $order -> limit($Page ->firstRow.','.$Page -> listRows)->order('id desc') -> select();
+			$orders = $order->where($map)-> limit($Page ->firstRow.','.$Page -> listRows)->order('id desc') -> select();
 
 			foreach ($orders as &$li){
 
@@ -338,10 +355,11 @@
             }
 
 
+            $this -> assign("orders",$orders);
             $this -> assign("page",$show);
             $this -> assign("new_time",time());
 
-			$this -> assign("orders",$orders);
+			$this -> assign("key",$typename);
 			$this -> display();
 
 
@@ -365,6 +383,7 @@
                 $this->success('修改成功!',U(GROUP_NAME .'/Shop/orderlist'));exit;
             }
 
+            $this->assign('order',$order);
             $this->assign('order',$order);
             $this->display();
         }

@@ -457,9 +457,22 @@ a.active{ color:#C30 !important; font-size:18px;}
 				</div>
 
 				<div id="page-content" class="clearfix">
-                       
+					<!--PAGE CONTENT BEGINS HERE-->
+					<form id="table-searchbar" method="POST" class="form-inline well well-small">
+						<div class="row-fluid">&nbsp;&nbsp;<select class="span3" name="type" style="width: 100px;">
+							<option value="1" selected="selected">会员</option>
+							<option value="2">服务器名称</option>
+
+
+						</select>
+							<input type="text" class="input-small" name="typename" value="<?php echo ($key); ?>">
+							&nbsp;&nbsp;
+							<button type="submit" class="btn btn-small no-border" id="btn-query" type="button"><i class="icon-search"></i>查询</button>
+						</div>
+					</form>
+
 					<div class="row-fluid">
-			
+
 
 						<div class="row-fluid">
 							<table id="table_report" class="table table-striped table-bordered table-hover">
@@ -467,6 +480,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 									<tr>
 								
                                             <th>ID</th>
+                                            <th>之前的ID</th>
 											<th>5G服务器编号</th>
 								            <th>会员</th>
 											<th>5G服务器名称</th>
@@ -484,6 +498,7 @@ a.active{ color:#C30 !important; font-size:18px;}
                                     <?php if(is_array($orders)): foreach($orders as $key=>$v): ?><tbody> 
 										<tr>
 										<td><?php echo ($v["id"]); ?></td>
+										<td><?php echo ($v["old_id"]); ?></td>
 										<td><?php echo ($v["kjbh"]); ?></td>
 									    <td class="hidden-480"><?php echo ($v["user"]); ?></td>
                                         <td class="hidden-480"><?php echo ($v["project"]); ?></td>

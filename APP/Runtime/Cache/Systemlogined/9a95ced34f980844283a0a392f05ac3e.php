@@ -332,6 +332,15 @@ a.active{ color:#C30 !important; font-size:18px;}
 				项目说明
 			</a>
 		</li><?php endif; ?>
+
+
+	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Info')][strtoupper('tanchu')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="InfoannType">
+			<a href="<?php echo U(GROUP_NAME.'/Info/tanchu');?>">
+				<i class="icon-double-angle-right"></i>
+				弹出公告
+			</a>
+		</li><?php endif; ?>
+
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Info')][strtoupper('msgReceive')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="InfomsgReceive">
 								<a href="<?php echo U(GROUP_NAME.'/Info/msgReceive');?>">
 									<i class="icon-double-angle-right"></i>

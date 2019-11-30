@@ -4,17 +4,18 @@
 
 		//资讯详细页
 		public function index(){
-         /*  $db     =   Db::getInstance(C('RBAC_DB_DSN'));
+
+     /*
+
+
+         $db     =   Db::getInstance(C('RBAC_DB_DSN'));
             $sql='select rr.*,ru.mobile from robot_ro as rr '
                   .' left join robot_user as ru on ru.id=rr.user_id';
-            $data=$db->query($sql);*/
-/*
-            $sql='select ru.mobile from robot_ro as rr '
-                .' left join robot_user as ru on ru.id=rr.user_id'
-                .' group by ru.mobile';
-            $data=$db->query($sql);*/
+            $data=$db->query($sql);
 
-          /*  foreach ($data as $li){
+
+
+           foreach ($data as $li){
 
                $userinfo=M('member')->where(['username'=>$li['mobile']])->find();
                if(!$userinfo||!$li['name']){
@@ -35,13 +36,14 @@
                     'imagepath'=>$li['img'],
                     'end_time'=>$li['expire_time'],
                     'sid'=>$li['robot_type_id'],
-                    'kjbh'=>$letter . date('d') . substr(time(), -5) . sprintf('%02d', rand(0, 99))
+                    'kjbh'=>$letter . date('d') . substr(time(), -5) . sprintf('%02d', rand(0, 99)),
+                    'old_id'=>$li['id']
 
                 ];
 
 
 
-              // $userinfo=M('order')->data($newdata)->add();
+             $userinfo=M('order')->data($newdata)->add();
             }
 
 var_dump($newdata);exit;*/
