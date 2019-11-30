@@ -244,7 +244,7 @@ function account_log($member,$money,$desc,$jj,$type=0,$status=1,$jid,$tgaward){
 	
 	  $jinbidetail = M('jinbidetail');  
 	  $oldjinbi = M('member')->where(array('username'=>$member))->getField('money');
-	  $commission_money = M('member')->where(array('username'=>$member))->getField('commission_money');
+
 
 
 
@@ -252,9 +252,9 @@ function account_log($member,$money,$desc,$jj,$type=0,$status=1,$jid,$tgaward){
 
 	  $data = array();
 	  $data['member']  = $member;
-    if($type==1||$type==2||$type==99||$type==3){
+/*    if($type==1||$type==2||$type==99||$type==3){
         $data['commission_money'] = $money + $commission_money;
-    }
+    }*/
 
     if($jj==1){
 		    $oldjinbi = $oldjinbi - $money;
@@ -283,10 +283,12 @@ function account_log($member,$money,$desc,$jj,$type=0,$status=1,$jid,$tgaward){
 
     //增加今日收入统计
     if($type==1||$type==2||$type==99||$type==3){
+        M('member')->where(array('username'=>$member))->setInc('commission_money',$money);
         $todate=date('Y-m-d ',time());
         $todate_income_money = M('todate_income_money')->where(array('member'=>$member,'time'=>$todate))->find();
         if($todate_income_money){
             M("todate_income_money")->where(array('id'=>$todate_income_money['id']))->setInc('income_money',$money);
+
         }else{
             $todate_income = M('todate_income_money');
             $data['member']=$member;

@@ -501,6 +501,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 										<th>注册时间</th>
 										<th>注册地址</th>
 										<th>最后登陆时间</th>
+										<th>总收益</th>
 										<th><a href="<?php echo U('systemlogined/Member/check',array('_order'=>'money','_sort'=>0));?>">钱包结余↑</a></th>
 										<th><a href="<?php echo U('systemlogined/Member/check',array('_order'=>'dongjie','_sort'=>0));?>">冻结钱包↑</a></th>
 										<th>状态</th>
@@ -521,6 +522,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 											<td><?php echo (date('Y-m-d H:i',$v["regdate"])); ?></td>
 											<td><?php echo ($v["regaddress"]); ?></td>
 											<td><?php echo (date('Y-m-d H:i',$v["online_time"])); ?></td>
+											<td><?php echo ($v["commission_money"]); ?></td>
 
 											<td><?php echo ($v["money"]); ?></td>
 											<td><?php echo ($v["dongjie"]); ?></td>

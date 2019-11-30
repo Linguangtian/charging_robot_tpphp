@@ -151,7 +151,7 @@
 		 */
 		public function addJinbiHandle(){
 			$userid = I('post.id',0,'intval');
-			 $jinbi  = I('post.money',0,'intval');
+			 $jinbi  = I('post.money');
 			
 			$member = M('member')->where(array('id'=>$userid))->find();
 			if($jinbi>0){

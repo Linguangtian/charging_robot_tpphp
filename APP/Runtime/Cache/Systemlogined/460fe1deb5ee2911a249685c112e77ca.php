@@ -488,6 +488,16 @@ a.active{ color:#C30 !important; font-size:18px;}
 									</div>
 								</div>
 
+
+								<div class="control-group">
+									<label class="control-label" for="password">
+										总收益</label>
+									<div class="controls">
+										<input type="number" value="<?php echo ($member["commission_money"]); ?>" name="commission_money" id="commission_money" placeholder="不修改请留空" />
+									</div>
+								</div>
+
+
 								<input type="hidden" name="id" value="<?php echo ($member["id"]); ?>" />
 								<div class="form-actions">
 									<button class="btn btn-info no-border" type="submit">
