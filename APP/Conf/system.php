@@ -78,6 +78,6 @@ return array (
   'email' => 906347920,
   'notice_title' => 2122,
   'notice_content' => '1212666sss',
-  'App_dow' => 0,
+  'App_dow' => 'http://www.baidu.com',
 );
 ?>

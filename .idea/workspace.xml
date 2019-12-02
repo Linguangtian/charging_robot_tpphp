@@ -4,17 +4,9 @@
     <list default="true" id="6ae773b5-c18d-470c-bf09-bf5169cf9c6b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Conf/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Conf/system.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/withdrawn.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/withdrawn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/sem/regsems.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/sem/regsems.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Jinbidetail/emoneywithdraw.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Jinbidetail/emoneywithdraw.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/53aaab89a56f8edb7f5c782339cfe2c7.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/53aaab89a56f8edb7f5c782339cfe2c7.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b78313e710c7637193724325df38c061.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b78313e710c7637193724325df38c061.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/e68246cd5586cc3d5f429dc9191b6e73.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/e68246cd5586cc3d5f429dc9191b6e73.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/09997c32a70c8f774098d0ed64693665.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/09997c32a70c8f774098d0ed64693665.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/49475928d822b5d6996e1e3a0a0ed295.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/49475928d822b5d6996e1e3a0a0ed295.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/3c9001dc12bbe46290b8e88e0a726665.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/3c9001dc12bbe46290b8e88e0a726665.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,20 +35,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="withdrawn.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/withdrawn.html">
+      <file leaf-file-name="SemAction.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="85" column="87" selection-start-line="85" selection-start-column="80" selection-end-line="85" selection-end-column="87" />
+            <state relative-caret-position="276">
+              <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SemAction.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
+      <file leaf-file-name="customsetting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="333">
+              <caret line="204" column="106" selection-start-line="204" selection-start-column="99" selection-end-line="204" selection-end-column="106" />
+              <folding>
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11063#11069#0" expanded="true" />
+                <element signature="e#11069#11075#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemAction.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -75,24 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-919">
               <caret line="68" column="59" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WalletAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/WalletAction.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="163" column="52" lean-forward="true" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emoneywithdraw.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Jinbidetail/emoneywithdraw.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="115" column="56" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -119,9 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>添加用户</find>
-      <find>btn-query&quot;</find>
-      <find>orderlist</find>
       <find>_search_filter</find>
       <find>icon-search</find>
       <find>5G服务器编号</find>
@@ -148,7 +142,10 @@
       <find>保存二维码</find>
       <find>手机验证码不匹配</find>
       <find>确定登录密码</find>
+      <find>APP下载链接</find>
       <find>regsems</find>
+      <find>App_dow</find>
+      <find>APP下载</find>
     </findStrings>
     <replaceStrings>
       <replace>5G服务器</replace>
@@ -185,8 +182,6 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html" />
         <option value="$PROJECT_DIR$/APP/Runtime/Cache/Index/e68246cd5586cc3d5f429dc9191b6e73.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/tixian.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/edit.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/help.html" />
         <option value="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" />
@@ -221,6 +216,8 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/LoginAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/sem/regsems.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" />
       </list>
     </option>
   </component>
@@ -233,7 +230,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-69" />
     <option name="y" value="73" />
     <option name="width" value="1460" />
@@ -356,15 +353,15 @@
       <workItem from="1575040272054" duration="7282000" />
       <workItem from="1575080495158" duration="22667000" />
       <workItem from="1575135490337" duration="641000" />
-      <workItem from="1575292322446" duration="2819000" />
+      <workItem from="1575292322446" duration="3824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162207000" />
+    <option name="totallyTimeSpent" value="163212000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-69" y="73" width="1460" height="678" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -373,7 +370,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20844875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20902778" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -463,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/help.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -488,13 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12800">
           <caret line="512" column="85" selection-start-line="512" selection-start-column="85" selection-end-line="512" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3350">
-          <caret line="134" column="52" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -523,13 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1975">
           <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1113,8 +1089,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="276">
+          <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="204" column="106" selection-start-line="204" selection-start-column="99" selection-end-line="204" selection-end-column="106" />
+          <folding>
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11063#11069#0" expanded="true" />
+            <element signature="e#11069#11075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
         </state>
       </provider>
     </entry>

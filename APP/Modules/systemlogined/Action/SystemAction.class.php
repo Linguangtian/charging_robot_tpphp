@@ -39,7 +39,7 @@
 			$path = './App/Conf/system.php';
 			$config = include $path;
 
-			$config['App_dow']      = I('post.lxOne_direct_num',0,'App_dow');
+			$config['App_dow']      = I('post.App_dow');
 
 
 			$config['lxOne_direct_num']      = I('post.lxOne_direct_num',0,'floatval');
