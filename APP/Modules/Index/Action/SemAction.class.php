@@ -103,7 +103,6 @@
                 if($check_code['status'] != 1){
                     $this->ajaxReturn(array('result'=>0,'info'=>$check_code['msg']));
                 }
-
                 if (empty($password)) {
                     $this->ajaxReturn(array('result'=>0,'info'=>'登陆密码不能为空'));
                 }
@@ -115,7 +114,24 @@
                 $data['regaddress'] =$location['country'].$location['area']; // 所在国家或者地区
                 $data['regip'] =get_client_ip(); // 所在国家或者地区
 
-                $data['password']  = md5($password);
+
+
+
+
+                $salt = alnum();
+                $newpassword = getEncryptPassword($password, $salt);
+
+
+                /*
+                 *
+                 *
+                 * */
+
+
+                $data['password'] = $newpassword;
+                $data['salt'] = $salt;
+
+
 				$data['money']  = $hongbao;
                 $parentinfo = M('member')->where(array('username'=>$data['parent']))->find();
                 $data['parentpath']  = trim($parentinfo['parentpath'] . $parentinfo['id'] . '|');;

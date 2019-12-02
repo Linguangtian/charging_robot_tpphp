@@ -333,6 +333,15 @@ a.active{ color:#C30 !important; font-size:18px;}
 				项目说明
 			</a>
 		</li><?php endif; ?>
+
+
+	<?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Info')][strtoupper('tanchu')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="InfoannType">
+			<a href="<?php echo U(GROUP_NAME.'/Info/tanchu');?>">
+				<i class="icon-double-angle-right"></i>
+				弹出公告
+			</a>
+		</li><?php endif; ?>
+
 <?php if((isset($acc[strtoupper(GROUP_NAME)][strtoupper('Info')][strtoupper('msgReceive')])) or (!empty($_SESSION[C('ADMIN_AUTH_KEY')]))): ?><li url="InfomsgReceive">
 								<a href="<?php echo U(GROUP_NAME.'/Info/msgReceive');?>">
 									<i class="icon-double-angle-right"></i>
@@ -476,6 +485,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 									<tr>
 										<th class="center">ID</th>
 										<th>会员编号</th>
+										<th>姓名</th>
 										<th>提现金额</th>
 										<th>手续费</th>
 										<th>实发金额</th>
@@ -492,6 +502,7 @@ a.active{ color:#C30 !important; font-size:18px;}
 									<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
 											<td><?php echo ($v["id"]); ?></td>
 											<td><?php echo ($v["username"]); ?></td>
+											<td><?php echo ($v["name"]); ?></td>
 											<td><?php echo ($v["amount"]); ?></td>
 											<td><?php echo ($v["charge"]); ?></td>
 											<td><?php echo ($v["payment"]); ?></td>

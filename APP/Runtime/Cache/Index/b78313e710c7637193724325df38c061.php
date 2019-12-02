@@ -73,6 +73,14 @@
              </div>-->
       </div>
 
+
+        <div class="item-content tixian-h">
+            <div class="item-input">
+                <span > 姓名：</span><input name="name" type="text" placeholder="姓名">
+            </div>
+        </div>
+
+
         <div class="item-content tixian-h">
             <div class="item-input">
                 <span > 银行卡号：</span><input name="card" type="text" placeholder="请输入银行卡号">

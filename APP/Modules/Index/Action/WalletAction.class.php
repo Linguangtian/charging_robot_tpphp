@@ -84,6 +84,7 @@
 
                 $type= I('post.type');
                 $txmoney = I('post.money');
+                $name = I('post.name');
                 $username = session('username');
                 $member = M('member')->where(array('id'=>session('mid')))->find();
                 $bank = M('bankcard')->where(array('userid'=>session('mid')))->count();
@@ -161,6 +162,7 @@
                     }else{*/
                         $data['username'] = session('username');
                         $data['amount'] =  $txmoney;
+                        $data['name'] =  $name;
                         $data['charge'] =  $withdrawtaxnum;
                         $data['payment'] =  $txmoney - $withdrawtaxnum;
                         $data['type'] = $type;
