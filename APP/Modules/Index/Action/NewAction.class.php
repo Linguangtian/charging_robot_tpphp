@@ -169,14 +169,16 @@ var_dump($newdata);exit;*/
             $this->assign('notice',$notice);
 		/*	$product = M("product");
             $typeData = $product -> where("is_on = 0") ->order("id asc") -> select();*/
-
-            $sql='select *,IFNULL(total,0) as have ,(xiangou - IFNULL(total,0) ) as unhave from ds_product as a'.
-                    ' left join (select count(1) as total,sid from ds_order where user='.$username.' and zt = 1 group by sid ) as b'
+            $nowtime=time();
+            $sql='select a.*,IFNULL(b.total,0) as have ,(xiangou - IFNULL(b.total,0) ) as unhave from ds_product as a'.
+                    ' left join (select count(1) as total,sid from ds_order where user='.$username." and end_time>{$nowtime} group by sid ) as b"
 /*                    ' left join (select count(1) as total,sid from ds_order where user='.$username.' and zt = 1 and UG_getTime >\''.time().'\' group by sid ) as b'*/
                     .' on b.sid=a.id '
 
             .' where a.is_on = 0 order by a.id asc';
             $typeData=$db->query($sql);
+
+
 
             $this->assign("typeData",$typeData);
 

@@ -27,6 +27,11 @@
 
   </head>
   <body style="background: #131933;">
+   <!--头部返回-->
+  <div style="width: 3rem;position: absolute;;left: 1rem;top :0.4rem;z-index: 100;">
+      <a href="javascript:history.go(-1)"><img src="/public/img/nextStep-big.png" width="70%" height="70%"></a>
+  </div>
+   <!--头部返回end-->
 
    <div class="award-index-t">
    	<p class="award-ysy">账户余额(元)</p>

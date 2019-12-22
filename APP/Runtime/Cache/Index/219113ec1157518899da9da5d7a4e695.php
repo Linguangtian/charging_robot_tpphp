@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="/Public/dianyun/css/app.css">
 	<link rel="stylesheet" href="/Public/dianyun/css/iconfont.css">
 
- 
+
 </head>
 <body onload="onload()" class="framework7-root">
 <div class="panel-overlay"></div>
@@ -54,20 +54,6 @@
 									</div>
 								</div>
 							</div>
-							<?php if(kefu2): ?><div class="col-100 h-jgg2">
-								<div class="row service-bar">
-									<div class="col-20"><img class="avatar" src="http://ae01.alicdn.com/kf/HTB1yjsZaBCw3KVjSZFl763JkFXak.png"></div>
-									<div class="col-50">
-										<label>QQ客服一002</label>
-										<span id="copy-numa" style="color: #fff;"><?php echo ($kefu2); ?></span>
-									</div>
-									<div class="col-30" style="padding-top:10px;">
-										<a href="javascript:void(0);" onclick="jsCopya()" class="external button-clipboard" data-clipboard-target="#lblNo1">
-											<img src="http://ae01.alicdn.com/kf/HTB18UASavWG3KVjSZPc762kbXXaT.png" style="width:70px;height: auto;">
-										</a>
-									</div>
-								</div>
-							</div><?php endif; ?>
 
 							<div class="col-100 h-jgg2">
 								<div class="row service-bar">
@@ -100,7 +86,7 @@
 							</div>
 						</div>
 
-						<div class="row ">
+						<!--<div class="row ">
 							<div class="col-100 h-jgg2">
 								<div class="row service-bar">
 									<div class="col-20"><img src="/Public/dianyun/img/service-tel.png"></div>
@@ -113,7 +99,7 @@
 									</a></div>
 								</div>
 							</div>
-						</div>
+						</div>-->
 
 						<div style="height:30px"></div>
 						<!--<div class="row">

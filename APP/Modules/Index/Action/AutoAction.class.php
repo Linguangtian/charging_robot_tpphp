@@ -16,7 +16,7 @@
 
             //删除前天的每日收益记录
             $db     =   Db::getInstance(C('RBAC_DB_DSN'));
-            $qiantian=date("Y-m-d",strtotime("-1 day"));
+            $qiantian=date("Y-m-d",strtotime("-2 day"));
             $sql='delete from ds_todate_income_money where time< \''.$qiantian.'\'';
            $db-> query($sql);
 
@@ -56,7 +56,7 @@
                      foreach ($parent_s as $li){
                          $linxiu=is_linxiu($li) ;
                          if($linxiu['linxiu']==0){
-                             break;
+                             continue;
                          }
 
                          if($linxiu['linxiu']==1){
@@ -77,9 +77,10 @@
 
                              $member = M('member');
                              $minfo = $member->where(array('id'=>$li))->find();
+
                              M("member")->where(array('username' => $minfo['username']))->setInc('money', $money);
                              account_log($minfo['username'], $money, $parent_num.'级会员每日收益分成', 1, 999, 1, 0, $member_info['username']);
-
+                             var_dump($minfo);exit;
                          }
 
 

@@ -34,10 +34,10 @@
             <input name="money" type="number" placeholder="请输入充值金额" style="height: 30px;line-height: 30px;width: 78%;border-radius: 4px;border: none; background:rgb(239, 239, 239);padding-left: 5px;-webkit-appearance:none; color:#39393d;">
         </li>
 
-    <!--     <li style="margin-top: 5px;width:100%">
+        <li style="margin-top: 5px;width:100%">
                 <span style="display:inline-block;width:20%;">充值备注:</span>
                 <input name="notis" type="text" placeholder="请输入充值备注" style="height: 30px;line-height: 30px;width: 78%;border-radius: 4px;border: none; background:rgb(239, 239, 239);padding-left: 5px;-webkit-appearance:none; color:#39393d;">
-         </li>-->
+         </li>
 
         <p style="height: 40px"></p>
     <div class="PaymentTop">

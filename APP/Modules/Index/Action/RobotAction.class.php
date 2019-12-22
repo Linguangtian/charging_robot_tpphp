@@ -36,7 +36,10 @@ Class RobotAction extends CommonAction{
 
         $letter = M('type')->where(array('id'=>$data['tid']))->getField('name');
         //判断 是否已经达到限购数量"user_id = {$user_id} and zt = {$zt}"
-        $my_gounum=M("order")->where(array("user"=>session('username'),"sid"=>$id,"zt"=>1))->count();
+        $where_data=array("user"=>session('username'),"sid"=>$id);
+        $where_data['end_time']=['gt',time()];
+        $my_gounum=M("order")->where($where_data)->count();
+
         if($my_gounum >=$data['xiangou']){
             echo '<script>alert("已经达到当前5G服务器的上线！");window.history.back(-1);</script>';
             die;
@@ -245,7 +248,7 @@ Class RobotAction extends CommonAction{
         $show = $Page -> show();
         $jiesuan_time = C('jiesuan_time');
 
-        $orders = $order->where("user_id = {$user_id}  and end_time>{$nowtime}" ) ->order('id desc') -> select();
+        $orders = $order->where("user_id = {$user_id}  and zt=1" ) ->order('id desc') -> select();
 
         $now_day_start=date('Y-m-d',time());
 

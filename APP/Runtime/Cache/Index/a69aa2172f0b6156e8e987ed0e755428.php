@@ -42,7 +42,7 @@
   	</div>-->
   	
 <!--  	<a class="xgwdxx" href="<?php echo U('Index/Index/edit');?>">修改资料与绑定银行卡</a>-->
-<a class="xgwdxx" href="<?php echo U('Index/Login/editPwd');?>">修改资料</a>
+<a class="xgwdxx" href="<?php echo U('Index/Login/editPwd');?>">修改密码</a>
   	
   	
   	
