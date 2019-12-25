@@ -54,7 +54,10 @@ Class RobotAction extends CommonAction{
         $where_data['end_time']=['gt',time()];
         $my_gounum_total=M("order")->where($where_data)->count();
 
-        $my_zhitui=M("member")->where(['parent'=>session('username')])->count();
+        $user_id=M('member')->where(['username'=>session('username')])->getField('id');
+        $is_linxiu= is_linxiu($user_id);
+
+        $my_zhitui=$is_linxiu['zhitui'];
 
         $xiangou_menber1 = C('xiangou_menber1');
         $xiangou_menber2 = C('xiangou_menber2');
@@ -292,7 +295,7 @@ Class RobotAction extends CommonAction{
         $show = $Page -> show();
         $jiesuan_time = C('jiesuan_time');
 
-        $orders = $order->where("user_id = {$user_id}  and zt=1" ) ->order('id desc') -> select();
+        $orders = $order->where("user_id = {$user_id}  and end_time>={$nowtime}" ) ->order('id desc') -> select();
 
         $now_day_start=date('Y-m-d',time());
 
@@ -347,7 +350,11 @@ Class RobotAction extends CommonAction{
         $xiaolv3 = C('xiaolv3');
         $xiaolv4 = C('xiaolv4');
         $add_xiaolv = C('add_xiaolv');
-        $my_zhitui=M("member")->where(['parent'=>session('username')])->count();
+        $user_id=M('member')->where(['username'=>session('username')])->getField('id');
+
+        $is_linxiu= is_linxiu($user_id);
+
+        $my_zhitui=$is_linxiu['zhitui'];
 
         $context='';
         if($xiangou_menber4<$my_zhitui){
@@ -465,7 +472,9 @@ Class RobotAction extends CommonAction{
 
         $context='';
         $currt_xiaolv='';
-        $my_zhitui=M("member")->where(['parent'=>session('username')])->count();
+        $user_id=M('member')->where(['username'=>session('username')])->getField('id');
+        $is_linxiu= is_linxiu($user_id);
+        $my_zhitui=$is_linxiu['zhitui'];
         if($xiangou_menber4<$my_zhitui){
             $add_num=$my_zhitui-$xiangou_menber4;
             $currt_xiaolv=($xiaolv4+$add_num*$add_xiaolv);

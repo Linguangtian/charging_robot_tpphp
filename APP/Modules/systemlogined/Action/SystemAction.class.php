@@ -89,7 +89,7 @@
             $config['xiaolv2']      = I('post.xiaolv2',0,'intval');
             $config['xiaolv3']      = I('post.xiaolv3',0,'intval');
             $config['xiaolv4']      = I('post.xiaolv4',0,'intval');
-            $config['add_xiaolv']      = I('post.add_xiaolv',0,'intval');
+            $config['add_xiaolv']      = I('post.add_xiaolv',0,'floatval');
 
 
 

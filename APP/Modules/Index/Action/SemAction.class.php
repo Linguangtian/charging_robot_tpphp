@@ -24,11 +24,14 @@
             if(!is_int($d_key)){
                 $d_key=str_replace('AAABBB','/',$d_key);
                 $uid =encrypt($d_key,'D','xyb8888');
+
             }else{
                 $uid =$d_key;
             }
+
 			$hongbao = C('hongbao');
             $this->assign('hongbao',$hongbao);
+
             $this->assign('uid',$uid);
             $this->display();
         }
@@ -41,6 +44,9 @@
 
             $e_keyid=str_replace('/','AAABBB',$e_keyid);
 
+
+
+
             $this->assign('e_keyid',$e_keyid);
             $this->assign('d_key',$d_key);
 
@@ -51,6 +57,10 @@
 
         //注册推广
         public function regSempost(){
+
+
+
+
             if (IS_AJAX) {
 
                 import('ORG.Net.IpLocation');// 导入IpLocation类

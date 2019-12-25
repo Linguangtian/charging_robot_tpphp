@@ -31,12 +31,12 @@
 
 </head>
 <body style="background: url(/Public/dianyun/img/login_bg.png) no-repeat #151a37;">
-	
-	
+
+
 	<div class="login_logo">
   		<img src="/Public/dianyun/img/lg.png"/>
   </div>
-  
+
   	<div class="login_form">
   		<form action="" id="myform" method="post"style="margin-top:0px">
 
@@ -55,16 +55,16 @@
                             <input class="inputfield" type="text" id="mobile" name="mobile" placeholder="手机号码" maxlength="11" value="">
                         </div>
                     </div>
-                    
-                    
-                    
+
+
+
                     <div class="input-container">
                         <div class="input-control">
                             <i class="icon iconfont icon-mima"></i>
                             <input class="inputfield" type="password" id="password" name="password" placeholder="登录密码" value="">
                         </div>
                     </div>
-                    
+
                       <div class="input-container">
                         <div class="input-control">
                             <i class="icon iconfont icon-mima"></i>
@@ -95,13 +95,13 @@
                             <input class="inputfield" type="text" id="id" value="<?php echo ($e_keyid); ?>" name="id" disabled>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
 
                     <div class="input-container">
                         <div class="row">
@@ -111,29 +111,29 @@
                                     <input class="inputfield" type="text" name="code"  id="code"  placeholder="短信验证码" value="">
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
-                         
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             <div class="col-40" style="background: #fdb523;height: 40px;line-height: 40px;border-radius: 10px;text-align: center;">
                                 <span id="count_down" onClick="send_sms_reg_code()">
                                    <p style="background: #fdb523;height: 40px;line-height: 40px;border-radius: 10px;text-align: center;">获取验证码</p>
@@ -148,31 +148,31 @@
                         <a href="javascript:account_reg_commit();" class="btn_submit_my login_la">
                             立即注册
                         </a>
-                      
+
                     </div>
                 </form>
   	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="/Public/js/jquery-1.11.3.min.js"></script>
 
 <script src="/Public/js/jquery-weui.min.js"></script>
