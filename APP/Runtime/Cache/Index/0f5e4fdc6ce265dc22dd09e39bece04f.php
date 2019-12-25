@@ -99,8 +99,11 @@
 	
             <p class="bxxxx-top">我的5G服务器
             	<a href="<?php echo U('/index/robot/pcontent');?>" style="">购买服务器 > </a>
+			<h4 style="color: firebrick;  padding-top:10px;   padding-left: 20px;">
+				<?php echo ($context); ?>
+			</h4>
             </p>
-            
+
             <div class="boooooss">
             
             	<ul>

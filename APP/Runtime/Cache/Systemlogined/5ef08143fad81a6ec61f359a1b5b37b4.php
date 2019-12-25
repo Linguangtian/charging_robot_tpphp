@@ -560,8 +560,8 @@ a.active{ color:#C30 !important; font-size:18px;}
 
 													<div class="controls">
 														<div style="margin-top: 5px;">一代:购买<input type="text" id="shou1" name="lxOne_shop_reward" value="<?php echo ($config["lxOne_shop_reward"]); ?>" style=" width: 100px;" class="span3"/>% 奖励
-																					&nbsp;每日收益<input type="text" id="shou1" name="lxOne_day_reward" value="<?php echo ($config["lxOne_day_reward"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
-																					&nbsp;享受<input type="text" id="shou1" name="lxOne_son_num" value="<?php echo ($config["lxOne_son_num"]); ?>" style=" width: 100px;" class="span3"/>代;
+															&nbsp;每日收益<input type="text" id="shou1" name="lxOne_day_reward" value="<?php echo ($config["lxOne_day_reward"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+															&nbsp;享受<input type="text" id="shou1" name="lxOne_son_num" value="<?php echo ($config["lxOne_son_num"]); ?>" style=" width: 100px;" class="span3"/>代;
 														</div>
 
 														<div style="margin-top: 5px;">
@@ -577,6 +577,47 @@ a.active{ color:#C30 !important; font-size:18px;}
 														</div>
 													</div>
 												</div>
+
+
+
+
+
+
+
+												<div class="control-group" >
+													<label class="control-label" for="xiangou">限购设置</label>
+
+													<div class="controls">
+														<div style="margin-top: 5px;">一:直推<input type="text" id="xiangou1" name="xiangou_menber1" value="<?php echo ($config["xiangou_menber1"]); ?>" style=" width: 100px;" class="span3"/>人
+															&nbsp;可租赁 <input type="text" id="xiangou1" name="xiangou_num1" value="<?php echo ($config["xiangou_num1"]); ?>" style=" width: 100px;" class="span3"/>台 &nbsp;
+															&nbsp;服务器收益 <input type="text" id="xiaolv1" name="xiaolv1" value="<?php echo ($config["xiaolv1"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+														</div>
+
+														<div style="margin-top: 5px;">二:直推<input type="text" id="xiangou1" name="xiangou_menber2" value="<?php echo ($config["xiangou_menber2"]); ?>" style=" width: 100px;" class="span3"/>人
+															&nbsp;可租赁 <input type="text" id="xiangou1" name="xiangou_num2" value="<?php echo ($config["xiangou_num2"]); ?>" style=" width: 100px;" class="span3"/>台 &nbsp;
+															&nbsp;服务器收益 <input type="text" id="xiaolv2" name="xiaolv2" value="<?php echo ($config["xiaolv2"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+														</div>
+														<div style="margin-top: 5px;">三:直推<input type="text" id="xiangou4" name="xiangou_menber3" value="<?php echo ($config["xiangou_menber3"]); ?>" style=" width: 100px;" class="span3"/>人
+															&nbsp;可租赁 <input type="text" id="xiangou4" name="xiangou_num3" value="<?php echo ($config["xiangou_num3"]); ?>" style=" width: 100px;" class="span3"/>台 &nbsp;
+															&nbsp;服务器收益 <input type="text" id="xiaolv3" name="xiaolv3" value="<?php echo ($config["xiaolv3"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;
+														</div>
+
+														<div style="margin-top: 5px;">四:直推<input type="text" id="xiangou4" name="xiangou_menber4" value="<?php echo ($config["xiangou_menber4"]); ?>" style=" width: 100px;" class="span3"/>人
+															&nbsp;可租赁 <input type="text" id="xiangou4" name="xiangou_num4" value="<?php echo ($config["xiangou_num4"]); ?>" style=" width: 100px;" class="span3"/>台
+															&nbsp;&nbsp;&nbsp;服务器收益 <input type="text" id="xiaolv4" name="xiaolv4" value="<?php echo ($config["xiaolv4"]); ?>" style=" width: 100px;" class="span3"/>% &nbsp;&nbsp;
+														</div>
+
+
+														<div style="margin-top: 5px;">第四层以后直推每增加一人，服务器收益增加<input type="text" id="add_xiaolv" name="add_xiaolv" value="<?php echo ($config["add_xiaolv"]); ?>" style=" width: 100px;" class="span3"/>%
+														</div>
+													</div>
+												</div>
+
+
+
+
+
+
 
 												<div class="control-group" >
 													<label class="control-label" for="kefu">客服编号</label>

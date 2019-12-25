@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae773b5-c18d-470c-bf09-bf5169cf9c6b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Public/img/nextStep-big.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Conf/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Conf/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Conf/system.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/219113ec1157518899da9da5d7a4e695.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/219113ec1157518899da9da5d7a4e695.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/997dfcb1233a6b786a401ad63ed34705.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/997dfcb1233a6b786a401ad63ed34705.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/a69aa2172f0b6156e8e987ed0e755428.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/a69aa2172f0b6156e8e987ed0e755428.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b19002d346325797e3a2999cd2ec7490.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/b19002d346325797e3a2999cd2ec7490.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6a733d7d2336d85fcc7291c60cfd629b.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6a733d7d2336d85fcc7291c60cfd629b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6f9ab0bc2c5493fb77a2c18101ff8e2b.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/6f9ab0bc2c5493fb77a2c18101ff8e2b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/a7bd2a047c51b939ee4903c58c2cb943.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/a7bd2a047c51b939ee4903c58c2cb943.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Index/0f5e4fdc6ce265dc22dd09e39bece04f.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Index/0f5e4fdc6ce265dc22dd09e39bece04f.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/4830999d5b39f770fc82c60050278927.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/4830999d5b39f770fc82c60050278927.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,34 +21,138 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customsetting.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
+      <file leaf-file-name="SystemAction.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="204" column="106" selection-start-line="204" selection-start-column="99" selection-end-line="204" selection-end-column="106" />
+            <state relative-caret-position="374">
+              <caret line="91" column="31" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotAction.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="364" column="31" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="35" />
               <folding>
-                <element signature="n#style#0;n#input#2;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#11063#11069#0" expanded="true" />
-                <element signature="e#11069#11075#0" expanded="true" />
+                <element signature="n#index#0;n#RobotAction#0;n#!!top" />
+                <element signature="n#pcontent#0;n#RobotAction#0;n#!!top" />
+                <element signature="n#buy#0;n#RobotAction#0;n#!!top" />
+                <element signature="e#802#877#0#PHP" />
+                <element signature="e#1204#1352#0#PHP" />
+                <element signature="e#1361#1501#0#PHP" />
+                <element signature="e#2133#3018#0#PHP" />
+                <element signature="e#2179#2249#0#PHP" />
+                <element signature="e#2352#2384#0#PHP" />
+                <element signature="e#2390#2552#0#PHP" />
+                <element signature="e#2574#2796#0#PHP" />
+                <element signature="e#2624#2786#0#PHP" />
+                <element signature="e#2796#3018#0#PHP" />
+                <element signature="e#2846#3008#0#PHP" />
+                <element signature="e#3195#9557#0#PHP" />
+                <element signature="e#3320#3423#0#PHP" />
+                <element signature="e#4144#4276#0#PHP" />
+                <element signature="e#4286#9557#0#PHP" />
+                <element signature="e#4353#4465#0#PHP" />
+                <element signature="e#5376#9547#0#PHP" />
+                <element signature="e#6364#6782#0#PHP" />
+                <element signature="e#6582#6782#0#PHP" />
+                <element signature="e#6804#7226#0#PHP" />
+                <element signature="e#7024#7226#0#PHP" />
+                <element signature="e#7246#7676#0#PHP" />
+                <element signature="e#7470#7676#0#PHP" />
+                <element signature="e#8305#9460#0#PHP" />
+                <element signature="e#8400#8485#0#PHP" />
+                <element signature="e#8506#8967#0#PHP" />
+                <element signature="e#8656#8809#0#PHP" />
+                <element signature="e#8810#8967#0#PHP" />
+                <element signature="e#8988#9381#0#PHP" />
+                <element signature="e#9707#10418#0#PHP" />
+                <element signature="e#9738#10408#0#PHP" />
+                <element signature="e#9854#10394#0#PHP" />
+                <element signature="e#9899#10182#0#PHP" />
+                <element signature="e#10255#10325#0#PHP" />
+                <element signature="e#10343#10394#0#PHP" />
+                <element signature="n#rank#0;n#RobotAction#0;n#!!top" />
+                <element signature="e#11553#11696#0#PHP" />
+                <element signature="e#11595#11684#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SystemAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
+      <file leaf-file-name="robot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="-745">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
+      <file leaf-file-name="customsetting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+            <state relative-caret-position="395">
+              <caret line="207" column="191" lean-forward="true" selection-start-line="207" selection-start-column="191" selection-end-line="207" selection-end-column="191" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#8759#8765#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#8898#8904#0" expanded="true" />
+                <element signature="e#8920#8926#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9288#9294#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9427#9433#0" expanded="true" />
+                <element signature="e#9449#9455#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9821#9827#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9964#9970#0" expanded="true" />
+                <element signature="e#9986#9992#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#10529#10535#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#10663#10669#0" expanded="true" />
+                <element signature="e#10685#10691#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#10819#10825#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11189#11195#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11314#11320#0" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11690#11696#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11815#11821#0" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11596#11602#0" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#12186#12192#0" expanded="true" />
+                <element signature="e#12187#12193#0" expanded="true" />
+                <element signature="e#12198#12204#0" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#12312#12318#0" expanded="true" />
+                <element signature="e#11730#11736#0" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#4;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +160,7 @@
       <file leaf-file-name="onlinerecharge.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
+            <state relative-caret-position="-1044">
               <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="n#style#0;n#li#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -73,34 +171,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotAction.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-              <folding>
-                <element signature="n#index#0;n#RobotAction#0;n#!!top" />
-                <element signature="n#pcontent#0;n#RobotAction#0;n#!!top" />
-                <element signature="n#rank#0;n#RobotAction#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IndexAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
+            <state relative-caret-position="1700">
               <caret line="68" column="59" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewAction.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="173" column="145" lean-forward="true" selection-start-line="173" selection-start-column="99" selection-end-line="173" selection-end-column="145" />
+            <state relative-caret-position="4125">
+              <caret line="165" column="44" selection-start-line="165" selection-start-column="44" selection-end-line="165" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -108,7 +192,7 @@
       <file leaf-file-name="AutoAction.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
+            <state relative-caret-position="1825">
               <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
@@ -117,26 +201,16 @@
       <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
+            <state relative-caret-position="3175">
               <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$mypassword</find>
-      <find>editMember</find>
-      <find>$password</find>
-      <find>where</find>
-      <find>addUser</find>
       <find>llaward</find>
       <find>密码不正确!</find>
       <find>award</find>
@@ -162,6 +236,11 @@
       <find>购买奖励</find>
       <find>级签到收益奖励</find>
       <find>eq</find>
+      <find>一代:购买</find>
+      <find>收益奖励</find>
+      <find>领袖奖励</find>
+      <find>xiangou_num1</find>
+      <find>xiangou_menber1</find>
     </findStrings>
     <replaceStrings>
       <replace>5G服务器</replace>
@@ -200,7 +279,6 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/edit.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/New/help.html" />
         <option value="$PROJECT_DIR$/APP/Runtime/Cache/Systemlogined/5ef08143fad81a6ec61f359a1b5b37b4.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" />
         <option value="$PROJECT_DIR$/APP/Runtime/Cache/Index/a69aa2172f0b6156e8e987ed0e755428.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/personal.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/TaskAction.class.php" />
@@ -208,7 +286,6 @@
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Public/sidebar.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/InfoAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Info/tanchu.html" />
-        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Member/adduser.html" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/ShopAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/Shop/orderlist.html" />
@@ -227,12 +304,14 @@
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/LoginAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/sem/regsems.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/SemAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/award.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html" />
+        <option value="$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html" />
         <option value="$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php" />
       </list>
     </option>
@@ -247,10 +326,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-79" />
-    <option name="y" value="67" />
+    <option name="x" value="-152" />
+    <option name="y" value="26" />
     <option name="width" value="1441" />
-    <option name="height" value="793" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -260,6 +339,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,11 +385,37 @@
               <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Action" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="charging_robot_tpphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charging_robot_tpphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="charging_robot_tpphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charging_robot_tpphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="charging_robot_tpphp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charging_robot_tpphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Robot" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,28 +497,33 @@
       <workItem from="1576070803830" duration="706000" />
       <workItem from="1576072609722" duration="118000" />
       <workItem from="1576387923666" duration="2776000" />
+      <workItem from="1577023164688" duration="2446000" />
+      <workItem from="1577112763012" duration="90000" />
+      <workItem from="1577112876198" duration="123000" />
+      <workItem from="1577253658468" duration="4666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174203000" />
+    <option name="totallyTimeSpent" value="181528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.08875" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21319444" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18402778" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -454,6 +565,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4325">
+          <caret line="173" column="145" lean-forward="true" selection-start-line="173" selection-start-column="99" selection-end-line="173" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Index/kefu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -570,13 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="116" column="80" selection-start-line="116" selection-start-column="80" selection-end-line="116" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -739,28 +850,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="204" column="106" selection-start-line="204" selection-start-column="99" selection-end-line="204" selection-end-column="106" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11063#11069#0" expanded="true" />
-            <element signature="e#11069#11075#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2300">
+          <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/index.html">
+    <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+        <state relative-caret-position="3175">
+          <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1825">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="59" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="165" column="44" selection-start-line="165" selection-start-column="44" selection-end-line="165" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Wallet/onlinerecharge.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
+        <state relative-caret-position="-1044">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="n#style#0;n#li#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -770,53 +897,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Tpl/System/customsetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="207" column="191" lean-forward="true" selection-start-line="207" selection-start-column="191" selection-end-line="207" selection-end-column="191" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8759#8765#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8898#8904#0" expanded="true" />
+            <element signature="e#8920#8926#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9288#9294#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9427#9433#0" expanded="true" />
+            <element signature="e#9449#9455#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9821#9827#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9964#9970#0" expanded="true" />
+            <element signature="e#9986#9992#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10529#10535#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10663#10669#0" expanded="true" />
+            <element signature="e#10685#10691#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10819#10825#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11189#11195#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11314#11320#0" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11690#11696#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#2;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11815#11821#0" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11596#11602#0" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12186#12192#0" expanded="true" />
+            <element signature="e#12187#12193#0" expanded="true" />
+            <element signature="e#12198#12204#0" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#3;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12312#12318#0" expanded="true" />
+            <element signature="e#11730#11736#0" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#4;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Tpl/default/Robot/robot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-745">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/systemlogined/Action/SystemAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Common/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/AutoAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="374">
+          <caret line="91" column="31" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/RobotAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="423">
+          <caret line="364" column="31" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="35" />
           <folding>
             <element signature="n#index#0;n#RobotAction#0;n#!!top" />
             <element signature="n#pcontent#0;n#RobotAction#0;n#!!top" />
+            <element signature="n#buy#0;n#RobotAction#0;n#!!top" />
+            <element signature="e#802#877#0#PHP" />
+            <element signature="e#1204#1352#0#PHP" />
+            <element signature="e#1361#1501#0#PHP" />
+            <element signature="e#2133#3018#0#PHP" />
+            <element signature="e#2179#2249#0#PHP" />
+            <element signature="e#2352#2384#0#PHP" />
+            <element signature="e#2390#2552#0#PHP" />
+            <element signature="e#2574#2796#0#PHP" />
+            <element signature="e#2624#2786#0#PHP" />
+            <element signature="e#2796#3018#0#PHP" />
+            <element signature="e#2846#3008#0#PHP" />
+            <element signature="e#3195#9557#0#PHP" />
+            <element signature="e#3320#3423#0#PHP" />
+            <element signature="e#4144#4276#0#PHP" />
+            <element signature="e#4286#9557#0#PHP" />
+            <element signature="e#4353#4465#0#PHP" />
+            <element signature="e#5376#9547#0#PHP" />
+            <element signature="e#6364#6782#0#PHP" />
+            <element signature="e#6582#6782#0#PHP" />
+            <element signature="e#6804#7226#0#PHP" />
+            <element signature="e#7024#7226#0#PHP" />
+            <element signature="e#7246#7676#0#PHP" />
+            <element signature="e#7470#7676#0#PHP" />
+            <element signature="e#8305#9460#0#PHP" />
+            <element signature="e#8400#8485#0#PHP" />
+            <element signature="e#8506#8967#0#PHP" />
+            <element signature="e#8656#8809#0#PHP" />
+            <element signature="e#8810#8967#0#PHP" />
+            <element signature="e#8988#9381#0#PHP" />
+            <element signature="e#9707#10418#0#PHP" />
+            <element signature="e#9738#10408#0#PHP" />
+            <element signature="e#9854#10394#0#PHP" />
+            <element signature="e#9899#10182#0#PHP" />
+            <element signature="e#10255#10325#0#PHP" />
+            <element signature="e#10343#10394#0#PHP" />
             <element signature="n#rank#0;n#RobotAction#0;n#!!top" />
+            <element signature="e#11553#11696#0#PHP" />
+            <element signature="e#11595#11684#0#PHP" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/IndexAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="68" column="59" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Modules/Index/Action/NewAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="173" column="145" lean-forward="true" selection-start-line="173" selection-start-column="99" selection-end-line="173" selection-end-column="145" />
         </state>
       </provider>
     </entry>

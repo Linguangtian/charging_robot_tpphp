@@ -79,5 +79,18 @@ return array (
   'notice_title' => 2122,
   'notice_content' => '1212666sss',
   'App_dow' => 'http://www.baidu.com',
+  'xiangou_menber1' => 0,
+  'xiangou_menber2' => 2,
+  'xiangou_menber3' => 3,
+  'xiangou_menber4' => 4,
+  'xiangou_num1' => 3,
+  'xiangou_num2' => 4,
+  'xiangou_num3' => 6,
+  'xiangou_num4' => 8,
+  'xiaolv1' => 85,
+  'xiaolv2' => 100,
+  'xiaolv3' => 125,
+  'xiaolv4' => 150,
+  'add_xiaolv' => 2,
 );
 ?>

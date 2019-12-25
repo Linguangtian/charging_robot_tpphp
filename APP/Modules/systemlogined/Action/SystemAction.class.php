@@ -73,6 +73,27 @@
             $config['notice_content']      = I('post.notice_content');
 
 /*----------------------------------------------------------*/
+
+            $config['xiangou_menber1']      = I('post.xiangou_menber1',0,'intval');
+            $config['xiangou_menber2']      = I('post.xiangou_menber2',0,'intval');
+            $config['xiangou_menber3']      = I('post.xiangou_menber3',0,'intval');
+            $config['xiangou_menber4']      = I('post.xiangou_menber4',0,'intval');
+
+             $config['xiangou_num1']      = I('post.xiangou_num1',0,'intval');
+            $config['xiangou_num2']      = I('post.xiangou_num2',0,'intval');
+            $config['xiangou_num3']      = I('post.xiangou_num3',0,'intval');
+            $config['xiangou_num4']      = I('post.xiangou_num4',0,'intval');
+
+
+            $config['xiaolv1']      = I('post.xiaolv1',0,'intval');
+            $config['xiaolv2']      = I('post.xiaolv2',0,'intval');
+            $config['xiaolv3']      = I('post.xiaolv3',0,'intval');
+            $config['xiaolv4']      = I('post.xiaolv4',0,'intval');
+            $config['add_xiaolv']      = I('post.add_xiaolv',0,'intval');
+
+
+
+            /*          限购END           */
             $config['tel']      = I('post.tel',0,'floatval');
             $config['wechat']      = I('post.wechat',0,'floatval');
             $config['email']      = I('post.email',0,'floatval');

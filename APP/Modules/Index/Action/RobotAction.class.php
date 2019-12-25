@@ -48,6 +48,50 @@ Class RobotAction extends CommonAction{
             echo '<script>alert("5G服务器已经购买完毕，请改日再来！");window.history.back(-1);</script>';
             die;
         }
+
+
+        $where_data=array("user"=>session('username'));
+        $where_data['end_time']=['gt',time()];
+        $my_gounum_total=M("order")->where($where_data)->count();
+
+        $my_zhitui=M("member")->where(['parent'=>session('username')])->count();
+
+        $xiangou_menber1 = C('xiangou_menber1');
+        $xiangou_menber2 = C('xiangou_menber2');
+        $xiangou_menber3 = C('xiangou_menber3');
+        $xiangou_menber4 = C('xiangou_menber4');
+
+        $xiangou_num1 = C('xiangou_num1');
+        $xiangou_num2 = C('xiangou_num2');
+        $xiangou_num3 = C('xiangou_num3');
+        $xiangou_num4 = C('xiangou_num4');
+
+
+        if($xiangou_menber4<=$my_zhitui){
+            if($my_gounum_total>=$xiangou_num4){
+                echo '<script>alert("已经达到当前5G服务器的上线！");window.history.back(-1);</script>';
+                die;
+            }
+
+        }elseif($xiangou_menber3<=$my_zhitui){
+            if($my_gounum_total>=$xiangou_num3){
+                echo '<script>alert("已经达到当前5G服务器的上线！");window.history.back(-1);</script>';
+                die;
+            }
+        }elseif($xiangou_menber2<=$my_zhitui){
+            if($my_gounum_total>=$xiangou_num2){
+                echo '<script>alert("已经达到当前5G服务器的上线！");window.history.back(-1);</script>';
+                die;
+            }
+        }elseif($xiangou_menber1<=$my_zhitui){
+            if($my_gounum_total>=$xiangou_num1){
+                echo '<script>alert("已经达到当前5G服务器的上线！");window.history.back(-1);</script>';
+                die;
+            }
+        }
+
+
+
         $faquan = C('faquan');
 
         $username = session('username');
@@ -267,6 +311,13 @@ Class RobotAction extends CommonAction{
         $mrkd = C('mrkd');
         $time = time();
 
+
+
+
+
+
+
+
         $this -> assign("jiesuan_time",$jiesuan_time);
         $this -> assign("count1",$count1);
         $this -> assign("sum",$sum);
@@ -276,6 +327,59 @@ Class RobotAction extends CommonAction{
         $this -> assign("page",$show);
         $this -> assign("zt",$zt);
         $this -> assign("orders",$orders);
+
+
+
+
+
+        $xiangou_menber1 = C('xiangou_menber1');
+        $xiangou_menber2 = C('xiangou_menber2');
+        $xiangou_menber3 = C('xiangou_menber3');
+        $xiangou_menber4 = C('xiangou_menber4');
+
+        $xiangou_num1 = C('xiangou_num1');
+        $xiangou_num2 = C('xiangou_num2');
+        $xiangou_num3 = C('xiangou_num3');
+        $xiangou_num4 = C('xiangou_num4');
+
+        $xiaolv1 = C('xiaolv1');
+        $xiaolv2 = C('xiaolv2');
+        $xiaolv3 = C('xiaolv3');
+        $xiaolv4 = C('xiaolv4');
+        $add_xiaolv = C('add_xiaolv');
+        $my_zhitui=M("member")->where(['parent'=>session('username')])->count();
+
+        $context='';
+        if($xiangou_menber4<$my_zhitui){
+            $add_num=$my_zhitui-$xiangou_menber4;
+            $currt_xiaolv=($xiaolv4+$add_num*$add_xiaolv);
+            $context='当前服务器工作效率('.$currt_xiaolv.'%),直推每增加一人工作效率增加'.$add_xiaolv.'%';
+        }elseif($xiangou_menber4==$my_zhitui){
+            $currt_xiaolv=$xiaolv4;
+            $context='当前服务器工作效率('.$currt_xiaolv.'%),直推每增加一人工作效率增加'.$add_xiaolv.'%';
+        }elseif($xiangou_menber3<=$my_zhitui){
+            $currt_xiaolv=$xiaolv3;
+            $xiaji_num=$xiangou_menber4-$xiangou_menber3;
+            $context='当前服务器工作效率('.$currt_xiaolv.'%),直推增加（'.$xiaji_num.'人）,工作效率('.$xiaolv4.'%),直推'.$xiangou_menber4.'人以上,直推每增加一人工作效率增加'.$add_xiaolv.'%';
+        }elseif($xiangou_menber2<=$my_zhitui){
+            $currt_xiaolv=$xiaolv2;
+            $xiaji_num=$xiangou_menber3-$xiangou_menber2;
+            $context='当前服务器工作效率('.$currt_xiaolv.'%),直推增加（'.$xiaji_num.'人）,工作效率('.$xiaolv3.'%),直推('.$xiangou_menber4.'人)，工作效率('.$xiaolv4.') %,直推'.$xiangou_menber4.'人以上,直推每增加一人工作效率增加'.$add_xiaolv.'%';
+
+        }elseif($xiangou_menber1<=$my_zhitui){
+            $currt_xiaolv=$xiaolv1;
+            $xiaji_num=$xiangou_menber2-$xiangou_menber1;
+            $context='当前服务器工作效率('.$currt_xiaolv.'%),直推增加（'.$xiaji_num.'人）,工作效率('.$xiaolv2.'%),直推('.$xiangou_menber3.'人),工作效率('.$xiaolv3.')%,直推('.$xiangou_menber4.'人)，工作效率'.$xiaolv4.' %,直推'.$xiangou_menber4.'人以上,直推每增加一人工作效率增加'.$add_xiaolv.'%';
+
+        }
+
+        $this -> assign("context",$context);
+
+
+
+
+
+
         $this -> display();
 
 
@@ -347,11 +451,50 @@ Class RobotAction extends CommonAction{
         }
 
 
+        /*直推XX人 收益百分*/
+
+        $xiangou_menber1 = C('xiangou_menber1');
+        $xiangou_menber2 = C('xiangou_menber2');
+        $xiangou_menber3 = C('xiangou_menber3');
+        $xiangou_menber4 = C('xiangou_menber4');
+        $xiaolv1 = C('xiaolv1');
+        $xiaolv2 = C('xiaolv2');
+        $xiaolv3 = C('xiaolv3');
+        $xiaolv4 = C('xiaolv4');
+        $add_xiaolv = C('add_xiaolv');
+
+        $context='';
+        $currt_xiaolv='';
+        $my_zhitui=M("member")->where(['parent'=>session('username')])->count();
+        if($xiangou_menber4<$my_zhitui){
+            $add_num=$my_zhitui-$xiangou_menber4;
+            $currt_xiaolv=($xiaolv4+$add_num*$add_xiaolv);
+            $shouyi=$shouyi*$currt_xiaolv/100;
+
+        }elseif($xiangou_menber4==$my_zhitui){
+            $currt_xiaolv=$xiaolv4;
+            $shouyi=$shouyi*$currt_xiaolv/100;
+
+        }elseif($xiangou_menber3<=$my_zhitui){
+            $currt_xiaolv=$xiaolv3;
+            $shouyi=$shouyi*$currt_xiaolv/100;
+        }elseif($xiangou_menber2<=$my_zhitui){
+            $currt_xiaolv=$xiaolv2;
+            $shouyi=$shouyi*$currt_xiaolv/100;
+        }elseif($xiangou_menber1<=$my_zhitui){
+            $currt_xiaolv=$xiaolv1;
+            $shouyi=$shouyi*$currt_xiaolv/100;
+        }
+        if($currt_xiaolv){
+            $context=',[当前工作效率'.$currt_xiaolv.'%]';
+        }
+
+
         M('order')->where("id = {$id} and user_id = {$user_id}")->setInc('already_profit',$shouyi);
         M('order')->where("id = {$id}  and user_id = {$user_id}")->save($data);
 
         M('member')->where("id = {$user_id}")->setInc("money",$shouyi);
-        account_log($username,$shouyi,'5G服务器签到收益',1,1,1,$order['id']);
+        account_log($username,$shouyi,'5G服务器签到收益'.$context,1,1,1,$order['id']);
         $shou1 = $shouyi * C('shou1');
         $shou2 = $shouyi * C('shou2');
         $shou3 = $shouyi * C('shou3');
